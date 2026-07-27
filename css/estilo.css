@@ -1,106 +1,72 @@
-/* =====================================================
-   CONECTASOPORTE
-   CSS GENERAL DEL PROTOTIPO
-   ===================================================== */
+/* ============================================
+   CONECTASOPORTE - CSS GENERAL PROTOTIPO
+   ============================================ */
 
-
-/* ------------------------------
-   RESET GENERAL
------------------------------- */
 
 *{
-
     margin:0;
     padding:0;
     box-sizing:border-box;
     font-family:"Segoe UI", Arial, sans-serif;
-
 }
 
 
 body{
-
     background:#f4f7fb;
     color:#263238;
-
 }
-
 
 
 a{
-
     text-decoration:none;
-
+    cursor:pointer;
 }
 
 
-/* =====================================================
+/* ============================================
    LOGIN
-===================================================== */
+   ============================================ */
 
 
 .login-page{
 
     min-height:100vh;
-
     background:#174A7E;
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
 }
-
-
-
-.login-container{
-
-    width:100%;
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
 
 
 .login-card{
 
-
     background:white;
-
     width:420px;
-
-    padding:45px;
+    padding:40px;
 
     border-radius:20px;
 
-    box-shadow:0 15px 40px rgba(0,0,0,.25);
-
     text-align:center;
 
-}
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
 
+}
 
 
 .login-logo{
 
-    width:80px;
-
-    margin-bottom:20px;
+    width:100px !important;
+    height:auto;
 
 }
-
 
 
 .login-card h1{
 
     color:#174A7E;
-
-    margin-bottom:10px;
+    margin:20px 0 10px;
 
 }
 
@@ -109,45 +75,25 @@ a{
 .subtitle{
 
     color:#78909C;
-
-    margin-bottom:30px;
-
-}
-
-
-
-
-.input-group{
-
-    text-align:left;
-
-    margin-bottom:20px;
-
-}
-
-
-.input-group label{
-
-    display:block;
-
-    margin-bottom:8px;
-
-    font-weight:600;
+    margin-bottom:25px;
 
 }
 
 
 
 
-.input-box{
+.input-box,
+.campo{
 
-    background:#f7f9fc;
+    background:#f8fafc;
 
     border:1px solid #d8e0e8;
 
     padding:15px;
 
     border-radius:10px;
+
+    margin:10px 0;
 
     color:#607D8B;
 
@@ -159,143 +105,45 @@ a{
 
     min-height:120px;
 
-    background:#f7f9fc;
+    background:#f8fafc;
 
     border:1px solid #d8e0e8;
 
+    border-radius:10px;
+
     padding:15px;
 
-    border-radius:10px;
-
-    color:#607D8B;
-
 }
 
 
 
-.options{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    margin:20px 0;
-
-    color:#607D8B;
-
-    font-size:14px;
-
-}
+/* ============================================
+   LAYOUT PRINCIPAL
+   ============================================ */
 
 
-
-
-.main-button{
-
-
-    background:#174A7E;
-
-    color:white;
-
-    padding:13px 25px;
-
-    border-radius:10px;
-
-    display:inline-block;
-
-    cursor:pointer;
-
-    border:none;
-
-}
-
-
-
-.main-button:hover{
-
-    background:#2D74B8;
-
-}
-
-
-
-.secondary-button{
-
-
-    background:white;
-
-    color:#174A7E;
-
-    border:1px solid #174A7E;
-
-    padding:13px 25px;
-
-    border-radius:10px;
-
-    display:inline-block;
-
-}
-
-
-
-.danger-button{
-
-    background:#C94A4A;
-
-    color:white;
-
-    padding:13px 25px;
-
-    border-radius:10px;
-
-    display:inline-block;
-
-}
-
-
-
-.login-footer{
-
-    margin-top:30px;
-
-    color:#78909C;
-
-    font-size:13px;
-
-}
-
-
-
-/* =====================================================
-   ESTRUCTURA PRINCIPAL
-===================================================== */
-
-
-.app-layout{
-
+.app-layout,
+.contenedor{
 
     display:flex;
 
     min-height:100vh;
 
-
 }
 
 
 
-/* =====================================================
-   SIDEBAR
-===================================================== */
+
+/* ============================================
+   SIDEBAR NUEVO Y ANTIGUO
+   ============================================ */
 
 
 .sidebar{
 
-
-    width:270px;
+    width:260px;
 
     background:#174A7E;
-
-    min-height:100vh;
 
     padding:25px;
 
@@ -303,12 +151,21 @@ a{
 
     position:fixed;
 
+    top:0;
+
+    left:0;
+
+    bottom:0;
+
+    overflow:auto;
+
 }
 
 
 
-.brand{
 
+.brand,
+.logo{
 
     display:flex;
 
@@ -316,29 +173,31 @@ a{
 
     gap:12px;
 
-    margin-bottom:40px;
-
-
-}
-
-
-
-.brand img{
-
-
-    width:45px;
-
-    height:45px;
+    margin-bottom:35px;
 
 }
 
 
 
-.brand h2{
+.brand img,
+.logo img{
 
-    font-size:20px;
+    width:45px !important;
+
+    height:45px !important;
+
+    object-fit:contain;
+
+}
+
+
+
+.brand h2,
+.logo h2{
 
     color:white;
+
+    font-size:20px;
 
 }
 
@@ -346,78 +205,78 @@ a{
 
 .brand span{
 
-    color:#d8e9f8;
-
     font-size:13px;
+
+    color:#dbeeff;
 
 }
 
 
 
-
+.menu a,
 .sidebar nav a{
-
 
     display:block;
 
-    padding:14px 18px;
+    color:white;
 
-    color:#eaf4fc;
+    padding:14px;
 
-    border-radius:12px;
+    border-radius:10px;
 
-    margin-bottom:10px;
-
+    margin-bottom:8px;
 
 }
 
 
 
+.menu a:hover,
 .sidebar nav a:hover,
 .sidebar nav .active{
 
-
     background:#2D74B8;
-
-    color:white;
-
 
 }
 
 
 
-/* =====================================================
+
+/* ============================================
    CONTENIDO
-===================================================== */
+   ============================================ */
 
 
-.main-content{
+.main-content,
+.contenido{
 
+    margin-left:260px;
 
-    margin-left:270px;
-
-    width:calc(100% - 270px);
+    width:calc(100% - 260px);
 
     padding:30px;
 
-
 }
 
 
 
-/* =====================================================
+
+
+/* ============================================
    HEADER
-===================================================== */
+   ============================================ */
 
 
-.top-header{
+.top-header,
+.header{
 
 
     background:white;
 
-    padding:22px 30px;
+    padding:25px;
 
-    border-radius:18px;
+    border-radius:15px;
+
+    margin-bottom:25px;
 
     display:flex;
 
@@ -425,32 +284,17 @@ a{
 
     align-items:center;
 
-    margin-bottom:25px;
-
-    box-shadow:0 5px 18px rgba(0,0,0,.06);
-
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 
 }
 
 
 
-.top-header h1{
 
+.top-header h1,
+.header h1{
 
     color:#174A7E;
-
-    margin-bottom:5px;
-
-
-}
-
-
-
-.top-header p{
-
-
-    color:#78909C;
-
 
 }
 
@@ -459,13 +303,11 @@ a{
 
 .profile{
 
-
     display:flex;
 
     align-items:center;
 
-    gap:12px;
-
+    gap:10px;
 
 }
 
@@ -473,16 +315,15 @@ a{
 
 .circle{
 
-
     width:45px;
 
     height:45px;
 
-    border-radius:50%;
-
     background:#2D74B8;
 
     color:white;
+
+    border-radius:50%;
 
     display:flex;
 
@@ -492,35 +333,35 @@ a{
 
     font-weight:bold;
 
-
 }
 
 
 
 
-/* =====================================================
-   TARJETAS KPI
-===================================================== */
+
+/* ============================================
+   TARJETAS
+   ============================================ */
 
 
-.stats-grid{
+.stats-grid,
+.cards{
 
 
     display:grid;
 
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
     gap:20px;
 
     margin-bottom:25px;
 
-
 }
 
 
 
-
-.stat-card{
+.stat-card,
+.card{
 
 
     background:white;
@@ -529,54 +370,45 @@ a{
 
     border-radius:18px;
 
-    box-shadow:0 5px 18px rgba(0,0,0,.07);
-
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 
 }
+
+
+
+
+.stat-card h2,
+.numero{
+
+    color:#174A7E;
+
+    font-size:35px;
+
+    margin-top:15px;
+
+}
+
 
 
 
 .stat-card span{
 
-
     color:#607D8B;
 
-    font-size:14px;
-
-
 }
 
 
 
-.stat-card h2{
 
 
-    font-size:38px;
-
-    color:#174A7E;
-
-    margin:15px 0;
-
-
-}
-
-
-
-.stat-card p{
-
-
-    color:#78909C;
-
-}
-
-
-
-/* =====================================================
+/* ============================================
    PANELES
-===================================================== */
+   ============================================ */
 
 
-.panel{
+.panel,
+.tabla,
+.grafico{
 
 
     background:white;
@@ -587,22 +419,22 @@ a{
 
     margin-bottom:25px;
 
-    box-shadow:0 5px 18px rgba(0,0,0,.07);
-
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 
 }
 
 
 
-.panel h3{
-
+.panel h3,
+.tabla h2,
+.grafico h2{
 
     color:#174A7E;
 
     margin-bottom:20px;
 
-
 }
+
 
 
 
@@ -616,30 +448,26 @@ a{
 
     gap:25px;
 
-
 }
 
 
 
-/* =====================================================
+/* ============================================
    TABLAS
-===================================================== */
+   ============================================ */
 
 
 table{
 
-
     width:100%;
 
     border-collapse:collapse;
-
 
 }
 
 
 
 th{
-
 
     background:#174A7E;
 
@@ -649,39 +477,213 @@ th{
 
     text-align:left;
 
-
 }
 
 
 
 td{
 
-
     padding:14px;
 
-    border-bottom:1px solid #e5e9ed;
-
+    border-bottom:1px solid #ddd;
 
 }
+
 
 
 
 tr:hover{
 
-
     background:#f5faff;
-
 
 }
 
 
 
-/* =====================================================
+
+/* ============================================
+   BOTONES
+   ============================================ */
+
+
+.main-button,
+.btn{
+
+    display:inline-block;
+
+    background:#174A7E;
+
+    color:white;
+
+    padding:13px 22px;
+
+    border-radius:10px;
+
+}
+
+
+
+.main-button:hover,
+.btn:hover{
+
+    background:#2D74B8;
+
+}
+
+
+
+.secondary-button{
+
+    display:inline-block;
+
+    padding:13px 22px;
+
+    border-radius:10px;
+
+    border:1px solid #174A7E;
+
+    color:#174A7E;
+
+}
+
+
+
+.danger-button{
+
+    background:#C94A4A;
+
+    color:white;
+
+    padding:13px 22px;
+
+    border-radius:10px;
+
+}
+
+
+
+/* ============================================
+   ESTADOS
+   ============================================ */
+
+
+.status-badge{
+
+    background:#fff3cd;
+
+    color:#856404;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+.estado{
+
+    padding:7px 15px;
+
+    border-radius:20px;
+
+}
+
+
+
+
+/* ============================================
+   INFORMACION
+   ============================================ */
+
+
+.info-row{
+
+    padding:12px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+
+.info-card{
+
+    background:#f8fafc;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+/* ============================================
+   TIMELINE
+   ============================================ */
+
+
+.timeline-item,
+.step-item{
+
+
+    padding:15px;
+
+    background:#f5f9ff;
+
+    border-left:4px solid #2D74B8;
+
+    margin-bottom:12px;
+
+    border-radius:8px;
+
+}
+
+
+
+/* ============================================
+   CONOCIMIENTO
+   ============================================ */
+
+
+.knowledge-item{
+
+
+    background:#f8fafc;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+.knowledge-item h4{
+
+    color:#174A7E;
+
+}
+
+
+
+
+
+/* ============================================
    FORMULARIOS
-===================================================== */
+   ============================================ */
 
 
-.form-grid{
+.form-grid,
+.filter-grid{
 
 
     display:grid;
@@ -690,23 +692,8 @@ tr:hover{
 
     gap:20px;
 
-
 }
 
-
-
-
-.filter-grid{
-
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:15px;
-
-
-}
 
 
 
@@ -719,286 +706,51 @@ tr:hover{
 
     gap:15px;
 
-
-}
-
-
-
-
-/* =====================================================
-   ESTADOS
-===================================================== */
-
-
-.status-badge{
-
-
-    background:#fff3cd;
-
-    color:#856404;
-
-    padding:8px 15px;
-
-    border-radius:20px;
-
-    font-weight:bold;
-
-
-}
-
-
-
-.alert-box{
-
-
-    background:#fff4e5;
-
-    border-left:5px solid #F1B844;
-
-    padding:15px;
-
-    margin-bottom:12px;
-
-    border-radius:8px;
-
-
-}
-
-
-
-/* =====================================================
-   TIMELINE
-===================================================== */
-
-
-.timeline-item{
-
-
-    padding:15px;
-
-    border-left:4px solid #2D74B8;
-
-    background:#f7faff;
-
-    margin-bottom:15px;
-
-    border-radius:8px;
-
-
-}
-
-
-
-/* =====================================================
-   CONOCIMIENTO
-===================================================== */
-
-
-.knowledge-item{
-
-
-    background:#f7f9fc;
-
-    padding:20px;
-
-    border-radius:12px;
-
-    margin-bottom:15px;
-
-
-}
-
-
-
-.knowledge-item h4{
-
-
-    color:#174A7E;
-
-    margin-bottom:8px;
-
-
-}
-
-
-
-.knowledge-item span{
-
-
-    color:#2D74B8;
-
-    font-size:13px;
-
-
-}
-
-
-
-/* =====================================================
-   ARTICULOS / PASOS
-===================================================== */
-
-
-.step-item{
-
-
-    padding:18px;
-
-    background:#f7f9fc;
-
-    margin-bottom:12px;
-
-    border-radius:10px;
-
-
-}
-
-
-
-
-.info-row{
-
-
-    padding:12px 0;
-
-    border-bottom:1px solid #eee;
-
-
-}
-
-
-
-
-.priority-item{
-
-
-    display:flex;
-
-    justify-content:space-between;
-
-    padding:15px;
-
-    background:#f7f9fc;
-
-    margin-bottom:10px;
-
-    border-radius:10px;
-
-
 }
 
 
 
 
 
-.chart-container{
-
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:15px;
-
-
-}
-
-
-
-.chart-line{
-
-
-    background:#2D74B8;
-
-    color:white;
-
-    padding:15px;
-
-    border-radius:10px;
-
-
-}
-
-
-
-
-
-/* =====================================================
+/* ============================================
    RESPONSIVE
-===================================================== */
+   ============================================ */
 
 
-@media(max-width:1000px){
+@media(max-width:900px){
 
 
 .sidebar{
-
 
     width:80px;
 
 }
 
 
-.brand span,
 .brand h2,
+.brand span,
+.logo h2,
+.menu a,
 .sidebar nav a{
 
-
     display:none;
-
 
 }
 
 
 
-.main-content{
-
+.main-content,
+.contenido{
 
     margin-left:80px;
 
     width:calc(100% - 80px);
-
-
-}
-
-
-
-.stats-grid{
-
-
-    grid-template-columns:repeat(2,1fr);
-
 
 }
 
 
 
 .dashboard-grid{
-
-
-    grid-template-columns:1fr;
-
-
-}
-
-
-
-}
-
-
-@media(max-width:600px){
-
-
-.stats-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.form-grid,
-.filter-grid{
 
     grid-template-columns:1fr;
 
