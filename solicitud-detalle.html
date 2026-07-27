@@ -1,338 +1,174 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="es">
 <head>
-
-<title>Detalle Solicitud</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detalle de la solicitud · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
-
-
 <body>
-
-
 <div class="app-layout">
-
-
-
 <aside class="sidebar">
-
-
-<div class="brand">
-
-<img src="img/logo.png">
-
-
-<div>
-
-<h2>
-ConectaSoporte
-</h2>
-
-
-<span>
-Detalle caso
-
-</span>
-
-
+  <a href="agente.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Agente</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="agente.html" class="nav-link"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<a href="solicitudes.html" class="nav-link"><i data-lucide="clipboard-list"></i><span class="txt">Mis solicitudes</span></a>
+<div class="nav-group open">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="active">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
-
+<a href="registro-solicitud.html" class="nav-link"><i data-lucide="plus-circle"></i><span class="txt">Crear solicitud</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Mis artículos</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
 </div>
-
-
-
-
-<nav>
-
-
-<a href="solicitudes.html">
-Volver solicitudes
-
-</a>
-
-
-<a href="escalacion.html">
-Escalar caso
-
-</a>
-
-
-</nav>
-
-
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="">Panel ejecutivo</a><a href="ejecutivo.html" class="">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
-
-
-
-
-
-
-
-
 <main class="main-content">
-
-
-
 <header class="top-header">
-
-
-<div>
-
-<h1>
-CS-2026-001
-
-</h1>
-
-
-<p>
-Detalle de solicitud
-
-</p>
-
-
-</div>
-
-
-
-<div class="status-badge">
-
-En progreso
-
-</div>
-
-
-
+  <div><h1>Detalle de la solicitud</h1><p>CS-2026-0128 · No puedo iniciar sesión</p></div>
+  <div></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">3</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">2</span></button>
+    <div class="profile">
+      <div class="circle">CL</div>
+      <div><strong>Carlos López</strong><br><small>Agente de Soporte</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-
-
-
-
-<section class="dashboard-grid">
-
-
-
-
+<a href="solicitudes.html" class="back-link"><i data-lucide="arrow-left"></i> Volver a la lista</a>
 
 <div class="panel">
-
-
-<h3>
-Información del caso
-
-</h3>
-
-
-
-<div class="info-row">
-
-Cliente:
-
-<b>
-Juan Pérez
-</b>
-
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div class="stat-icon" style="width:52px;height:52px;"><i data-lucide="file-text"></i></div>
+      <div><span style="font-size:12px;color:var(--text-soft);font-weight:700;">ID</span><h2 style="font-size:20px;">CS-2026-0128</h2></div>
+    </div>
+    <div class="info-grid" style="grid-template-columns:repeat(5,auto);gap:26px;">
+      <div class="info-item"><span class="lbl">Estado</span><span class="badge badge-blue">En progreso</span></div>
+      <div class="info-item"><span class="lbl">Prioridad</span><span class="badge prioridad-alta">Alta</span></div>
+      <div class="info-item"><span class="lbl">Categoría</span><span class="val">Acceso</span></div>
+      <div class="info-item"><span class="lbl">Asignada a</span><span class="val">Carlos López</span></div>
+      <div class="info-item"><span class="lbl">Creación</span><span class="val">24/07/2026 09:15</span></div>
+    </div>
+    <div class="dropdown">
+      <button class="secondary-button" data-toggle="#menuAcciones">Acciones <i data-lucide="chevron-down"></i></button>
+      <div class="dropdown-menu" id="menuAcciones">
+        <a href="#"><i data-lucide="pencil"></i> Editar</a>
+        <a href="#"><i data-lucide="refresh-cw"></i> Cambiar estado</a>
+        <a href="#"><i data-lucide="user-round-cog"></i> Reasignar</a>
+        <a href="escalacion.html"><i data-lucide="arrow-up-circle"></i> Escalar solicitud</a>
+        <a href="#"><i data-lucide="copy"></i> Duplicar solicitud</a>
+        <hr>
+        <a href="#" class="danger"><i data-lucide="x-circle"></i> Cerrar solicitud</a>
+        <a href="#" class="danger"><i data-lucide="ban"></i> Cancelar solicitud</a>
+      </div>
+    </div>
+  </div>
 </div>
 
+<div class="dashboard-grid">
+  <div>
+    <div class="panel">
+      <h3>Información de la solicitud</h3>
+      <div class="info-grid">
+        <div class="info-item"><span class="lbl">Asunto</span><span class="val">No puedo iniciar sesión</span></div>
+        <div class="info-item"><span class="lbl">Tipo de solicitante</span><span class="val">Cliente final</span></div>
+        <div class="info-item"><span class="lbl">Categoría</span><span class="val">Acceso</span></div>
+        <div class="info-item"><span class="lbl">Cliente / Solicitante</span><span class="val">Juan Pérez</span></div>
+        <div class="info-item"><span class="lbl">Fuente</span><span class="val">Portal web</span></div>
+        <div class="info-item"><span class="lbl">Subcategoría</span><span class="val">Inicio de sesión</span></div>
+        <div class="info-item"><span class="lbl">Correo electrónico</span><span class="val">juan.perez@empresa.com</span></div>
+        <div class="info-item"><span class="lbl">Impacto</span><span class="badge badge-amber">Medio</span></div>
+        <div class="info-item"><span class="lbl">Elemento afectado</span><span class="val">Sistema web</span></div>
+        <div class="info-item"><span class="lbl">Teléfono</span><span class="val">(506) 8888-8888</span></div>
+        <div class="info-item"><span class="lbl">Urgencia</span><span class="badge prioridad-alta">Alta</span></div>
+        <div class="info-item"><span class="lbl">Etiquetas</span><span class="chip">acceso</span> <span class="chip">login</span> <span class="chip">credenciales</span></div>
+        <div class="info-item"><span class="lbl">Departamento / Área</span><span class="val">Operaciones</span></div>
+        <div class="info-item"><span class="lbl">SLA</span><span class="badge badge-green">En tiempo</span></div>
+        <div class="info-item"><span class="lbl">Relacionado con</span><span class="val">—</span></div>
+        <div class="info-item"><span class="lbl">Ubicación</span><span class="val">Oficina Central</span></div>
+        <div class="info-item"><span class="lbl">Fecha compromiso</span><span class="val">24/07/2026 15:15</span></div>
+      </div>
+      <div class="summary-block">
+        <span class="lbl" style="display:block;margin-bottom:6px;">Descripción inicial</span>
+        <p>Desde hoy en la mañana no puedo iniciar sesión en el sistema con mi usuario. Al ingresar mis credenciales me muestra el mensaje de error "Usuario o contraseña incorrectos". He intentado restablecer la contraseña y el problema persiste.</p>
+      </div>
+    </div>
 
+    <div class="panel">
+      <div class="tabs">
+        <div class="tab active">Actividad</div>
+        <div class="tab">Comentarios internos</div>
+        <div class="tab">Historial de estados</div>
+        <div class="tab">Adjuntos (2)</div>
+        <div class="tab">Relaciones (1)</div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="t-icon"><i data-lucide="user-round"></i></div><div class="t-head"><strong>Carlos López asignó la solicitud a sí mismo</strong><span class="t-time">24/07/2026 09:20</span></div><p>Comentario: Asumo la atención de esta solicitud.</p></div>
+        <div class="timeline-item"><div class="t-icon"><i data-lucide="message-square"></i></div><div class="t-head"><strong>Comentario para el cliente</strong><span class="t-time">24/07/2026 09:25</span></div><p>Hola Juan, estamos revisando el acceso a su cuenta. Le solicitamos un momento mientras validamos.</p></div>
+        <div class="timeline-item"><div class="t-icon"><i data-lucide="check"></i></div><div class="t-head"><strong>Cambio de estado: En espera → En progreso</strong><span class="t-time">24/07/2026 10:05</span></div><p>Comentario: Se validó con el equipo técnico. Revisando configuración de cuenta.</p></div>
+        <div class="timeline-item"><div class="t-icon"><i data-lucide="paperclip"></i></div><div class="t-head"><strong>Adjunto agregado: captura_error_login.png</strong><span class="t-time">24/07/2026 10:12</span></div><p>Agregado por: Carlos López</p></div>
+        <div class="timeline-item"><div class="t-icon"><i data-lucide="message-square"></i></div><div class="t-head"><strong>Comentario para el cliente</strong><span class="t-time">24/07/2026 11:30</span></div><p>Juan, su contraseña ha sido restablecida. Por favor intente nuevamente y nos confirma.</p></div>
+      </div>
+      <div style="display:flex;gap:10px;margin-top:16px;">
+        <select style="width:200px;margin:0;"><option>Comentario para el cliente</option></select>
+        <input type="text" placeholder="Escribe tu mensaje..." style="margin:0;">
+        <button class="main-button">Enviar <i data-lucide="send"></i></button>
+      </div>
+    </div>
+  </div>
 
-<div class="info-row">
-
-Categoría:
-
-<b>
-Acceso
-
-</b>
-
+  <div>
+    <div class="panel">
+      <h3>Información adicional</h3>
+      <div class="info-row" style="display:flex;justify-content:space-between;"><span class="lbl">Versión</span><span class="val">—</span></div>
+      <div class="info-row" style="display:flex;justify-content:space-between;"><span class="lbl">Dispositivo / Navegador</span><span class="val">Chrome 126 / Windows 11</span></div>
+      <div class="info-row" style="display:flex;justify-content:space-between;"><span class="lbl">Dirección IP</span><span class="val">190.45.67.23</span></div>
+      <div class="info-row" style="display:flex;justify-content:space-between;"><span class="lbl">Empresa</span><span class="val">Conecta Soluciones Digitales</span></div>
+      <div class="info-row" style="display:flex;justify-content:space-between;"><span class="lbl">Contratos / Acuerdos</span><span class="val">—</span></div>
+      <label class="field-label" style="margin-top:14px;">Notas internas</label>
+      <textarea class="large-input" style="min-height:90px;">Usuario nuevo en el sistema. Se verificó cuenta activa y permisos.</textarea>
+    </div>
+  </div>
 </div>
-
-
-
-
-<div class="info-row">
-
-Prioridad:
-
-<b>
-Alta
-
-</b>
-
-</div>
-
-
-
-
-<div class="info-row">
-
-Responsable:
-
-<b>
-Carlos López
-
-</b>
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-Acciones
-
-</h3>
-
-
-
-<button class="main-button">
-
-Actualizar estado
-
-</button>
-
-
-
-<button class="secondary-button">
-
-Escalar
-
-</button>
-
-
-
-<button class="secondary-button">
-
-Cerrar solicitud
-
-</button>
-
-
-
-</div>
-
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-Descripción del problema
-
-</h3>
-
-
-<p>
-
-El usuario no puede ingresar al sistema corporativo.
-Se muestra mensaje de error después de validar credenciales.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-Historial del caso
-
-</h3>
-
-
-
-
-<div class="timeline-item">
-
-09:00
-Solicitud creada
-
-</div>
-
-
-<div class="timeline-item">
-
-09:20
-Asignada a agente
-
-</div>
-
-
-<div class="timeline-item">
-
-10:30
-Pruebas iniciales realizadas
-
-</div>
-
-
-<div class="timeline-item">
-
-11:45
-Pendiente de escalación
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
 
 </main>
-
-
-
 </div>
 
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>

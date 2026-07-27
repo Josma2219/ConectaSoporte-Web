@@ -1,563 +1,154 @@
 <!DOCTYPE html>
-
-<html>
-
-
+<html lang="es">
 <head>
-
-<title>Escalación</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de escalación · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
-
-
-
 <body>
-
-
 <div class="app-layout">
-
-
 <aside class="sidebar">
-
-
-<div class="brand">
-
-
-<img src="img/logo.png">
-
-
-<div>
-
-<h2>
-ConectaSoporte
-</h2>
-
-
-<span>
-Escalaciones
-
-</span>
-
-
+  <a href="agente.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Agente</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="agente.html" class="nav-link"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<a href="solicitudes.html" class="nav-link"><i data-lucide="clipboard-list"></i><span class="txt">Mis solicitudes</span></a>
+<div class="nav-group open">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="active">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
-
+<a href="registro-solicitud.html" class="nav-link"><i data-lucide="plus-circle"></i><span class="txt">Crear solicitud</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Mis artículos</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
 </div>
-
-
-
-
-<nav>
-
-
-<a href="solicitudes.html">
-
-Solicitudes
-
-</a>
-
-
-<a class="active">
-
-Escalar caso
-
-</a>
-
-
-<a href="cola-tecnica.html">
-
-Cola técnica
-
-</a>
-
-
-</nav>
-
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="">Panel ejecutivo</a><a href="ejecutivo.html" class="">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
-
-
-
-
-
-
-
-
-
 <main class="main-content">
-
-
 <header class="top-header">
-
-
-<div>
-
-<h1>
-Nueva escalación
-
-</h1>
-
-
-<p>
-Enviar caso a soporte especializado
-
-</p>
-
-
-</div>
-
-
-
-<div class="status-badge">
-
-Pendiente
-
-</div>
-
-
+  <div><h1>Escalar solicitud</h1><p>Solicitudes / Escalar solicitud</p></div>
+  <div></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">3</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">2</span></button>
+    <div class="profile">
+      <div class="circle">CL</div>
+      <div><strong>Carlos López</strong><br><small>Agente de Soporte</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-
-
-
-
+<a href="solicitud-detalle.html" class="back-link"><i data-lucide="arrow-left"></i> Volver al detalle · ID: CS-2026-0128 - No puedo iniciar sesión</a>
 
 <div class="panel">
+  <h3 style="margin-bottom:4px;">Escalar solicitud</h3>
+  <p class="field-hint" style="margin-bottom:20px;">Complete la información para escalar la solicitud.</p>
 
+  <div class="stepper">
+    <div class="step active"><div class="step-circle">1</div><span class="step-label">Información de escalación</span></div>
+    <div class="step-line"></div>
+    <div class="step"><div class="step-circle">2</div><span class="step-label">Destino</span></div>
+    <div class="step-line"></div>
+    <div class="step"><div class="step-circle">3</div><span class="step-label">Detalles adicionales</span></div>
+    <div class="step-line"></div>
+    <div class="step"><div class="step-circle">4</div><span class="step-label">Confirmación</span></div>
+  </div>
 
-<h3>
-Información del caso
+  <div class="form-grid">
+    <div>
+      <h4 style="margin-bottom:10px;">Información de la solicitud</h4>
+      <div class="form-grid" style="grid-template-columns:1fr 1fr;">
+        <div><label class="field-label">ID de la solicitud</label><input type="text" value="CS-2026-0128" disabled></div>
+        <div><label class="field-label">Asunto</label><input type="text" value="No puedo iniciar sesión" disabled></div>
+        <div><label class="field-label">Estado actual</label><input type="text" value="En progreso" disabled></div>
+        <div><label class="field-label">Asignada a</label><input type="text" value="Carlos López" disabled></div>
+      </div>
+      <label class="field-label">Resumen de la solicitud</label>
+      <textarea class="large-input" disabled>Desde hoy en la mañana no puedo iniciar sesión en el sistema con mi usuario. Al ingresar mis credenciales me muestra el mensaje de error "Usuario o contraseña incorrectos". He intentado restablecer la contraseña y el problema persiste.</textarea>
+      <div class="char-count" style="text-align:left;">Solo lectura</div>
+    </div>
 
-</h3>
+    <div>
+      <label class="field-label">Motivo de la escalación <span class="required">*</span></label>
+      <p class="field-hint">Seleccione el motivo principal de la escalación.</p>
+      <select><option>Seleccione un motivo...</option></select>
 
+      <label class="field-label" style="margin-top:18px;">Nivel de escalación <span class="required">*</span></label>
+      <p class="field-hint">Seleccione el nivel al que desea escalar.</p>
+      <div class="radio-group" style="flex-direction:column;gap:12px;">
+        <label class="radio-option"><input type="radio" name="nivel" checked> Nivel 2 - Soporte especializado</label>
+        <label class="radio-option"><input type="radio" name="nivel"> Nivel 3 - Soporte técnico</label>
+        <label class="radio-option"><input type="radio" name="nivel"> Otro equipo / área</label>
+      </div>
 
+      <label class="field-label" style="margin-top:18px;">Urgencia de la escalación <span class="required">*</span></label>
+      <div class="priority-pill-group">
+        <label class="priority-pill p-alta"><input type="radio" name="urg" checked><i data-lucide="arrow-down"></i> Alta</label>
+        <label class="priority-pill p-media"><input type="radio" name="urg"><i data-lucide="circle"></i> Media</label>
+        <label class="priority-pill p-baja"><input type="radio" name="urg"><i data-lucide="circle"></i> Baja</label>
+      </div>
+    </div>
 
-<div class="info-card">
+    <div class="form-full">
+      <label class="field-label">Descripción del motivo <span class="required">*</span></label>
+      <p class="field-hint">Explique claramente por qué se necesita escalar esta solicitud.</p>
+      <textarea class="large-input" placeholder="Describa en detalle el motivo de la escalación..."></textarea>
+      <div class="char-count">0 / 1000 caracteres</div>
+    </div>
 
+    <div>
+      <label class="field-label">Impacto <span class="required">*</span></label>
+      <p class="field-hint">Seleccione el impacto que tiene esta escalación.</p>
+      <select><option>Seleccione el impacto...</option></select>
+    </div>
+    <div>
+      <label class="field-label">¿Afecta a más usuarios?</label>
+      <div class="radio-group" style="margin:10px 0;"><label class="radio-option"><input type="radio" name="afecta" checked> Sí</label><label class="radio-option"><input type="radio" name="afecta"> No</label></div>
+      <label class="field-label">Cantidad aproximada de usuarios</label>
+      <input type="text" placeholder="Ej. 25, 100, 500...">
+    </div>
+  </div>
 
-Solicitud:
-
-<b>
-CS-2026-001
-</b>
-
-
+  <div class="action-panel">
+    <a href="solicitud-detalle.html" class="secondary-button">Cancelar</a>
+    <button class="main-button">Siguiente <i data-lucide="chevron-right"></i></button>
+  </div>
 </div>
-
-
-
-<div class="info-card">
-
-
-Cliente:
-
-<b>
-Juan Pérez
-
-</b>
-
-
-</div>
-
-
-
-<div class="info-card">
-
-
-Categoría:
-
-<b>
-Error de acceso
-
-</b>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-Datos de escalación
-
-</h3>
-
-
-
-
-<div class="input-box">
-
-Área destino:
-Soporte técnico nivel 2
-
-</div>
-
-
-
-
-<div class="input-box">
-
-Motivo de escalación
-
-</div>
-
-
-
-
-
-<div class="large-input">
-
-Descripción técnica del problema,
-pruebas realizadas y resultados obtenidos.
-
-</div>
-
-
-
-
-
-<div class="large-input">
-
-Evidencias adjuntas
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="action-panel">
-
-
-<a class="main-button" href="revision-escalacion.html">
-
-Enviar escalación
-
-</a>
-
-
-</div>
-
-
-
-
-
 
 </main>
-
-
-
 </div>
 
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
-</html><!DOCTYPE html>
-
-<html>
-
-
-<head>
-
-<title>Escalación</title>
-
-<link rel="stylesheet" href="css/estilo.css">
-
-</head>
-
-
-
-<body>
-
-
-<div class="app-layout">
-
-
-<aside class="sidebar">
-
-
-<div class="brand">
-
-
-<img src="img/logo.png">
-
-
-<div>
-
-<h2>
-ConectaSoporte
-</h2>
-
-
-<span>
-Escalaciones
-
-</span>
-
-
-</div>
-
-
-</div>
-
-
-
-
-<nav>
-
-
-<a href="solicitudes.html">
-
-Solicitudes
-
-</a>
-
-
-<a class="active">
-
-Escalar caso
-
-</a>
-
-
-<a href="cola-tecnica.html">
-
-Cola técnica
-
-</a>
-
-
-</nav>
-
-
-</aside>
-
-
-
-
-
-
-
-
-
-<main class="main-content">
-
-
-<header class="top-header">
-
-
-<div>
-
-<h1>
-Nueva escalación
-
-</h1>
-
-
-<p>
-Enviar caso a soporte especializado
-
-</p>
-
-
-</div>
-
-
-
-<div class="status-badge">
-
-Pendiente
-
-</div>
-
-
-</header>
-
-
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-Información del caso
-
-</h3>
-
-
-
-<div class="info-card">
-
-
-Solicitud:
-
-<b>
-CS-2026-001
-</b>
-
-
-</div>
-
-
-
-<div class="info-card">
-
-
-Cliente:
-
-<b>
-Juan Pérez
-
-</b>
-
-
-</div>
-
-
-
-<div class="info-card">
-
-
-Categoría:
-
-<b>
-Error de acceso
-
-</b>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-Datos de escalación
-
-</h3>
-
-
-
-
-<div class="input-box">
-
-Área destino:
-Soporte técnico nivel 2
-
-</div>
-
-
-
-
-<div class="input-box">
-
-Motivo de escalación
-
-</div>
-
-
-
-
-
-<div class="large-input">
-
-Descripción técnica del problema,
-pruebas realizadas y resultados obtenidos.
-
-</div>
-
-
-
-
-
-<div class="large-input">
-
-Evidencias adjuntas
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="action-panel">
-
-
-<a class="main-button" href="revision-escalacion.html">
-
-Enviar escalación
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-</main>
-
-
-
-</div>
-
-
-</body>
-
-
 </html>

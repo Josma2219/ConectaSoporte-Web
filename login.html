@@ -1,124 +1,73 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="es">
 <head>
-
-<title>ConectaSoporte - Login</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio de sesión · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
+<body>
 
+<div class="login-page">
+  <div class="login-card">
+    <img src="img/logo.png" class="login-logo" alt="ConectaSoporte">
+    <h1>¡Bienvenido de vuelta!</h1>
+    <p class="subtitle">Inicia sesión para continuar en ConectaSoporte</p>
 
-<body class="login-page">
+    <form>
+      <label class="field-label" style="text-align:left;display:block;">Correo electrónico</label>
+      <div class="input-with-icon">
+        <i data-lucide="mail"></i>
+        <input type="email" placeholder="usuario@empresa.com">
+      </div>
 
+      <label class="field-label" style="text-align:left;display:block;">Contraseña</label>
+      <div class="input-with-icon">
+        <i data-lucide="lock"></i>
+        <input type="password" placeholder="Ingrese su contraseña">
+        <span class="toggle-eye"><i data-lucide="eye"></i></span>
+      </div>
 
-<div class="login-container">
+      <div class="checkbox-row">
+        <label><input type="checkbox" style="width:auto;margin:0;"> Recordarme</label>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
 
+      <a class="main-button btn-block" style="justify-content:center;margin-top:6px;">Iniciar sesión <i data-lucide="arrow-right"></i></a>
+    </form>
 
-<div class="login-card">
+    <div class="divider-or">o</div>
 
+    <a class="secondary-button btn-block" style="justify-content:center;"><i data-lucide="shield-check"></i> Iniciar sesión con SSO (Corporativo)</a>
 
-<img src="img/logo.png" class="login-logo">
+    <p class="subtitle" style="margin:22px 0 0;font-size:13px;">¿No tienes una cuenta? <a href="#" style="color:var(--primary);font-weight:700;">Contacta al administrador</a></p>
 
-
-<h1>
-ConectaSoporte
-</h1>
-
-
-<p class="subtitle">
-Plataforma de gestión de solicitudes
-</p>
-
-
-
-
-<div class="input-group">
-
-<label>
-Correo electrónico
-</label>
-
-<div class="input-box">
-usuario@empresa.com
+    <div class="login-features">
+      <div><div class="feat-icon"><i data-lucide="clock"></i></div>Seguimiento en tiempo real</div>
+      <div><div class="feat-icon"><i data-lucide="bar-chart-3"></i></div>Reportes e indicadores</div>
+      <div><div class="feat-icon"><i data-lucide="shield-check"></i></div>Seguro y confiable</div>
+    </div>
+  </div>
 </div>
 
-
-</div>
-
-
-
-
-<div class="input-group">
-
-<label>
-Contraseña
-</label>
-
-<div class="input-box">
-••••••••
-</div>
-
-
-</div>
-
-
-
-
-<div class="options">
-
-<label>
-
-<input type="checkbox">
-
-Recordarme
-
-</label>
-
-
-<a>
-¿Olvidó su contraseña?
-</a>
-
-
-</div>
-
-
-
-
-
-<a href="index.html" class="main-button">
-
-Ingresar
-
-</a>
-
-
-
-
-<div class="login-footer">
-
-Conecta Soluciones Digitales S.A.
-
-<br>
-
-Soporte seguro y centralizado
-
-</div>
-
-
-
-</div>
-
-
-
-</div>
-
-
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>

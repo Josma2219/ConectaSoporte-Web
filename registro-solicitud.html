@@ -1,300 +1,148 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="es">
 <head>
-
-<title>Nueva Solicitud</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nueva solicitud · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
-
-
 <body>
-
-
 <div class="app-layout">
-
-
-
 <aside class="sidebar">
-
-
-<div class="brand">
-
-<img src="img/logo.png">
-
-
-<div>
-
-<h2>
-ConectaSoporte
-</h2>
-
-
-<span>
-Nueva solicitud
-</span>
-
-
+  <a href="agente.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Agente</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="agente.html" class="nav-link"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<a href="solicitudes.html" class="nav-link"><i data-lucide="clipboard-list"></i><span class="txt">Mis solicitudes</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
+<a href="registro-solicitud.html" class="nav-link active"><i data-lucide="plus-circle"></i><span class="txt">Crear solicitud</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Mis artículos</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
 </div>
-
-
-
-
-<nav>
-
-<a href="index.html">
-Inicio
-</a>
-
-
-<a href="solicitudes.html">
-Solicitudes
-</a>
-
-
-<a class="active">
-Crear solicitud
-</a>
-
-
-<a href="conocimiento.html">
-Conocimiento
-</a>
-
-
-</nav>
-
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="">Panel ejecutivo</a><a href="ejecutivo.html" class="">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
-
-
-
-
-
-
-
-
-
 <main class="main-content">
-
-
-
 <header class="top-header">
-
-
-<div>
-
-<h1>
-Registrar solicitud
-
-</h1>
-
-
-<p>
-Crear nuevo caso de soporte
-
-</p>
-
-
-</div>
-
-
-
-<div class="profile">
-
-
-<div class="circle">
-CL
-</div>
-
-
-<div>
-
-<strong>
-Carlos López
-</strong>
-
-
-<br>
-
-
-<small>
-Agente
-
-</small>
-
-
-</div>
-
-
-</div>
-
-
-
+  <div><h1>Nueva solicitud</h1><p>Solicitudes / Nueva solicitud</p></div>
+  <div></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">3</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">2</span></button>
+    <div class="profile">
+      <div class="circle">CL</div>
+      <div><strong>Carlos López</strong><br><small>Agente de Soporte</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-
-
-
-
+<div class="breadcrumb"><a href="solicitudes.html">Solicitudes</a><span class="sep"><i data-lucide="chevron-right"></i></span><span class="current">Nueva solicitud</span></div>
 <div class="panel">
+  <div class="stepper">
+    <div class="step active"><div class="step-circle">1</div><span class="step-label">Información general</span></div>
+    <div class="step-line"></div>
+    <div class="step"><div class="step-circle">2</div><span class="step-label">Detalles</span></div>
+    <div class="step-line"></div>
+    <div class="step"><div class="step-circle">3</div><span class="step-label">Clasificación</span></div>
+    <div class="step-line"></div>
+    <div class="step"><div class="step-circle">4</div><span class="step-label">Impacto y prioridad</span></div>
+    <div class="step-line"></div>
+    <div class="step"><div class="step-circle">5</div><span class="step-label">Adjuntos</span></div>
+    <div class="step-line"></div>
+    <div class="step"><div class="step-circle">6</div><span class="step-label">Confirmación</span></div>
+  </div>
 
+  <h3 style="margin-bottom:4px;">Información general</h3>
+  <p class="field-hint" style="margin-bottom:20px;">Ingrese la información básica de la solicitud.</p>
 
-<h3>
-Información del cliente
+  <div class="form-grid">
+    <div>
+      <label class="field-label">Cliente / Solicitante <span class="required">*</span></label>
+      <div style="display:flex;gap:10px;">
+        <input type="text" placeholder="Buscar cliente o solicitante...">
+        <button class="secondary-button" style="white-space:nowrap;"><i data-lucide="plus"></i> Nuevo</button>
+      </div>
+    </div>
+    <div>
+      <label class="field-label">Tipo de solicitante <span class="required">*</span></label>
+      <div class="radio-group" style="margin-top:14px;">
+        <label class="radio-option"><input type="radio" name="tipo" checked> Cliente final</label>
+        <label class="radio-option"><input type="radio" name="tipo"> Usuario interno</label>
+        <label class="radio-option"><input type="radio" name="tipo"> Proveedor</label>
+      </div>
+    </div>
+    <div>
+      <label class="field-label">Correo electrónico</label>
+      <div class="input-with-icon"><i data-lucide="mail"></i><input type="email" placeholder="correo@empresa.com"></div>
+    </div>
+    <div>
+      <label class="field-label">Teléfono de contacto</label>
+      <div class="input-with-icon"><i data-lucide="phone"></i><input type="tel" placeholder="(506) 8888-8888"></div>
+    </div>
+    <div>
+      <label class="field-label">Departamento / Área <span class="required">*</span></label>
+      <select><option>Seleccione un departamento...</option></select>
+    </div>
+    <div>
+      <label class="field-label">Ubicación</label>
+      <select><option>Seleccione una ubicación...</option></select>
+    </div>
+    <div class="form-full">
+      <label class="field-label">Asunto <span class="required">*</span></label>
+      <input type="text" placeholder="Ingrese un resumen breve del asunto (máx. 100 caracteres)">
+      <div class="char-count">0 / 100 caracteres</div>
+    </div>
+    <div class="form-full">
+      <label class="field-label">Descripción inicial <span class="required">*</span></label>
+      <textarea class="large-input" placeholder="Describa con detalle la solicitud. Incluya toda la información relevante para su atención..."></textarea>
+      <div class="char-count">0 / 2000 caracteres</div>
+    </div>
+  </div>
 
-</h3>
+  <p class="field-hint" style="margin-top:16px;"><span class="required">*</span> Campos obligatorios</p>
 
-
-
-<div class="form-grid">
-
-
-<div class="input-box">
-
-Nombre del cliente
-
+  <div class="action-panel">
+    <a href="solicitudes.html" class="secondary-button">Cancelar</a>
+    <button class="main-button">Siguiente <i data-lucide="chevron-right"></i></button>
+  </div>
 </div>
-
-
-<div class="input-box">
-
-Correo electrónico
-
-</div>
-
-
-<div class="input-box">
-
-Empresa
-
-</div>
-
-
-<div class="input-box">
-
-Teléfono
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-Información del problema
-
-</h3>
-
-
-
-<div class="input-box">
-
-Categoría del problema
-
-</div>
-
-
-
-
-<div class="input-box">
-
-Título de la solicitud
-
-</div>
-
-
-
-
-<div class="large-input">
-
-Descripción detallada del problema
-
-</div>
-
-
-
-
-<div class="input-box">
-
-Prioridad
-
-</div>
-
-
-
-
-<div class="input-box">
-
-Adjuntar evidencia
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel action-panel">
-
-
-<a class="secondary-button">
-
-Cancelar
-
-</a>
-
-
-
-<a href="solicitudes.html" class="main-button">
-
-Crear solicitud
-
-</a>
-
-
-</div>
-
-
-
-
 
 </main>
-
-
-
 </div>
 
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>

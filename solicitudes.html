@@ -1,403 +1,180 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="es">
 <head>
-
-<title>Solicitudes</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista de solicitudes · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
-
-
 <body>
-
-
 <div class="app-layout">
-
-
-
 <aside class="sidebar">
-
-
-<div class="brand">
-
-<img src="img/logo.png">
-
-
-<div>
-
-<h2>
-ConectaSoporte
-</h2>
-
-<span>
-Solicitudes
-</span>
-
+  <a href="agente.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Agente</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="agente.html" class="nav-link"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<a href="solicitudes.html" class="nav-link"><i data-lucide="clipboard-list"></i><span class="txt">Mis solicitudes</span></a>
+<div class="nav-group open">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="active">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
+<a href="registro-solicitud.html" class="nav-link"><i data-lucide="plus-circle"></i><span class="txt">Crear solicitud</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Mis artículos</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
 </div>
-
-
-
-
-
-<nav>
-
-
-<a href="index.html">
-Inicio
-</a>
-
-
-<a class="active">
-Solicitudes
-</a>
-
-
-<a href="registro-solicitud.html">
-Nueva solicitud
-</a>
-
-
-<a href="conocimiento.html">
-Base conocimiento
-</a>
-
-
-</nav>
-
-
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="">Panel ejecutivo</a><a href="ejecutivo.html" class="">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
-
-
-
-
-
-
-
-
 <main class="main-content">
-
-
-
 <header class="top-header">
-
-
-<div>
-
-<h1>
-Solicitudes
-
-</h1>
-
-
-<p>
-Gestión y seguimiento de casos
-
-</p>
-
-
-</div>
-
-
-
-<div class="profile">
-
-<div class="circle">
-CL
-</div>
-
-
-<div>
-
-<strong>
-Carlos López
-</strong>
-
-
-<br>
-
-
-<small>
-Agente
-
-</small>
-
-
-</div>
-
-
-</div>
-
-
+  <div><h1>Lista de solicitudes</h1><p>Consulta y gestión de todas las solicitudes del sistema</p></div>
+  <div class="header-search"><i data-lucide="search"></i><input type="text" placeholder="Buscar solicitudes..."></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">3</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">2</span></button>
+    <div class="profile">
+      <div class="circle">CL</div>
+      <div><strong>Carlos López</strong><br><small>Agente de Soporte</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-
-
 <div class="panel">
+  <div class="table-toolbar">
+    <div class="input-with-icon" style="max-width:280px;"><i data-lucide="search"></i><input type="text" placeholder="Buscar por ID, asunto o cliente..."></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <select style="margin:0;width:auto;"><option>Todos los estados</option></select>
+      <select style="margin:0;width:auto;"><option>Todas las prioridades</option></select>
+      <select style="margin:0;width:auto;"><option>Todas las categorías</option></select>
+      <button class="secondary-button btn-sm"><i data-lucide="sliders-horizontal"></i> Filtros avanzados</button>
+      <a href="registro-solicitud.html" class="main-button btn-sm"><i data-lucide="plus"></i> Nueva solicitud</a>
+    </div>
+  </div>
 
+  <div class="table-toolbar">
+    <span class="table-count">128 solicitudes encontradas</span>
+    <div style="display:flex;gap:10px;">
+      <button class="secondary-button btn-sm"><i data-lucide="download"></i> Exportar</button>
+      <button class="secondary-button btn-sm"><i data-lucide="columns-3"></i> Columnas</button>
+    </div>
+  </div>
 
-<h3>
-Filtros de búsqueda
+  <div class="table-wrap"><table>
+    <tr><th><input type="checkbox" style="width:auto;margin:0;"></th><th>ID</th><th>Asunto</th><th>Cliente</th><th>Categoría</th><th>Prioridad</th><th>Estado</th><th>Asignada a</th><th>Creación</th><th>Acciones</th></tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0128</a></td>
+      <td>No puedo iniciar sesión</td><td>Juan Pérez</td><td>Acceso</td>
+      <td><span class="badge prioridad-alta">Alta</span></td>
+      <td><span class="badge badge-blue">En progreso</span></td>
+      <td>Carlos López</td><td>24/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0127</a></td>
+      <td>Error al cargar archivo</td><td>María González</td><td>Sistema</td>
+      <td><span class="badge prioridad-media">Media</span></td>
+      <td><span class="badge badge-purple">En espera</span></td>
+      <td>Laura Vargas</td><td>24/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0126</a></td>
+      <td>Consulta de facturación</td><td>Ana Ramírez</td><td>Facturación</td>
+      <td><span class="badge prioridad-baja">Baja</span></td>
+      <td><span class="badge badge-blue">En progreso</span></td>
+      <td>Pedro Sánchez</td><td>23/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0125</a></td>
+      <td>Acceso a módulo reportes</td><td>Pedro Solís</td><td>Reportes</td>
+      <td><span class="badge prioridad-media">Media</span></td>
+      <td><span class="badge badge-green">Resuelta</span></td>
+      <td>María González</td><td>23/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0124</a></td>
+      <td>Solicitud de nueva función</td><td>Roberto Núñez</td><td>Mejora</td>
+      <td><span class="badge prioridad-baja">Baja</span></td>
+      <td><span class="badge badge-gray">Por asignar</span></td>
+      <td>—</td><td>23/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0123</a></td>
+      <td>No recibo notificaciones</td><td>Laura Vargas</td><td>Notificaciones</td>
+      <td><span class="badge prioridad-media">Media</span></td>
+      <td><span class="badge badge-blue">En progreso</span></td>
+      <td>Carlos López</td><td>23/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0122</a></td>
+      <td>Problema con exportación</td><td>José Fernández</td><td>Reportes</td>
+      <td><span class="badge prioridad-baja">Baja</span></td>
+      <td><span class="badge badge-purple">En espera</span></td>
+      <td>Pedro Sánchez</td><td>22/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+  </table></div>
 
-</h3>
-
-
-
-<div class="filter-grid">
-
-
-<div class="input-box">
-
-Buscar solicitud
-
+  <div class="pagination">
+    <div class="p-info">Mostrar <select style="width:auto;display:inline-block;margin:0 6px;"><option>10</option></select> por página · 1-7 de 128</div>
+    <div class="pages">
+      <button class="page-btn"><i data-lucide="chevrons-left"></i></button>
+      <button class="page-btn"><i data-lucide="chevron-left"></i></button>
+      <button class="page-btn active">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <span>…</span>
+      <button class="page-btn">13</button>
+      <button class="page-btn"><i data-lucide="chevron-right"></i></button>
+      <button class="page-btn"><i data-lucide="chevrons-right"></i></button>
+    </div>
+  </div>
 </div>
-
-
-<div class="input-box">
-
-Estado: Todos
-
-</div>
-
-
-<div class="input-box">
-
-Prioridad: Todas
-
-</div>
-
-
-<div class="input-box">
-
-Fecha
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<div class="panel-header">
-
-
-<h3>
-Listado de solicitudes
-
-</h3>
-
-
-<a class="main-button">
-
-Nueva solicitud
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-<table>
-
-
-<tr>
-
-
-<th>
-ID
-
-</th>
-
-
-<th>
-Cliente
-
-</th>
-
-
-<th>
-Asunto
-
-</th>
-
-
-<th>
-Prioridad
-
-</th>
-
-
-<th>
-Estado
-
-</th>
-
-
-</tr>
-
-
-
-
-
-<tr>
-
-<td>
-CS-2026-001
-
-</td>
-
-
-<td>
-Juan Pérez
-
-</td>
-
-
-<td>
-Error de acceso
-
-</td>
-
-
-<td>
-Alta
-
-</td>
-
-
-<td>
-En progreso
-
-</td>
-
-
-</tr>
-
-
-
-
-
-<tr>
-
-<td>
-CS-2026-002
-
-</td>
-
-
-<td>
-María Gómez
-
-</td>
-
-
-<td>
-Problema aplicación
-
-</td>
-
-
-<td>
-Media
-
-</td>
-
-
-<td>
-Pendiente
-
-</td>
-
-
-</tr>
-
-
-
-
-
-<tr>
-
-<td>
-CS-2026-003
-
-</td>
-
-
-<td>
-Empresa ABC
-
-</td>
-
-
-<td>
-Configuración sistema
-
-</td>
-
-
-<td>
-Baja
-
-</td>
-
-
-<td>
-Resuelto
-
-</td>
-
-
-</tr>
-
-
-
-
-</table>
-
-
-
-</div>
-
-
-
-
-
 
 </main>
-
-
-
 </div>
 
-
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>

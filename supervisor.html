@@ -1,449 +1,141 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="es">
 <head>
-
-<title>Panel Supervisor - ConectaSoporte</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel del Supervisor · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
-
-
 <body>
-
-
 <div class="app-layout">
-
-
-
 <aside class="sidebar">
-
-
-<div class="brand">
-
-
-<img src="img/logo.png">
-
-
-<div>
-
-<h2>
-ConectaSoporte
-</h2>
-
-<span>
-Supervisor
-</span>
-
+  <a href="supervisor.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Supervisora</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="supervisor.html" class="nav-link active"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="alert-triangle"></i><span class="txt">Escalaciones</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="revision-escalacion.html" class="">Pendientes de revisión</a><a href="revision-escalacion.html" class="">En revisión</a><a href="revision-escalacion.html" class="">Resueltas</a><a href="revision-escalacion.html" class="">Historial</a></div>
 </div>
-
-
-
-
-
-<nav>
-
-
-<a href="index.html">
-Inicio
-</a>
-
-
-<a class="active">
-Supervisor
-</a>
-
-
-<a href="solicitudes.html">
-Solicitudes
-</a>
-
-
-<a href="revision-escalacion.html">
-Escalaciones
-</a>
-
-
-<a href="calidad.html">
-Calidad
-</a>
-
-
-<a href="ejecutivo.html">
-Indicadores
-</a>
-
-
-</nav>
-
-
-
+<a href="supervisor.html" class="nav-link"><i data-lucide="users"></i><span class="txt">Equipo</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="">Panel ejecutivo</a><a href="ejecutivo.html" class="">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a><a href="calidad.html" class="">Calibraciones</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="settings"></i><span class="txt">Configuración</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="usuarios.html" class="">General</a><a href="usuarios.html" class="">Canales</a><a href="usuarios.html" class="">Plantillas</a><a href="usuarios.html" class="">Reglas de negocio</a><a href="usuarios.html" class="">Usuarios</a><a href="usuarios.html" class="">Roles y permisos</a><a href="usuarios.html" class="">Grupos</a><a href="usuarios.html" class="">Auditoría</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
-
-
-
-
-
-
-
-
 <main class="main-content">
-
-
-
 <header class="top-header">
-
-
-<div>
-
-<h1>
-Panel del supervisor
-</h1>
-
-
-<p>
-Control operativo del equipo de soporte
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="profile">
-
-
-<div class="circle">
-AM
-</div>
-
-
-
-<div>
-
-<strong>
-Ana Martínez
-</strong>
-
-
-<br>
-
-
-<small>
-Supervisora
-
-</small>
-
-
-</div>
-
-
-
-</div>
-
-
-
+  <div><h1>Bienvenida, Ana Martínez</h1><p>Monitoreo del equipo y desempeño</p></div>
+  <div class="header-search"><i data-lucide="search"></i><input type="text" placeholder="Buscar solicitudes..."></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">3</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">2</span></button>
+    <div class="profile">
+      <div class="circle">AM</div>
+      <div><strong>Ana Martínez</strong><br><small>Supervisora de Soporte</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-
-
 <section class="stats-grid">
-
-
-
-<div class="stat-card">
-
-<span>
-Casos activos
-</span>
-
-
-<h2>
-248
-</h2>
-
-
-<p>
-Actualizado hoy
-
-</p>
-
-
-</div>
-
-
-
-
-<div class="stat-card">
-
-<span>
-Agentes conectados
-</span>
-
-
-<h2>
-18
-</h2>
-
-
-<p>
-Disponibles
-
-</p>
-
-
-</div>
-
-
-
-
-<div class="stat-card">
-
-<span>
-Escalaciones pendientes
-</span>
-
-
-<h2>
-12
-</h2>
-
-
-<p>
-Requieren revisión
-
-</p>
-
-
-</div>
-
-
-
-
-<div class="stat-card">
-
-<span>
-Cumplimiento SLA
-
-</span>
-
-
-<h2>
-92%
-
-</h2>
-
-
-<p>
-Meta mensual
-
-</p>
-
-
-</div>
-
-
-
+  <div class="stat-card"><div class="stat-card-top"><span>Solicitudes totales</span><div class="stat-icon"><i data-lucide="layers"></i></div></div><h2>128</h2><span class="trend up"><i data-lucide="trending-up"></i> 12% vs. periodo anterior</span></div>
+  <div class="stat-card"><div class="stat-card-top"><span>Resueltas</span><div class="stat-icon c-green"><i data-lucide="check-circle-2"></i></div></div><h2>78</h2><span class="trend up"><i data-lucide="trending-up"></i> 18% vs. periodo anterior</span></div>
+  <div class="stat-card"><div class="stat-card-top"><span>En progreso</span><div class="stat-icon c-orange"><i data-lucide="clock"></i></div></div><h2>24</h2><span class="trend down"><i data-lucide="trending-down"></i> 5% vs. periodo anterior</span></div>
+  <div class="stat-card"><div class="stat-card-top"><span>Por asignar</span><div class="stat-icon c-pink"><i data-lucide="user-x"></i></div></div><h2>26</h2><span class="trend down"><i data-lucide="trending-down"></i> 7% vs. periodo anterior</span></div>
+  <div class="stat-card"><div class="stat-card-top"><span>Tiempo prom. resolución</span><div class="stat-icon c-cyan"><i data-lucide="timer"></i></div></div><h2>18.6h</h2><span class="trend up"><i data-lucide="trending-down"></i> 8% vs. periodo anterior</span></div>
 </section>
 
-
-
-
-
-
-
-
-
-<section class="dashboard-grid">
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-Carga del equipo
-
-</h3>
-
-
-
-<table>
-
-
-<tr>
-
-<th>
-Agente
-</th>
-
-
-<th>
-Casos
-</th>
-
-
-<th>
-Estado
-</th>
-
-
-</tr>
-
-
-
-<tr>
-
-<td>
-Carlos López
-</td>
-
-
-<td>
-18
-
-</td>
-
-
-<td>
-Disponible
-
-</td>
-
-
-</tr>
-
-
-
-<tr>
-
-<td>
-María González
-</td>
-
-
-<td>
-22
-
-</td>
-
-
-<td>
-Atendiendo
-
-</td>
-
-
-</tr>
-
-
-
-<tr>
-
-<td>
-Pedro Sánchez
-</td>
-
-
-<td>
-15
-
-</td>
-
-
-<td>
-Disponible
-
-</td>
-
-
-</tr>
-
-
-
-</table>
-
-
-
+<div class="dashboard-grid">
+  <div class="panel">
+    <h3>Distribución de solicitudes por estado</h3>
+    <div style="display:flex;align-items:center;gap:30px;flex-wrap:wrap;">
+      <div class="donut" style="background:conic-gradient(var(--green) 0% 60.9%, var(--primary) 60.9% 79.7%, var(--pink) 79.7% 100%);">
+        <div class="donut-center"><span class="big">128</span><span class="small">Total</span></div>
+      </div>
+      <div class="legend" style="flex:1;min-width:220px;">
+        <div class="legend-row"><span class="lname"><span class="dot" style="background:var(--green)"></span>Resueltas</span><span class="lval">78 (60.9%)</span></div>
+        <div class="legend-row"><span class="lname"><span class="dot" style="background:var(--primary)"></span>En progreso</span><span class="lval">24 (18.8%)</span></div>
+        <div class="legend-row"><span class="lname"><span class="dot" style="background:var(--pink)"></span>Por asignar</span><span class="lval">26 (20.3%)</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="panel">
+    <h3>Solicitudes por prioridad</h3>
+    <div class="vbar-chart">
+      <div class="vbar"><span class="vb-val">32</span><div class="vb-fill" style="height:50%;background:linear-gradient(180deg,#818CF8,#4F46E5);"></div><span class="vb-label">Alta</span></div>
+      <div class="vbar"><span class="vb-val">64</span><div class="vb-fill" style="height:100%;"></div><span class="vb-label">Media</span></div>
+      <div class="vbar"><span class="vb-val">24</span><div class="vb-fill" style="height:38%;background:linear-gradient(180deg,#A5B4FC,#818CF8);"></div><span class="vb-label">Baja</span></div>
+      <div class="vbar"><span class="vb-val">8</span><div class="vb-fill" style="height:14%;background:#C7CAEF;"></div><span class="vb-label">Muy baja</span></div>
+    </div>
+  </div>
 </div>
 
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-Alertas del sistema
-
-</h3>
-
-
-
-<div class="alert-box">
-
-5 solicitudes próximas a vencer
-
+<div class="grid-2">
+  <div class="panel">
+    <div class="panel-head"><h3>Desempeño del equipo</h3><a class="see-all">Ver desempeño completo</a></div>
+    <div class="table-wrap"><table>
+      <tr><th>Agente</th><th>Asignadas</th><th>Resueltas</th><th>SLA cumplido</th></tr>
+      <tr><td>Carlos López</td><td>28</td><td>20</td><td><span class="badge badge-green">92%</span></td></tr>
+      <tr><td>María González</td><td>26</td><td>18</td><td><span class="badge badge-green">88%</span></td></tr>
+      <tr><td>Pedro Sánchez</td><td>24</td><td>15</td><td><span class="badge badge-amber">85%</span></td></tr>
+      <tr><td>Laura Vargas</td><td>25</td><td>14</td><td><span class="badge badge-green">90%</span></td></tr>
+      <tr><td>José Ramírez</td><td>25</td><td>11</td><td><span class="badge badge-red">78%</span></td></tr>
+    </table></div>
+  </div>
+  <div class="panel">
+    <div class="panel-head"><h3>Solicitudes recientes</h3><a class="see-all">Ver todas las solicitudes</a></div>
+    <div class="table-wrap"><table>
+      <tr><th>ID</th><th>Asunto</th><th>Prioridad</th><th>Estado</th></tr>
+      <tr><td><a href="solicitud-detalle.html">CS-2026-0128</a></td><td>No puedo iniciar sesión</td><td><span class="badge prioridad-alta">Alta</span></td><td><span class="badge badge-blue">En progreso</span></td></tr>
+      <tr><td><a href="solicitud-detalle.html">CS-2026-0127</a></td><td>Error al cargar archivo</td><td><span class="badge prioridad-media">Media</span></td><td><span class="badge badge-purple">En espera</span></td></tr>
+      <tr><td><a href="solicitud-detalle.html">CS-2026-0126</a></td><td>Consulta de facturación</td><td><span class="badge prioridad-baja">Baja</span></td><td><span class="badge badge-blue">En progreso</span></td></tr>
+      <tr><td><a href="solicitud-detalle.html">CS-2026-0125</a></td><td>Acceso a módulo reportes</td><td><span class="badge prioridad-media">Media</span></td><td><span class="badge badge-blue">En progreso</span></td></tr>
+    </table></div>
+  </div>
 </div>
-
-
-
-<div class="alert-box">
-
-3 escalaciones sin respuesta
-
-</div>
-
-
-
-<div class="alert-box">
-
-Nuevo artículo pendiente de aprobación
-
-</div>
-
-
-
-</div>
-
-
-
-
-</section>
-
-
-
-
-
-
-
 
 </main>
-
-
-
 </div>
 
-
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>

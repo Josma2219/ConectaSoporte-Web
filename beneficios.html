@@ -1,273 +1,113 @@
 <!DOCTYPE html>
-
-<html>
-
-
+<html lang="es">
 <head>
-
-<title>Beneficios esperados</title>
-
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beneficios esperados · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
-
 </head>
-
-
 <body>
-
-
-
-<div class="contenedor">
-
-
-
+<div class="app-layout">
 <aside class="sidebar">
-
-
-<div class="logo">
-
-<img src="img/logo.png">
-
-<h2>
-ConectaSoporte
-</h2>
-
-
+  <a href="supervisor.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Gestión de soporte</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="supervisor.html" class="nav-link"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
-
-<div class="menu">
-
-
-<a href="index.html">
-Inicio
-</a>
-
-
-<a href="ejecutivo.html">
-Indicadores
-</a>
-
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="alert-triangle"></i><span class="txt">Escalaciones</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="revision-escalacion.html" class="">Pendientes de revisión</a><a href="revision-escalacion.html" class="">En revisión</a><a href="revision-escalacion.html" class="">Resueltas</a><a href="revision-escalacion.html" class="">Historial</a></div>
 </div>
-
-
+<a href="supervisor.html" class="nav-link"><i data-lucide="users"></i><span class="txt">Equipo</span></a>
+<div class="nav-group open">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="active">Panel ejecutivo</a><a href="ejecutivo.html" class="">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a><a href="calidad.html" class="">Calibraciones</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="settings"></i><span class="txt">Configuración</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="usuarios.html" class="">General</a><a href="usuarios.html" class="">Canales</a><a href="usuarios.html" class="">Plantillas</a><a href="usuarios.html" class="">Reglas de negocio</a><a href="usuarios.html" class="">Usuarios</a><a href="usuarios.html" class="">Roles y permisos</a><a href="usuarios.html" class="">Grupos</a><a href="usuarios.html" class="">Auditoría</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
+<main class="main-content">
+<header class="top-header">
+  <div><h1>Beneficios esperados</h1><p>Evaluación del proyecto</p></div>
+  <div></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">3</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">2</span></button>
+    <div class="profile">
+      <div class="circle">AM</div>
+      <div><strong>Ana Martínez</strong><br><small>Supervisora</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
+</header>
 
-
-
-
-
-
-
-
-<main class="contenido">
-
-
-<div class="header">
-
-
-<h1>
-Beneficios esperados
-
-</h1>
-
-
-Evaluación del proyecto
-
-
+<div class="hero" style="padding:40px 44px;">
+  <h1 style="font-size:26px;">Beneficios esperados</h1>
+  <p>Evaluación del impacto esperado del proyecto ConectaSoporte sobre la operación, los costos y la experiencia del cliente.</p>
 </div>
 
+<section class="stats-grid" style="grid-template-columns:repeat(3,1fr);">
+  <div class="card"><h3 style="color:var(--text-soft);font-size:13.5px;font-weight:700;">Operativos</h3><div class="numero" style="color:var(--primary);font-size:34px;font-weight:800;margin-top:8px;">40%</div><p style="color:var(--text-soft);font-size:13px;margin-top:6px;">Reducción de tiempos y mejor seguimiento.</p></div>
+  <div class="card"><h3 style="color:var(--text-soft);font-size:13.5px;font-weight:700;">Económicos</h3><div class="numero" style="color:var(--secondary);font-size:34px;font-weight:800;margin-top:8px;">35%</div><p style="color:var(--text-soft);font-size:13px;margin-top:6px;">Reducción de costos administrativos.</p></div>
+  <div class="card"><h3 style="color:var(--text-soft);font-size:13.5px;font-weight:700;">Experiencia cliente</h3><div class="numero" style="color:var(--pink);font-size:34px;font-weight:800;margin-top:8px;">25%</div><p style="color:var(--text-soft);font-size:13px;margin-top:6px;">Mayor satisfacción y comunicación.</p></div>
+</section>
 
-
-
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-Operativos
-
-</h3>
-
-
-<div class="numero">
-40%
-
+<div class="panel">
+  <h3 style="margin-bottom:16px;">Impacto esperado</h3>
+  <div class="bars-simple">
+    <div class="bar-row"><span class="b-label" style="width:140px;">Eficiencia operativa</span><div class="b-track"><div class="b-fill" style="width:90%;background:linear-gradient(90deg,#34D399,#10B981);"></div></div><span class="b-val">90%</span></div>
+    <div class="bar-row"><span class="b-label" style="width:140px;">Ahorro económico</span><div class="b-track"><div class="b-fill" style="width:75%;"></div></div><span class="b-val">75%</span></div>
+    <div class="bar-row"><span class="b-label" style="width:140px;">Satisfacción</span><div class="b-track"><div class="b-fill" style="width:65%;background:linear-gradient(90deg,#FBBF24,#F59E0B);"></div></div><span class="b-val">65%</span></div>
+  </div>
 </div>
 
-
-<p>
-
-Reducción de tiempos y mejor seguimiento.
-
-</p>
-
-
+<div class="panel">
+  <h3 style="margin-bottom:16px;">Resumen económico</h3>
+  <div class="info-grid cols-2">
+    <div class="info-item"><span class="lbl">Ahorro mensual estimado</span><span class="val" style="font-size:20px;color:var(--primary);">₡1.189.733</span></div>
+    <div class="info-item"><span class="lbl">Ahorro anual estimado</span><span class="val" style="font-size:20px;color:var(--primary);">₡14.276.796</span></div>
+    <div class="info-item"><span class="lbl">Recuperación estimada</span><span class="val" style="font-size:20px;color:var(--primary);">11 meses</span></div>
+  </div>
 </div>
-
-
-
-
-
-<div class="card">
-
-<h3>
-Económicos
-
-</h3>
-
-
-<div class="numero">
-35%
-
-</div>
-
-
-<p>
-
-Reducción de costos administrativos.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h3>
-Experiencia cliente
-
-</h3>
-
-
-<div class="numero">
-25%
-
-</div>
-
-
-<p>
-
-Mayor satisfacción y comunicación.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-<div class="grafico">
-
-
-<h2>
-Impacto esperado
-
-
-</h2>
-
-
-
-<div class="barra verde" style="width:90%">
-
-Eficiencia operativa
-
-</div>
-
-
-
-<div class="barra" style="width:75%">
-
-Ahorro económico
-
-</div>
-
-
-
-
-<div class="barra amarillo" style="width:65%">
-
-Satisfacción
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-<div class="card">
-
-
-<h2>
-Resumen económico
-
-</h2>
-
-
-<p>
-
-Ahorro mensual estimado:
-<b>₡1.189.733</b>
-
-</p>
-
-
-<p>
-
-Ahorro anual estimado:
-<b>₡14.276.796</b>
-
-</p>
-
-
-<p>
-
-Recuperación estimada:
-<b>11 meses</b>
-
-</p>
-
-
-
-</div>
-
-
-
-
-
 
 </main>
-
-
-
 </div>
 
-
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>

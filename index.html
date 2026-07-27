@@ -1,366 +1,122 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="es">
 <head>
-
-<title>Panel Principal</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel Principal · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
-
-
 <body>
-
-
 <div class="app-layout">
-
-
-
 <aside class="sidebar">
-
-
-<div class="brand">
-
-<img src="img/logo.png">
-
-<div>
-
-<h2>
-ConectaSoporte
-</h2>
-
-<span>
-Gestión de soporte
-</span>
-
+  <a href="supervisor.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Gestión de soporte</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="supervisor.html" class="nav-link active"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="alert-triangle"></i><span class="txt">Escalaciones</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="revision-escalacion.html" class="">Pendientes de revisión</a><a href="revision-escalacion.html" class="">En revisión</a><a href="revision-escalacion.html" class="">Resueltas</a><a href="revision-escalacion.html" class="">Historial</a></div>
 </div>
-
-
-
-
-
-<nav>
-
-
-<a class="active">
-Inicio
-</a>
-
-
-<a href="solicitudes.html">
-Solicitudes
-</a>
-
-
-<a href="supervisor.html">
-Supervisión
-</a>
-
-
-<a href="cola-tecnica.html">
-Cola técnica
-</a>
-
-
-<a href="conocimiento.html">
-Base conocimiento
-</a>
-
-
-<a href="ejecutivo.html">
-Reportes
-</a>
-
-
-</nav>
-
-
+<a href="supervisor.html" class="nav-link"><i data-lucide="users"></i><span class="txt">Equipo</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="">Panel ejecutivo</a><a href="ejecutivo.html" class="">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a><a href="calidad.html" class="">Calibraciones</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="settings"></i><span class="txt">Configuración</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="usuarios.html" class="">General</a><a href="usuarios.html" class="">Canales</a><a href="usuarios.html" class="">Plantillas</a><a href="usuarios.html" class="">Reglas de negocio</a><a href="usuarios.html" class="">Usuarios</a><a href="usuarios.html" class="">Roles y permisos</a><a href="usuarios.html" class="">Grupos</a><a href="usuarios.html" class="">Auditoría</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
-
-
-
-
-
 <main class="main-content">
-
-
-
 <header class="top-header">
-
-
-<div>
-
-<h1>
-Panel general
-</h1>
-
-<p>
-Resumen actual del servicio
-
-</p>
-
-</div>
-
-
-
-<div class="profile">
-
-<div class="circle">
-AM
-</div>
-
-
-<div>
-
-<strong>
-Ana Martínez
-</strong>
-
-
-<br>
-
-<small>
-Supervisora
-
-</small>
-
-
-</div>
-
-
-</div>
-
-
-
+  <div><h1>Panel general</h1><p>Resumen actual del servicio</p></div>
+  <div></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">3</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">2</span></button>
+    <div class="profile">
+      <div class="circle">AM</div>
+      <div><strong>Ana Martínez</strong><br><small>Supervisora</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-
-
 <section class="stats-grid">
-
-
-<div class="stat-card">
-
-<span>
-Solicitudes abiertas
-</span>
-
-<h2>
-248
-</h2>
-
-<p>
-+12 esta semana
-</p>
-
-</div>
-
-
-
-
-<div class="stat-card">
-
-<span>
-SLA cumplido
-</span>
-
-<h2>
-92%
-</h2>
-
-<p>
-Meta 90%
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="stat-card">
-
-<span>
-Tiempo promedio
-</span>
-
-<h2>
-24 min
-</h2>
-
-<p>
-Respuesta inicial
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="stat-card">
-
-<span>
-Satisfacción
-</span>
-
-<h2>
-4.6
-</h2>
-
-<p>
-de 5 puntos
-</p>
-
-
-</div>
-
-
-
+  <div class="stat-card"><div class="stat-card-top"><span>Solicitudes abiertas</span><div class="stat-icon"><i data-lucide="inbox"></i></div></div><h2>248</h2><span class="trend up"><i data-lucide="trending-up"></i> +12 esta semana</span></div>
+  <div class="stat-card"><div class="stat-card-top"><span>SLA cumplido</span><div class="stat-icon c-green"><i data-lucide="shield-check"></i></div></div><h2>92%</h2><span style="color:var(--text-soft);font-size:12px;">Meta 90%</span></div>
+  <div class="stat-card"><div class="stat-card-top"><span>Tiempo promedio</span><div class="stat-icon c-cyan"><i data-lucide="timer"></i></div></div><h2>24 min</h2><span style="color:var(--text-soft);font-size:12px;">Respuesta inicial</span></div>
+  <div class="stat-card"><div class="stat-card-top"><span>Satisfacción</span><div class="stat-icon c-orange"><i data-lucide="star"></i></div></div><h2>4.6</h2><span style="color:var(--text-soft);font-size:12px;">de 5 puntos</span></div>
 </section>
 
-
-
-
-
-
-
-<section class="dashboard-grid">
-
-
-
 <div class="panel">
-
-
-<h3>
-Solicitudes por prioridad
-</h3>
-
-
-
-<div class="chart-bar">
-
-<span>
-Crítica
-</span>
-
-
-<div style="width:25%">
-
+  <h3 style="margin-bottom:16px;">Accesos rápidos</h3>
+  <div class="grid-3" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));">
+    <a href="solicitudes.html" class="feature-card"><div class="f-icon"><i data-lucide="list-checks"></i></div><h3>Solicitudes</h3><p>Consulta y gestiona los casos activos.</p></a>
+    <a href="supervisor.html" class="feature-card"><div class="f-icon"><i data-lucide="users"></i></div><h3>Supervisión</h3><p>Desempeño del equipo en tiempo real.</p></a>
+    <a href="cola-tecnica.html" class="feature-card"><div class="f-icon"><i data-lucide="life-buoy"></i></div><h3>Cola técnica</h3><p>Casos asignados al equipo técnico.</p></a>
+    <a href="conocimiento.html" class="feature-card"><div class="f-icon"><i data-lucide="book-open"></i></div><h3>Base de conocimiento</h3><p>Artículos y soluciones documentadas.</p></a>
+    <a href="ejecutivo.html" class="feature-card"><div class="f-icon"><i data-lucide="bar-chart-3"></i></div><h3>Reportes</h3><p>Indicadores clave del servicio.</p></a>
+  </div>
 </div>
 
-
+<div class="dashboard-grid">
+  <div class="panel">
+    <h3>Solicitudes por prioridad</h3>
+    <div class="bars-simple">
+      <div class="bar-row"><span class="b-label">Crítica</span><div class="b-track"><div class="b-fill" style="width:25%;background:linear-gradient(90deg,#F87171,#EF4444);"></div></div><span class="b-val">25%</span></div>
+      <div class="bar-row"><span class="b-label">Alta</span><div class="b-track"><div class="b-fill" style="width:65%;background:linear-gradient(90deg,#FBBF24,#F59E0B);"></div></div><span class="b-val">65%</span></div>
+      <div class="bar-row"><span class="b-label">Media</span><div class="b-track"><div class="b-fill" style="width:90%"></div></div><span class="b-val">90%</span></div>
+    </div>
+  </div>
+  <div class="panel">
+    <h3>Actividad reciente</h3>
+    <div class="timeline">
+      <div class="timeline-item"><div class="t-icon"><i data-lucide="file-plus"></i></div><p style="color:var(--text);">Solicitud CS-1024 creada</p></div>
+      <div class="timeline-item"><div class="t-icon"><i data-lucide="arrow-up-circle"></i></div><p style="color:var(--text);">Caso escalado a nivel 2</p></div>
+      <div class="timeline-item"><div class="t-icon"><i data-lucide="book-open"></i></div><p style="color:var(--text);">Artículo actualizado</p></div>
+      <div class="timeline-item"><div class="t-icon"><i data-lucide="user-plus"></i></div><p style="color:var(--text);">Nuevo usuario registrado</p></div>
+    </div>
+  </div>
 </div>
-
-
-
-
-<div class="chart-bar">
-
-<span>
-Alta
-</span>
-
-
-<div style="width:65%">
-
-</div>
-
-
-</div>
-
-
-
-<div class="chart-bar">
-
-<span>
-Media
-</span>
-
-
-<div style="width:90%">
-
-</div>
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-Actividad reciente
-</h3>
-
-
-<ul class="activity">
-
-
-<li>
-Solicitud CS-1024 creada
-</li>
-
-
-<li>
-Caso escalado a nivel 2
-</li>
-
-
-<li>
-Artículo actualizado
-</li>
-
-
-<li>
-Nuevo usuario registrado
-</li>
-
-
-</ul>
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
 
 </main>
-
-
-
 </div>
 
-
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>

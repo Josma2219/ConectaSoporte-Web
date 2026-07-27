@@ -1,266 +1,110 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="es">
 <head>
-
-<title>Comparación de indicadores</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparación de indicadores · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
-
-
-
 <body>
-
-
-
-<div class="contenedor">
-
-
+<div class="app-layout">
 <aside class="sidebar">
-
-
-<div class="logo">
-
-<img src="img/logo.png">
-
-<h2>
-ConectaSoporte
-</h2>
-
-
+  <a href="supervisor.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Gestión de soporte</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="supervisor.html" class="nav-link"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
-
-<div class="menu">
-
-
-<a href="index.html">
-Inicio
-</a>
-
-
-<a href="ejecutivo.html">
-Dashboard
-</a>
-
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="alert-triangle"></i><span class="txt">Escalaciones</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="revision-escalacion.html" class="">Pendientes de revisión</a><a href="revision-escalacion.html" class="">En revisión</a><a href="revision-escalacion.html" class="">Resueltas</a><a href="revision-escalacion.html" class="">Historial</a></div>
 </div>
-
-
+<a href="supervisor.html" class="nav-link"><i data-lucide="users"></i><span class="txt">Equipo</span></a>
+<div class="nav-group open">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="">Panel ejecutivo</a><a href="ejecutivo.html" class="active">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a><a href="calidad.html" class="">Calibraciones</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="settings"></i><span class="txt">Configuración</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="usuarios.html" class="">General</a><a href="usuarios.html" class="">Canales</a><a href="usuarios.html" class="">Plantillas</a><a href="usuarios.html" class="">Reglas de negocio</a><a href="usuarios.html" class="">Usuarios</a><a href="usuarios.html" class="">Roles y permisos</a><a href="usuarios.html" class="">Grupos</a><a href="usuarios.html" class="">Auditoría</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
+<main class="main-content">
+<header class="top-header">
+  <div><h1>Comparación de resultados</h1><p>Antes vs Después</p></div>
+  <div></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">3</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">2</span></button>
+    <div class="profile">
+      <div class="circle">AM</div>
+      <div><strong>Ana Martínez</strong><br><small>Supervisora</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
+</header>
 
-
-
-
-
-
-
-<main class="contenido">
-
-
-<div class="header">
-
-<h1>
-Comparación de resultados
-</h1>
-
-
-Antes vs Después
-
-
+<div class="hero" style="padding:40px 44px;">
+  <h1 style="font-size:26px;">Comparación de resultados</h1>
+  <p>Antes vs. después de la implementación de ConectaSoporte.</p>
 </div>
 
-
-
-
-
-
-<div class="tabla">
-
-
-<h2>
-Indicadores principales
-
-</h2>
-
-
-
-
-<table>
-
-
-<tr>
-
-<th>Indicador</th>
-
-<th>Antes</th>
-
-<th>Después</th>
-
-
-</tr>
-
-
-
-
-<tr>
-
-<td>
-Tiempo primera respuesta
-</td>
-
-<td>
-35 minutos
-</td>
-
-<td>
-24 minutos
-</td>
-
-
-</tr>
-
-
-
-
-<tr>
-
-<td>
-Tiempo resolución
-</td>
-
-<td>
-10.1 horas
-</td>
-
-<td>
-7.8 horas
-</td>
-
-
-</tr>
-
-
-
-
-<tr>
-
-<td>
-Cumplimiento SLA
-</td>
-
-<td>
-80.3%
-</td>
-
-<td>
-90.5%
-</td>
-
-
-</tr>
-
-
-
-
-<tr>
-
-<td>
-Satisfacción cliente
-</td>
-
-<td>
-80.2%
-</td>
-
-<td>
-88.4%
-</td>
-
-
-</tr>
-
-
-
-
-<tr>
-
-<td>
-Horas administrativas
-</td>
-
-<td>
-421 horas
-</td>
-
-<td>
-250 horas
-</td>
-
-
-</tr>
-
-
-
-</table>
-
-
-
+<div class="panel">
+  <h3 style="margin-bottom:16px;">Indicadores principales</h3>
+  <div class="table-wrap"><table>
+    <tr><th>Indicador</th><th>Antes</th><th>Después</th><th>Mejora</th></tr>
+    <tr><td>Tiempo primera respuesta</td><td>35 minutos</td><td><strong style="color:var(--primary);">24 minutos</strong></td><td><span class="badge badge-green">-31%</span></td></tr>
+    <tr><td>Tiempo de resolución</td><td>10.1 horas</td><td><strong style="color:var(--primary);">7.8 horas</strong></td><td><span class="badge badge-green">-23%</span></td></tr>
+    <tr><td>Cumplimiento de SLA</td><td>80.3%</td><td><strong style="color:var(--primary);">90.5%</strong></td><td><span class="badge badge-green">+10.2 p.p.</span></td></tr>
+    <tr><td>Satisfacción del cliente</td><td>80.2%</td><td><strong style="color:var(--primary);">88.4%</strong></td><td><span class="badge badge-green">+8.2 p.p.</span></td></tr>
+    <tr><td>Horas administrativas</td><td>421 horas</td><td><strong style="color:var(--primary);">250 horas</strong></td><td><span class="badge badge-green">-41%</span></td></tr>
+  </table></div>
 </div>
 
-
-
-
-
-
-
-<div class="grafico">
-
-
-<h2>
-Mejora general
-
-
-</h2>
-
-
-
-<div class="barra rojo" style="width:85%">
-
-Proceso anterior
-
+<div class="panel">
+  <h3 style="margin-bottom:16px;">Mejora general</h3>
+  <div class="bars-simple">
+    <div class="bar-row"><span class="b-label" style="width:150px;">Proceso anterior</span><div class="b-track"><div class="b-fill" style="width:85%;background:linear-gradient(90deg,#F87171,#EF4444);"></div></div><span class="b-val">85%</span></div>
+    <div class="bar-row"><span class="b-label" style="width:150px;">ConectaSoporte</span><div class="b-track"><div class="b-fill" style="width:45%;background:linear-gradient(90deg,#34D399,#10B981);"></div></div><span class="b-val">45%</span></div>
+  </div>
+  <p class="field-hint" style="margin-top:10px;">Tiempo relativo requerido para completar el ciclo de atención (menor es mejor).</p>
 </div>
-
-
-
-<div class="barra verde" style="width:45%">
-
-ConectaSoporte
-
-</div>
-
-
-
-
-</div>
-
-
-
-
-
 
 </main>
-
-
-
 </div>
 
-
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>

@@ -1,334 +1,154 @@
 <!DOCTYPE html>
-
-<html>
-
-
+<html lang="es">
 <head>
-
-<title>Artículo conocimiento</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artículo de conocimiento · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
-
-
-
 <body>
-
-
-
 <div class="app-layout">
-
-
 <aside class="sidebar">
-
-
-<div class="brand">
-
-<img src="img/logo.png">
-
-
-<div>
-
-<h2>
-ConectaSoporte
-</h2>
-
-
-<span>
-
-Artículo
-
-</span>
-
-
+  <a href="agente.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Agente</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="agente.html" class="nav-link"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<a href="solicitudes.html" class="nav-link"><i data-lucide="clipboard-list"></i><span class="txt">Mis solicitudes</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
-
+<a href="registro-solicitud.html" class="nav-link"><i data-lucide="plus-circle"></i><span class="txt">Crear solicitud</span></a>
+<div class="nav-group open">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="active">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Mis artículos</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
 </div>
-
-
-
-<nav>
-
-
-<a href="conocimiento.html">
-
-Volver conocimiento
-
-</a>
-
-
-<a href="solicitudes.html">
-
-Solicitudes
-
-</a>
-
-
-</nav>
-
-
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="">Panel ejecutivo</a><a href="ejecutivo.html" class="">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
-
-
-
-
-
-
-
-
-
 <main class="main-content">
-
-
-
 <header class="top-header">
-
-
-<div>
-
-
-<h1>
-
-¿Cómo restablecer contraseña?
-
-</h1>
-
-
-<p>
-
-Artículo KB-001
-
-</p>
-
-
-</div>
-
-
-
-
-<div class="status-badge">
-
-Publicado
-
-</div>
-
-
-
+  <div><h1>Restablecimiento de contraseña</h1><p>Base de conocimiento / Cuentas y accesos</p></div>
+  <div></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">3</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">2</span></button>
+    <div class="profile">
+      <div class="circle">CL</div>
+      <div><strong>Carlos López</strong><br><small>Agente de Soporte</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-
-
-
+<div class="breadcrumb"><a href="conocimiento.html">Base de conocimiento</a><span class="sep"><i data-lucide="chevron-right"></i></span><a href="conocimiento.html">Cuentas y accesos</a><span class="sep"><i data-lucide="chevron-right"></i></span><span class="current">Restablecimiento de contraseña</span></div>
+<a href="conocimiento.html" class="back-link"><i data-lucide="arrow-left"></i> Volver a resultados</a>
 
 <div class="dashboard-grid">
+  <div>
+    <div class="panel">
+      <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-start;">
+        <div style="display:flex;gap:16px;">
+          <div class="stat-icon" style="width:56px;height:56px;"><i data-lucide="lock"></i></div>
+          <div>
+            <h2 style="font-size:21px;">¿Cómo restablecer mi contraseña?</h2>
+            <p style="color:var(--text-soft);margin-top:4px;">Pasos para restablecer la contraseña de la cuenta en el portal.</p>
+            <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap;">
+              <span class="chip">Cuentas y accesos</span><span class="chip">contraseña</span><span class="chip">acceso</span><span class="chip">seguridad</span>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;">
+          <button class="secondary-button btn-sm"><i data-lucide="printer"></i> Imprimir</button>
+          <button class="secondary-button btn-sm"><i data-lucide="share-2"></i> Compartir</button>
+        </div>
+      </div>
 
+      <h3 style="margin-top:26px;margin-bottom:10px;">Descripción</h3>
+      <p style="color:var(--text-soft);line-height:1.7;">Si olvidaste tu contraseña o no puedes acceder a tu cuenta, puedes restablecerla fácilmente siguiendo los pasos que se describen a continuación.</p>
 
+      <h3 style="margin-top:24px;margin-bottom:12px;">Pasos</h3>
+      <div class="timeline">
+        <div class="timeline-item"><div class="t-icon">1</div><p style="color:var(--text);">En la pantalla de inicio de sesión, haz clic en el enlace "¿Olvidaste tu contraseña?".</p></div>
+        <div class="timeline-item"><div class="t-icon">2</div><p style="color:var(--text);">Ingresa tu correo electrónico asociado a la cuenta y haz clic en "Enviar enlace de recuperación".</p></div>
+        <div class="timeline-item"><div class="t-icon">3</div><p style="color:var(--text);">Revisa tu bandeja de entrada y abre el correo que recibiste. Haz clic en el enlace para restablecer tu contraseña.</p></div>
+        <div class="timeline-item"><div class="t-icon">4</div><p style="color:var(--text);">Ingresa tu nueva contraseña y confírmala. Asegúrate de que cumpla con los requisitos de seguridad.</p></div>
+        <div class="timeline-item"><div class="t-icon">5</div><p style="color:var(--text);">Haz clic en "Guardar" para completar el proceso. Ahora puedes iniciar sesión con tu nueva contraseña.</p></div>
+      </div>
 
-<div class="panel">
+      <div class="alert-box alert-info" style="margin-top:16px;"><i data-lucide="info"></i><span>El enlace de recuperación tiene una vigencia de 30 minutos. Si expiró, solicita un nuevo enlace.</span></div>
 
+      <h3 style="margin-top:10px;margin-bottom:10px;">Archivos adjuntos</h3>
+      <div class="info-card" style="display:flex;align-items:center;gap:10px;"><i data-lucide="paperclip"></i><a href="#">Guía rápida - Restablecimiento de contraseña.pdf</a><span style="color:var(--text-faint);font-size:12px;">(PDF, 1.2 MB)</span></div>
 
-<h3>
+      <div class="panel" style="background:var(--surface-soft);box-shadow:none;margin-top:20px;margin-bottom:0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+        <strong>¿Fue útil este artículo?</strong>
+        <div style="display:flex;gap:10px;">
+          <button class="secondary-button btn-sm"><i data-lucide="thumbs-up"></i> Sí</button>
+          <button class="secondary-button btn-sm"><i data-lucide="thumbs-down"></i> No</button>
+          <button class="main-button btn-sm"><i data-lucide="pencil"></i> Sugerir mejora</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-Información general
-
-</h3>
-
-
-
-<div class="info-row">
-
-Categoría:
-
-<b>
-Acceso
-
-</b>
-
+  <div>
+    <div class="side-panel">
+      <span class="badge badge-green" style="margin-bottom:14px;display:inline-flex;">Publicado</span>
+      <div class="info-row" style="display:flex;justify-content:space-between;"><span class="lbl"><i data-lucide="eye"></i> Vistas</span><span class="val">1,245</span></div>
+      <div class="info-row" style="display:flex;justify-content:space-between;"><span class="lbl"><i data-lucide="thumbs-up"></i> Útil</span><span class="val">98%</span></div>
+      <div class="info-row" style="display:flex;justify-content:space-between;"><span class="lbl"><i data-lucide="calendar"></i> Actualizado</span><span class="val">23/07/2026</span></div>
+      <div class="info-row" style="display:flex;justify-content:space-between;border-bottom:none;"><span class="lbl"><i data-lucide="user-round"></i> Autor</span><span class="val">María González</span></div>
+    </div>
+    <div class="side-panel">
+      <h4>Artículos relacionados</h4>
+      <a class="quick-link">Solución: Error al iniciar sesión <i data-lucide="chevron-right"></i></a>
+      <a class="quick-link">Cómo cambiar mi contraseña <i data-lucide="chevron-right"></i></a>
+      <a class="quick-link">Requisitos de contraseña segura <i data-lucide="chevron-right"></i></a>
+      <a class="quick-link">¿No recibí el correo de recuperación? <i data-lucide="chevron-right"></i></a>
+    </div>
+    <div class="side-panel">
+      <h4>Aplica a</h4>
+      <p style="font-size:13px;color:var(--text-soft);margin-bottom:14px;">Portal web, Aplicación móvil (iOS, Android)</p>
+      <h4>Audiencia</h4>
+      <p style="font-size:13px;color:var(--text-soft);margin-bottom:14px;">Clientes, Agentes de soporte</p>
+      <h4>Idioma</h4>
+      <p style="font-size:13px;color:var(--text-soft);">Español</p>
+    </div>
+  </div>
 </div>
-
-
-
-<div class="info-row">
-
-Autor:
-
-<b>
-Equipo técnico
-
-</b>
-
-</div>
-
-
-
-<div class="info-row">
-
-Última actualización:
-
-<b>
-25/07/2026
-
-</b>
-
-</div>
-
-
-
-
-</div>
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-
-Valoración
-
-</h3>
-
-
-
-<h2>
-
-★★★★★
-
-</h2>
-
-
-<p>
-
-98% de usuarios encontraron útil este artículo.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-
-Procedimiento
-
-</h3>
-
-
-
-
-<div class="step-item">
-
-1.
-Ingresar al portal de acceso.
-
-</div>
-
-
-
-
-<div class="step-item">
-
-2.
-Seleccionar "Olvidé mi contraseña".
-
-</div>
-
-
-
-
-<div class="step-item">
-
-3.
-Validar identidad del usuario.
-
-</div>
-
-
-
-
-<div class="step-item">
-
-4.
-Crear nueva contraseña.
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-
-Artículos relacionados
-
-</h3>
-
-
-<div class="knowledge-item">
-
-Problemas de autenticación
-
-</div>
-
-
-
-<div class="knowledge-item">
-
-Configuración de usuarios
-
-</div>
-
-
-
-</div>
-
-
-
-
 
 </main>
-
-
-
 </div>
 
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>

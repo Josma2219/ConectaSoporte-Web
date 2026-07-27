@@ -1,416 +1,182 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="es">
 <head>
-
-<title>Base de conocimiento</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Base de conocimiento · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
-
-
 <body>
-
-
 <div class="app-layout">
-
-
-
 <aside class="sidebar">
-
-
-<div class="brand">
-
-
-<img src="img/logo.png">
-
-
-<div>
-
-<h2>
-ConectaSoporte
-</h2>
-
-
-<span>
-Conocimiento
-
-</span>
-
-
+  <a href="agente.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Agente</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="agente.html" class="nav-link"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<a href="solicitudes.html" class="nav-link"><i data-lucide="clipboard-list"></i><span class="txt">Mis solicitudes</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
-
+<a href="registro-solicitud.html" class="nav-link"><i data-lucide="plus-circle"></i><span class="txt">Crear solicitud</span></a>
+<div class="nav-group open">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="active">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Mis artículos</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
 </div>
-
-
-
-
-
-<nav>
-
-
-<a href="index.html">
-
-Inicio
-
-</a>
-
-
-<a href="solicitudes.html">
-
-Solicitudes
-
-</a>
-
-
-<a class="active">
-
-Base conocimiento
-
-</a>
-
-
-<a href="articulo.html">
-
-Artículos
-
-</a>
-
-
-</nav>
-
-
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="">Panel ejecutivo</a><a href="ejecutivo.html" class="">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
-
-
-
-
-
-
-
-
-
 <main class="main-content">
-
-
-
 <header class="top-header">
-
-
-<div>
-
-
-<h1>
-Base de conocimiento
-
-</h1>
-
-
-<p>
-Soluciones y procedimientos disponibles
-
-</p>
-
-
-</div>
-
-
-
-
-<div class="profile">
-
-
-<div class="circle">
-
-CL
-
-</div>
-
-
-
-<div>
-
-<strong>
-
-Carlos López
-
-</strong>
-
-
-<br>
-
-
-<small>
-
-Agente
-
-</small>
-
-
-</div>
-
-
-
-</div>
-
-
-
+  <div><h1>Base de conocimiento</h1><p>Encuentra soluciones y guías para resolver problemas comunes</p></div>
+  <div></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">3</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">2</span></button>
+    <div class="profile">
+      <div class="circle">CL</div>
+      <div><strong>Carlos López</strong><br><small>Agente de Soporte</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-
-
-
+<div class="panel">
+  <div class="input-with-icon" style="max-width:100%;margin-bottom:16px;"><i data-lucide="search"></i><input type="text" placeholder="Buscar artículos, soluciones o palabras clave..."></div>
+  <div class="table-toolbar">
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <select style="margin:0;width:auto;"><option>Todas las categorías</option></select>
+      <select style="margin:0;width:auto;"><option>Todas las etiquetas</option></select>
+      <select style="margin:0;width:auto;"><option>Todos</option></select>
+      <select style="margin:0;width:auto;"><option>Publicado</option></select>
+      <button class="secondary-button btn-sm"><i data-lucide="sliders-horizontal"></i> Filtros avanzados</button>
+    </div>
+    <button class="main-button btn-sm"><i data-lucide="search"></i> Buscar</button>
+  </div>
+</div>
 
 <div class="panel">
-
-
-<h3>
-
-Buscar información
-
-</h3>
-
-
-
-<div class="input-box">
-
-Buscar artículos, soluciones o procedimientos...
-
+  <h3 style="margin-bottom:16px;">Categorías populares</h3>
+  <div class="stats-grid" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));">
+    <div class="category-card"><div class="cat-icon"><i data-lucide="user-round"></i></div><h4>Cuentas y accesos</h4><span>24 artículos</span></div>
+    <div class="category-card"><div class="cat-icon"><i data-lucide="shield-check"></i></div><h4>Seguridad</h4><span>18 artículos</span></div>
+    <div class="category-card"><div class="cat-icon"><i data-lucide="layout-grid"></i></div><h4>Aplicaciones</h4><span>32 artículos</span></div>
+    <div class="category-card"><div class="cat-icon"><i data-lucide="mail"></i></div><h4>Correo</h4><span>16 artículos</span></div>
+    <div class="category-card"><div class="cat-icon"><i data-lucide="monitor"></i></div><h4>Hardware</h4><span>21 artículos</span></div>
+    <div class="category-card"><div class="cat-icon"><i data-lucide="more-horizontal"></i></div><h4>Ver todas</h4><span>12 categorías</span></div>
+  </div>
 </div>
-
-
-
-<div class="filter-grid">
-
-
-<div class="input-box">
-
-Categoría: Todas
-
-</div>
-
-
-<div class="input-box">
-
-Estado: Publicados
-
-</div>
-
-
-<div class="input-box">
-
-Ordenar por utilidad
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-<section class="stats-grid">
-
-
-
-<div class="stat-card">
-
-<span>
-Artículos publicados
-
-</span>
-
-
-<h2>
-248
-
-</h2>
-
-</div>
-
-
-
-
-<div class="stat-card">
-
-<span>
-Categorías
-
-</span>
-
-
-<h2>
-12
-
-</h2>
-
-</div>
-
-
-
-<div class="stat-card">
-
-<span>
-Consultas este mes
-
-</span>
-
-
-<h2>
-1240
-
-</h2>
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-
-
 
 <div class="panel">
-
-
-<h3>
-
-Artículos destacados
-
-</h3>
-
-
-
-
-
-<div class="knowledge-item">
-
-
-<h4>
-
-¿Cómo restablecer contraseña?
-
-</h4>
-
-
-<p>
-
-Pasos para recuperar acceso a una cuenta.
-
-</p>
-
-
-<span>
-
-Cuentas y acceso
-
-</span>
-
-
+  <div class="tabs">
+    <div class="tab active">Artículos destacados</div>
+    <div class="tab">Más recientes</div>
+    <div class="tab">Más vistos</div>
+    <div class="tab">Útiles</div>
+    <div style="margin-left:auto;"><button class="main-button btn-sm"><i data-lucide="plus"></i> Crear artículo</button></div>
+  </div>
+  <div class="knowledge-item">
+      <div style="display:flex;gap:14px;">
+        <div class="stat-icon"><i data-lucide="lock"></i></div>
+        <div style="flex:1;">
+          <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+            <h4>¿Cómo restablecer mi contraseña?</h4><span class="badge badge-green">Publicado</span>
+          </div>
+          <p>Pasos para restablecer la contraseña de la cuenta en el portal.</p>
+          <div class="knowledge-meta">
+            <span class="chip">contraseña</span> <span class="chip">acceso</span>
+            <span><i data-lucide="eye"></i> 1,245</span>
+            <span><i data-lucide="thumbs-up"></i> 98% útil</span>
+            <span>Actualizado por María González · 23/07/2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="knowledge-item">
+      <div style="display:flex;gap:14px;">
+        <div class="stat-icon"><i data-lucide="monitor"></i></div>
+        <div style="flex:1;">
+          <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+            <h4>Solución: Error al iniciar sesión en la aplicación</h4><span class="badge badge-green">Publicado</span>
+          </div>
+          <p>Guía para resolver problemas al iniciar sesión en la aplicación móvil.</p>
+          <div class="knowledge-meta">
+            <span class="chip">inicio de sesión</span> <span class="chip">error</span>
+            <span><i data-lucide="eye"></i> 892</span>
+            <span><i data-lucide="thumbs-up"></i> 95% útil</span>
+            <span>Actualizado por Juan Pérez · 22/07/2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="knowledge-item">
+      <div style="display:flex;gap:14px;">
+        <div class="stat-icon"><i data-lucide="mail"></i></div>
+        <div style="flex:1;">
+          <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+            <h4>Configuración de correo en Outlook</h4><span class="badge badge-green">Publicado</span>
+          </div>
+          <p>Pasos para configurar cuentas de correo en Outlook correctamente.</p>
+          <div class="knowledge-meta">
+            <span class="chip">configuración</span> <span class="chip">outlook</span>
+            <span><i data-lucide="eye"></i> 756</span>
+            <span><i data-lucide="thumbs-up"></i> 92% útil</span>
+            <span>Actualizado por Ana Ramírez · 21/07/2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="knowledge-item">
+      <div style="display:flex;gap:14px;">
+        <div class="stat-icon"><i data-lucide="shield-check"></i></div>
+        <div style="flex:1;">
+          <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+            <h4>Buenas prácticas de seguridad en la empresa</h4><span class="badge badge-green">Publicado</span>
+          </div>
+          <p>Recomendaciones para mantener la información segura.</p>
+          <div class="knowledge-meta">
+            <span class="chip">buenas prácticas</span> <span class="chip">políticas</span>
+            <span><i data-lucide="eye"></i> 1,103</span>
+            <span><i data-lucide="thumbs-up"></i> 97% útil</span>
+            <span>Actualizado por Carlos López · 20/07/2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div style="text-align:center;margin-top:6px;"><a class="stat-link">Ver más artículos</a></div>
 </div>
-
-
-
-
-
-<div class="knowledge-item">
-
-
-<h4>
-
-Solución error aplicación móvil
-
-</h4>
-
-
-<p>
-
-Procedimiento para problemas comunes.
-
-</p>
-
-
-<span>
-
-Aplicaciones
-
-</span>
-
-
-</div>
-
-
-
-
-
-
-<div class="knowledge-item">
-
-
-<h4>
-
-Configuración inicial del sistema
-
-</h4>
-
-
-<p>
-
-Guía para nuevos usuarios.
-
-</p>
-
-
-<span>
-
-Configuración
-
-</span>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
 
 </main>
-
-
 </div>
 
-
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>

@@ -1,253 +1,105 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="es">
 <head>
-
-<title>Material de capacitación</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Material de capacitación · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
-
-
 <body>
-
-
-<div class="contenedor">
-
-
+<div class="app-layout">
 <aside class="sidebar">
-
-
-<div class="logo">
-
-<img src="img/logo.png">
-
-<h2>
-ConectaSoporte
-</h2>
-
+  <a href="supervisor.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Gestión de soporte</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="supervisor.html" class="nav-link active"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
-
-<div class="menu">
-
-<a href="index.html">
-Inicio
-</a>
-
-<a href="supervisor.html">
-Supervisor
-</a>
-
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="alert-triangle"></i><span class="txt">Escalaciones</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="revision-escalacion.html" class="">Pendientes de revisión</a><a href="revision-escalacion.html" class="">En revisión</a><a href="revision-escalacion.html" class="">Resueltas</a><a href="revision-escalacion.html" class="">Historial</a></div>
 </div>
-
-
+<a href="supervisor.html" class="nav-link"><i data-lucide="users"></i><span class="txt">Equipo</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="">Panel ejecutivo</a><a href="ejecutivo.html" class="">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a><a href="calidad.html" class="">Calibraciones</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="settings"></i><span class="txt">Configuración</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="usuarios.html" class="">General</a><a href="usuarios.html" class="">Canales</a><a href="usuarios.html" class="">Plantillas</a><a href="usuarios.html" class="">Reglas de negocio</a><a href="usuarios.html" class="">Usuarios</a><a href="usuarios.html" class="">Roles y permisos</a><a href="usuarios.html" class="">Grupos</a><a href="usuarios.html" class="">Auditoría</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
+<main class="main-content">
+<header class="top-header">
+  <div><h1>Material de capacitación</h1><p>Centro de aprendizaje</p></div>
+  <div></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">3</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">2</span></button>
+    <div class="profile">
+      <div class="circle">AM</div>
+      <div><strong>Ana Martínez</strong><br><small>Supervisora</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
+</header>
 
-
-
-
-
-
-<main class="contenido">
-
-
-<div class="header">
-
-<h1>
-Material de capacitación
-</h1>
-
-
-Centro de aprendizaje
-
-
+<div class="hero" style="padding:40px 44px;">
+  <h1 style="font-size:26px;">Material de capacitación</h1>
+  <p>Centro de aprendizaje para el equipo de soporte.</p>
 </div>
 
-
-
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-Guía inicial
-</h3>
-
-<p>
-Primer acceso y configuración del perfil.
-</p>
-
-
-<a class="btn">
-Ver material
-</a>
-
-
+<div class="grid-3">
+  <div class="feature-card"><div class="f-icon"><i data-lucide="play-circle"></i></div><h3>Guía inicial</h3><p>Primer acceso y configuración del perfil.</p><a class="stat-link" style="margin-top:10px;display:inline-block;">Ver material <i data-lucide="arrow-right"></i></a></div>
+  <div class="feature-card"><div class="f-icon"><i data-lucide="clipboard-list"></i></div><h3>Gestión de solicitudes</h3><p>Registro, seguimiento y cierre de casos.</p><a class="stat-link" style="margin-top:10px;display:inline-block;">Ver material <i data-lucide="arrow-right"></i></a></div>
+  <div class="feature-card"><div class="f-icon"><i data-lucide="arrow-up-circle"></i></div><h3>Escalaciones</h3><p>Proceso correcto para enviar casos técnicos.</p><a class="stat-link" style="margin-top:10px;display:inline-block;">Ver material <i data-lucide="arrow-right"></i></a></div>
 </div>
 
-
-
-
-
-<div class="card">
-
-<h3>
-Gestión de solicitudes
-</h3>
-
-<p>
-Registro, seguimiento y cierre de casos.
-</p>
-
-
-<a class="btn">
-Ver material
-</a>
-
-
+<div class="panel">
+  <h3 style="margin-bottom:16px;">Cursos disponibles</h3>
+  <div class="table-wrap"><table>
+    <tr><th>Curso</th><th>Duración</th><th>Estado</th></tr>
+    <tr><td>Introducción a ConectaSoporte</td><td>1 hora</td><td><span class="badge badge-green">Disponible</span></td></tr>
+    <tr><td>Gestión avanzada de solicitudes</td><td>2 horas</td><td><span class="badge badge-green">Disponible</span></td></tr>
+    <tr><td>Buenas prácticas de escalación</td><td>45 minutos</td><td><span class="badge badge-green">Disponible</span></td></tr>
+  </table></div>
 </div>
-
-
-
-
-
-
-<div class="card">
-
-<h3>
-Escalaciones
-</h3>
-
-<p>
-Proceso correcto para enviar casos técnicos.
-</p>
-
-
-<a class="btn">
-Ver material
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="tabla">
-
-
-<h2>
-Cursos disponibles
-
-</h2>
-
-
-
-<table>
-
-
-<tr>
-
-<th>Curso</th>
-
-<th>Duración</th>
-
-<th>Estado</th>
-
-
-</tr>
-
-
-
-<tr>
-
-<td>
-Introducción a ConectaSoporte
-</td>
-
-<td>
-1 hora
-</td>
-
-<td>
-Disponible
-</td>
-
-
-</tr>
-
-
-
-
-<tr>
-
-<td>
-Gestión avanzada de solicitudes
-</td>
-
-<td>
-2 horas
-</td>
-
-<td>
-Disponible
-</td>
-
-
-</tr>
-
-
-
-
-<tr>
-
-<td>
-Buenas prácticas de escalación
-</td>
-
-<td>
-45 minutos
-</td>
-
-<td>
-Disponible
-</td>
-
-
-</tr>
-
-
-
-</table>
-
-
-
-</div>
-
-
-
-
 
 </main>
-
-
 </div>
 
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>

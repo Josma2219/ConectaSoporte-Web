@@ -1,620 +1,188 @@
 <!DOCTYPE html>
-
-<html>
-
-
+<html lang="es">
 <head>
-
-<title>Panel Ejecutivo</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel ejecutivo · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
-
-
 <body>
-
-
-
 <div class="app-layout">
-
-
-
 <aside class="sidebar">
-
-
-<div class="brand">
-
-
-<img src="img/logo.png">
-
-
-
-<div>
-
-<h2>
-ConectaSoporte
-</h2>
-
-
-<span>
-Gerencia
-
-</span>
-
-
+  <a href="supervisor.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Supervisora</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="supervisor.html" class="nav-link"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
-
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="alert-triangle"></i><span class="txt">Escalaciones</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="revision-escalacion.html" class="">Pendientes de revisión</a><a href="revision-escalacion.html" class="">En revisión</a><a href="revision-escalacion.html" class="">Resueltas</a><a href="revision-escalacion.html" class="">Historial</a></div>
 </div>
-
-
-
-
-
-
-<nav>
-
-
-<a href="index.html">
-
-Inicio
-
-</a>
-
-
-<a class="active">
-
-Panel ejecutivo
-
-</a>
-
-
-<a href="calidad.html">
-
-Calidad
-
-</a>
-
-
-<a href="usuarios.html">
-
-Usuarios
-
-</a>
-
-
-</nav>
-
-
-
+<a href="supervisor.html" class="nav-link"><i data-lucide="users"></i><span class="txt">Equipo</span></a>
+<div class="nav-group open">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="active">Panel ejecutivo</a><a href="ejecutivo.html" class="">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a><a href="calidad.html" class="">Calibraciones</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="settings"></i><span class="txt">Configuración</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="usuarios.html" class="">General</a><a href="usuarios.html" class="">Canales</a><a href="usuarios.html" class="">Plantillas</a><a href="usuarios.html" class="">Reglas de negocio</a><a href="usuarios.html" class="">Usuarios</a><a href="usuarios.html" class="">Roles y permisos</a><a href="usuarios.html" class="">Grupos</a><a href="usuarios.html" class="">Auditoría</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
-
-
-
-
-
-
-
-
-
 <main class="main-content">
-
-
-
 <header class="top-header">
-
-
-<div>
-
-<h1>
-
-Panel ejecutivo
-
-</h1>
-
-
-<p>
-
-Indicadores generales del servicio
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="profile">
-
-
-<div class="circle">
-
-GD
-
-</div>
-
-
-
-<div>
-
-
-<strong>
-
-Gerencia
-
-</strong>
-
-
-<br>
-
-
-<small>
-
-Administrador
-
-</small>
-
-
-
-</div>
-
-
-
-</div>
-
-
+  <div><h1>Panel ejecutivo</h1><p>Resumen general del servicio de soporte</p></div>
+  <div></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">8</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">5</span></button>
+    <div class="profile">
+      <div class="circle">AM</div>
+      <div><strong>Ana Martínez</strong><br><small>Supervisora</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-
-
-
-
-<section class="stats-grid">
-
-
-
-<div class="stat-card">
-
-
-<span>
-
-Solicitudes mensuales
-
-</span>
-
-
-<h2>
-
-1248
-
-</h2>
-
-
-<p>
-
-+15% crecimiento
-
-</p>
-
-
+<div class="table-toolbar">
+  <div></div>
+  <div style="display:flex;gap:10px;">
+    <button class="secondary-button btn-sm"><i data-lucide="calendar"></i> 21/07/2026 - 24/07/2026</button>
+    <button class="main-button btn-sm"><i data-lucide="download"></i> Exportar</button>
+  </div>
 </div>
 
-
-
-
-
-<div class="stat-card">
-
-
-<span>
-
-Cumplimiento SLA
-
-</span>
-
-
-<h2>
-
-92%
-
-</h2>
-
-
-<p>
-
-Objetivo 90%
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="stat-card">
-
-
-<span>
-
-Satisfacción cliente
-
-</span>
-
-
-<h2>
-
-4.6
-
-</h2>
-
-
-<p>
-
-Promedio mensual
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="stat-card">
-
-
-<span>
-
-Reducción costos
-
-</span>
-
-
-<h2>
-
-34%
-
-</h2>
-
-
-<p>
-
-Ahorro operativo
-
-</p>
-
-
-</div>
-
-
-
+<div class="dashboard-grid">
+<div>
+<section class="stats-grid" style="grid-template-columns:repeat(auto-fit,minmax(160px,1fr));">
+  <div class="stat-card"><span>Solicitudes totales</span><h2>1,248</h2><span class="trend up"><i data-lucide="trending-up"></i> 12%</span></div>
+  <div class="stat-card"><span>Resueltas</span><h2>1,032</h2><span class="trend up"><i data-lucide="trending-up"></i> 15%</span></div>
+  <div class="stat-card"><span>En atención</span><h2>142</h2><span class="trend down"><i data-lucide="trending-down"></i> 5%</span></div>
+  <div class="stat-card"><span>En espera</span><h2>74</h2><span class="trend down"><i data-lucide="trending-down"></i> 8%</span></div>
+  <div class="stat-card"><span>SLA cumplimiento</span><h2>92%</h2><span class="trend up"><i data-lucide="trending-up"></i> 6 p.p.</span></div>
+  <div class="stat-card"><span>Satisfacción</span><h2>4.6/5</h2><div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div></div>
 </section>
 
-
-
-
-
-
-
-
-
-<section class="dashboard-grid">
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-
-Tendencia de solicitudes
-
-</h3>
-
-
-
-
-<div class="chart-container">
-
-
-<div class="chart-line">
-
-Enero
-
+<div class="grid-3">
+  <div class="panel"><h3>Solicitudes por estado</h3>
+    <div class="donut" style="width:120px;height:120px;background:conic-gradient(#C7CAEF 0% 11%, var(--amber) 11% 17%, var(--primary) 17% 42%, var(--green) 42% 83%, var(--secondary) 83% 100%);"><div class="donut-center" style="width:80px;height:80px;"><span class="big" style="font-size:18px;">83%</span><span class="small">Resueltas</span></div></div>
+  </div>
+  <div class="panel"><h3>Solicitudes por canal</h3>
+    <div class="bars-simple">
+      <div class="bar-row"><span class="b-label">Chat</span><div class="b-track"><div class="b-fill" style="width:100%"></div></div><span class="b-val">512</span></div>
+      <div class="bar-row"><span class="b-label">Portal web</span><div class="b-track"><div class="b-fill" style="width:75%"></div></div><span class="b-val">384</span></div>
+      <div class="bar-row"><span class="b-label">Correo</span><div class="b-track"><div class="b-fill" style="width:42%"></div></div><span class="b-val">216</span></div>
+      <div class="bar-row"><span class="b-label">Teléfono</span><div class="b-track"><div class="b-fill" style="width:21%"></div></div><span class="b-val">108</span></div>
+    </div>
+  </div>
+  <div class="panel"><h3>Solicitudes por prioridad</h3>
+    <div class="legend">
+      <div class="legend-row"><span class="lname"><span class="dot" style="background:var(--red)"></span>Alta</span><span class="lval">198 (16%)</span></div>
+      <div class="legend-row"><span class="lname"><span class="dot" style="background:var(--primary)"></span>Media</span><span class="lval">624 (50%)</span></div>
+      <div class="legend-row"><span class="lname"><span class="dot" style="background:var(--green)"></span>Baja</span><span class="lval">426 (34%)</span></div>
+    </div>
+  </div>
 </div>
 
-
-<div class="chart-line">
-
-Febrero
-
+<div class="grid-3">
+  <div class="panel"><h3>Tendencia de solicitudes</h3><div class="line-chart-placeholder"></div></div>
+  <div class="panel"><h3>Tiempo prom. de respuesta</h3>
+    <div class="bars-simple">
+      <div class="bar-row"><span class="b-label">Chat</span><div class="b-track"><div class="b-fill" style="width:30%"></div></div><span class="b-val">00:02:15</span></div>
+      <div class="bar-row"><span class="b-label">Portal</span><div class="b-track"><div class="b-fill" style="width:55%"></div></div><span class="b-val">00:06:40</span></div>
+      <div class="bar-row"><span class="b-label">Correo</span><div class="b-track"><div class="b-fill" style="width:95%"></div></div><span class="b-val">02:15:30</span></div>
+      <div class="bar-row"><span class="b-label">Teléfono</span><div class="b-track"><div class="b-fill" style="width:40%"></div></div><span class="b-val">00:04:10</span></div>
+    </div>
+  </div>
+  <div class="panel"><h3>Cumplimiento de SLA</h3>
+    <div class="donut" style="width:120px;height:120px;background:conic-gradient(var(--green) 0% 92%, #E7E8F5 92% 100%);"><div class="donut-center" style="width:80px;height:80px;"><span class="big" style="font-size:22px;">92%</span><span class="small">Meta: 90%</span></div></div>
+  </div>
 </div>
 
-
-<div class="chart-line">
-
-Marzo
-
+<div class="grid-2">
+  <div class="panel"><h3>Top 5 categorías</h3><div class="table-wrap"><table>
+    <tr><th>Categoría</th><th>Solicitudes</th><th>%</th></tr>
+    <tr><td>Acceso e inicio de sesión</td><td>324</td><td>26%</td></tr>
+    <tr><td>Aplicaciones</td><td>256</td><td>21%</td></tr>
+    <tr><td>Configuraciones</td><td>198</td><td>16%</td></tr>
+    <tr><td>Errores del sistema</td><td>176</td><td>14%</td></tr>
+    <tr><td>Consultas generales</td><td>132</td><td>11%</td></tr>
+  </table></div></div>
+  <div class="panel"><h3>Top 5 agentes por solicitudes resueltas</h3><div class="table-wrap"><table>
+    <tr><th>Agente</th><th>Resueltas</th><th>Satisfacción</th></tr>
+    <tr><td>Carlos López</td><td>156</td><td>4.8 <i data-lucide="star"></i></td></tr>
+    <tr><td>María González</td><td>142</td><td>4.7 <i data-lucide="star"></i></td></tr>
+    <tr><td>Juan Pérez</td><td>128</td><td>4.6 <i data-lucide="star"></i></td></tr>
+    <tr><td>Laura Vargas</td><td>110</td><td>4.6 <i data-lucide="star"></i></td></tr>
+    <tr><td>Roberto Núñez</td><td>96</td><td>4.5 <i data-lucide="star"></i></td></tr>
+  </table></div></div>
+</div>
 </div>
 
-
-<div class="chart-line">
-
-Abril
-
+<div>
+  <div class="side-panel">
+    <h4>Filtros rápidos</h4>
+    <label class="field-label">Rango de fechas</label>
+    <select><option>21/07/2026 - 24/07/2026</option></select>
+    <label class="field-label">Equipo</label>
+    <select><option>Todos los equipos</option></select>
+    <label class="field-label">Canal</label>
+    <select><option>Todos los canales</option></select>
+    <button class="main-button btn-block" style="justify-content:center;margin-top:8px;">Aplicar filtros</button>
+  </div>
+  <div class="side-panel">
+    <h4>Accesos rápidos</h4>
+    <a href="solicitudes.html" class="quick-link"><i data-lucide="list-checks"></i> Solicitudes en cola <i data-lucide="chevron-right"></i></a>
+    <a href="revision-escalacion.html" class="quick-link"><i data-lucide="alert-triangle"></i> Escalaciones activas <i data-lucide="chevron-right"></i></a>
+    <a href="calidad.html" class="quick-link"><i data-lucide="star"></i> Evaluación de calidad <i data-lucide="chevron-right"></i></a>
+    <a href="#" class="quick-link"><i data-lucide="bar-chart-3"></i> Indicadores detallados <i data-lucide="chevron-right"></i></a>
+    <a href="#" class="quick-link"><i data-lucide="download"></i> Descargar reportes <i data-lucide="chevron-right"></i></a>
+  </div>
+  <div class="side-panel">
+    <h4>Últimas solicitudes críticas</h4>
+    <div class="alert-item"><i data-lucide="alert-circle"></i><p><strong>CS-2026-0128</strong> · No puedo iniciar sesión<br><span class="a-time">Hace 10 min</span></p></div>
+    <div class="alert-item"><i data-lucide="alert-circle"></i><p><strong>CS-2026-0125</strong> · Error al cargar documentos<br><span class="a-time">Hace 15 min</span></p></div>
+    <div class="alert-item"><i data-lucide="alert-circle"></i><p><strong>CS-2026-0123</strong> · Falla al generar reporte<br><span class="a-time">Hace 25 min</span></p></div>
+    <a class="stat-link" style="margin-top:8px;display:inline-block;">Ver todas</a>
+  </div>
 </div>
-
-
 </div>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-
-Distribución por prioridad
-
-</h3>
-
-
-
-<div class="priority-item">
-
-
-Crítica
-
-<span>
-
-15%
-
-</span>
-
-
-</div>
-
-
-
-<div class="priority-item">
-
-
-Alta
-
-<span>
-
-35%
-
-</span>
-
-
-</div>
-
-
-
-<div class="priority-item">
-
-
-Media
-
-<span>
-
-40%
-
-</span>
-
-
-</div>
-
-
-
-<div class="priority-item">
-
-
-Baja
-
-<span>
-
-10%
-
-</span>
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-
-Impacto del proyecto
-
-</h3>
-
-
-
-
-<table>
-
-
-<tr>
-
-
-<th>
-
-Indicador
-
-</th>
-
-
-<th>
-
-Antes
-
-</th>
-
-
-<th>
-
-Después
-
-</th>
-
-
-</tr>
-
-
-
-
-<tr>
-
-<td>
-
-Tiempo respuesta
-
-</td>
-
-
-<td>
-
-35 min
-
-</td>
-
-
-<td>
-
-24 min
-
-</td>
-
-
-</tr>
-
-
-
-
-
-<tr>
-
-<td>
-
-Satisfacción
-
-</td>
-
-
-<td>
-
-80%
-
-</td>
-
-
-<td>
-
-92%
-
-</td>
-
-
-</tr>
-
-
-
-
-
-
-<tr>
-
-<td>
-
-Costos operativos
-
-</td>
-
-
-<td>
-
-100%
-
-</td>
-
-
-<td>
-
-66%
-
-</td>
-
-
-</tr>
-
-
-
-</table>
-
-
-
-</div>
-
-
-
-
-
-
-
 
 </main>
-
-
 </div>
 
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>

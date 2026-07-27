@@ -1,620 +1,176 @@
 <!DOCTYPE html>
-
-<html>
-
-
+<html lang="es">
 <head>
-
-<title>Administración usuarios</title>
-
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administración de usuarios · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
-
 </head>
-
-
 <body>
-
-
-
 <div class="app-layout">
-
-
-
 <aside class="sidebar">
-
-
-<div class="brand">
-
-
-<img src="img/logo.png">
-
-
-
-<div>
-
-
-<h2>
-
-ConectaSoporte
-
-</h2>
-
-
-<span>
-
-Administración
-
-</span>
-
-
-
+  <a href="supervisor.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Supervisora</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="supervisor.html" class="nav-link"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="alert-triangle"></i><span class="txt">Escalaciones</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="revision-escalacion.html" class="">Pendientes de revisión</a><a href="revision-escalacion.html" class="">En revisión</a><a href="revision-escalacion.html" class="">Resueltas</a><a href="revision-escalacion.html" class="">Historial</a></div>
 </div>
-
-
-
-
-
-
-
-<nav>
-
-
-<a href="index.html">
-
-Inicio
-
-</a>
-
-
-
-<a class="active">
-
-Usuarios
-
-</a>
-
-
-
-<a href="ejecutivo.html">
-
-Reportes
-
-</a>
-
-
-
-</nav>
-
-
-
+<a href="supervisor.html" class="nav-link"><i data-lucide="users"></i><span class="txt">Equipo</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="">Panel ejecutivo</a><a href="ejecutivo.html" class="">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a><a href="calidad.html" class="">Calibraciones</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
+</div>
+<div class="nav-group open">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="settings"></i><span class="txt">Configuración</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="usuarios.html" class="">General</a><a href="usuarios.html" class="">Canales</a><a href="usuarios.html" class="">Plantillas</a><a href="usuarios.html" class="">Reglas de negocio</a><a href="usuarios.html" class="active">Usuarios</a><a href="usuarios.html" class="">Roles y permisos</a><a href="usuarios.html" class="">Grupos</a><a href="usuarios.html" class="">Auditoría</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
-
-
-
-
-
-
-
-
-
 <main class="main-content">
-
-
-
 <header class="top-header">
-
-
-<div>
-
-
-<h1>
-
-Administración de usuarios
-
-</h1>
-
-
-<p>
-
-Gestión de accesos y permisos
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="profile">
-
-
-<div class="circle">
-
-AD
-
-</div>
-
-
-<div>
-
-
-<strong>
-
-Administrador
-
-</strong>
-
-
-</div>
-
-
-</div>
-
-
-
+  <div><h1>Administración de usuarios</h1><p>Gestiona los usuarios que tienen acceso al sistema</p></div>
+  <div></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">8</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">5</span></button>
+    <div class="profile">
+      <div class="circle">AM</div>
+      <div><strong>Ana Martínez</strong><br><small>Supervisora</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-
-
-
-
 <section class="stats-grid">
-
-
-
-<div class="stat-card">
-
-
-<span>
-
-Usuarios totales
-
-</span>
-
-
-<h2>
-
-128
-
-</h2>
-
-
-
-</div>
-
-
-
-
-
-<div class="stat-card">
-
-
-<span>
-
-Usuarios activos
-
-</span>
-
-
-<h2>
-
-112
-
-</h2>
-
-
-</div>
-
-
-
-
-
-<div class="stat-card">
-
-
-<span>
-
-Pendientes aprobación
-
-</span>
-
-
-<h2>
-
-8
-
-</h2>
-
-
-</div>
-
-
-
-
+  <div class="stat-card"><div class="stat-card-top"><span>Usuarios totales</span><div class="stat-icon"><i data-lucide="users"></i></div></div><h2>128</h2><span class="trend up"><i data-lucide="trending-up"></i> 6 nuevos este mes</span></div>
+  <div class="stat-card"><div class="stat-card-top"><span>Activos</span><div class="stat-icon c-green"><i data-lucide="user-check"></i></div></div><h2>112</h2><span style="color:var(--text-soft);font-size:12px;">87.5% del total</span></div>
+  <div class="stat-card"><div class="stat-card-top"><span>Inactivos</span><div class="stat-icon c-red"><i data-lucide="user-x"></i></div></div><h2>16</h2><span style="color:var(--text-soft);font-size:12px;">12.5% del total</span></div>
+  <div class="stat-card"><div class="stat-card-top"><span>Bloqueados</span><div class="stat-icon c-orange"><i data-lucide="lock"></i></div></div><h2>0</h2><span style="color:var(--text-soft);font-size:12px;">0% del total</span></div>
 </section>
 
-
-
-
-
-
-
-
-
 <div class="panel">
-
-
-<div class="panel-header">
-
-
-<h3>
-
-Usuarios registrados
-
-</h3>
-
-
-
-<a class="main-button">
-
-Nuevo usuario
-
-</a>
-
-
-
+  <div class="table-toolbar">
+    <div class="input-with-icon" style="max-width:300px;"><i data-lucide="search"></i><input type="text" placeholder="Buscar por nombre, correo o usuario..."></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <select style="margin:0;width:auto;"><option>Todos los estados</option></select>
+      <select style="margin:0;width:auto;"><option>Todos los roles</option></select>
+      <select style="margin:0;width:auto;"><option>Todos los equipos</option></select>
+      <button class="secondary-button btn-sm"><i data-lucide="sliders-horizontal"></i> Filtros</button>
+      <button class="secondary-button btn-sm"><i data-lucide="download"></i> Exportar</button>
+      <button class="main-button btn-sm"><i data-lucide="user-plus"></i> Nuevo usuario</button>
+    </div>
+  </div>
+  <div class="table-wrap"><table>
+    <tr><th><input type="checkbox" style="width:auto;margin:0;"></th><th>Usuario</th><th>Nombre completo</th><th>Correo</th><th>Rol</th><th>Equipo</th><th>Estado</th><th>Último acceso</th><th>Acciones</th></tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td style="display:flex;align-items:center;gap:10px;"><div class="circle" style="width:32px;height:32px;font-size:11px;">AM</div>ana.martinez</td>
+      <td>Ana Martínez</td><td>ana.martinez@conectasoporte.com</td>
+      <td><span class="badge badge-purple">Supervisora</span></td><td>Soporte Nivel 2</td>
+      <td><span class="badge badge-green dot">Activo</span></td><td>24/07/2026 09:15</td>
+      <td style="display:flex;gap:6px;"><button class="icon-action"><i data-lucide="eye"></i></button><button class="icon-action"><i data-lucide="pencil"></i></button><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td style="display:flex;align-items:center;gap:10px;"><div class="circle" style="width:32px;height:32px;font-size:11px;">CL</div>carlos.lopez</td>
+      <td>Carlos López</td><td>carlos.lopez@conectasoporte.com</td>
+      <td><span class="badge badge-blue">Agente</span></td><td>Soporte Nivel 1</td>
+      <td><span class="badge badge-green dot">Activo</span></td><td>24/07/2026 08:42</td>
+      <td style="display:flex;gap:6px;"><button class="icon-action"><i data-lucide="eye"></i></button><button class="icon-action"><i data-lucide="pencil"></i></button><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td style="display:flex;align-items:center;gap:10px;"><div class="circle" style="width:32px;height:32px;font-size:11px;">MG</div>maria.gonzalez</td>
+      <td>María González</td><td>maria.gonzalez@conectasoporte.com</td>
+      <td><span class="badge badge-blue">Agente</span></td><td>Soporte Nivel 1</td>
+      <td><span class="badge badge-green dot">Activo</span></td><td>24/07/2026 07:58</td>
+      <td style="display:flex;gap:6px;"><button class="icon-action"><i data-lucide="eye"></i></button><button class="icon-action"><i data-lucide="pencil"></i></button><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td style="display:flex;align-items:center;gap:10px;"><div class="circle" style="width:32px;height:32px;font-size:11px;">JP</div>juan.perez</td>
+      <td>Juan Pérez</td><td>juan.perez@conectasoporte.com</td>
+      <td><span class="badge badge-cyan">Analista</span></td><td>Soporte Nivel 2</td>
+      <td><span class="badge badge-green dot">Activo</span></td><td>23/07/2026 16:20</td>
+      <td style="display:flex;gap:6px;"><button class="icon-action"><i data-lucide="eye"></i></button><button class="icon-action"><i data-lucide="pencil"></i></button><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td style="display:flex;align-items:center;gap:10px;"><div class="circle" style="width:32px;height:32px;font-size:11px;">LV</div>laura.vargas</td>
+      <td>Laura Vargas</td><td>laura.vargas@conectasoporte.com</td>
+      <td><span class="badge badge-blue">Agente</span></td><td>Soporte Nivel 1</td>
+      <td><span class="badge badge-red dot">Inactivo</span></td><td>20/07/2026 11:10</td>
+      <td style="display:flex;gap:6px;"><button class="icon-action"><i data-lucide="eye"></i></button><button class="icon-action"><i data-lucide="pencil"></i></button><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td style="display:flex;align-items:center;gap:10px;"><div class="circle" style="width:32px;height:32px;font-size:11px;">RN</div>roberto.nunez</td>
+      <td>Roberto Núñez</td><td>roberto.nunez@conectasoporte.com</td>
+      <td><span class="badge badge-red">Admin</span></td><td>Administración</td>
+      <td><span class="badge badge-green dot">Activo</span></td><td>24/07/2026 10:05</td>
+      <td style="display:flex;gap:6px;"><button class="icon-action"><i data-lucide="eye"></i></button><button class="icon-action"><i data-lucide="pencil"></i></button><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td style="display:flex;align-items:center;gap:10px;"><div class="circle" style="width:32px;height:32px;font-size:11px;">SR</div>sofia.ramirez</td>
+      <td>Sofía Ramírez</td><td>sofia.ramirez@conectasoporte.com</td>
+      <td><span class="badge badge-blue">Agente</span></td><td>Soporte Nivel 1</td>
+      <td><span class="badge badge-red dot">Inactivo</span></td><td>18/07/2026 09:30</td>
+      <td style="display:flex;gap:6px;"><button class="icon-action"><i data-lucide="eye"></i></button><button class="icon-action"><i data-lucide="pencil"></i></button><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td style="display:flex;align-items:center;gap:10px;"><div class="circle" style="width:32px;height:32px;font-size:11px;">PS</div>pedro.sanchez</td>
+      <td>Pedro Sánchez</td><td>pedro.sanchez@conectasoporte.com</td>
+      <td><span class="badge badge-blue">Agente</span></td><td>Soporte Nivel 1</td>
+      <td><span class="badge badge-green dot">Activo</span></td><td>24/07/2026 06:40</td>
+      <td style="display:flex;gap:6px;"><button class="icon-action"><i data-lucide="eye"></i></button><button class="icon-action"><i data-lucide="pencil"></i></button><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+  </table></div>
+  <div class="pagination">
+    <div class="p-info">Mostrar <select style="width:auto;display:inline-block;margin:0 6px;"><option>10</option></select> por página · 1-8 de 128</div>
+    <div class="pages"><button class="page-btn"><i data-lucide="chevrons-left"></i></button><button class="page-btn"><i data-lucide="chevron-left"></i></button><button class="page-btn active">1</button><button class="page-btn">2</button><span>…</span><button class="page-btn">13</button><button class="page-btn"><i data-lucide="chevron-right"></i></button><button class="page-btn"><i data-lucide="chevrons-right"></i></button></div>
+  </div>
 </div>
-
-
-
-
-
-
-
-
-<table>
-
-
-<tr>
-
-
-<th>
-
-Nombre
-
-</th>
-
-
-<th>
-
-Correo
-
-</th>
-
-
-<th>
-
-Rol
-
-</th>
-
-
-<th>
-
-Estado
-
-</th>
-
-
-<th>
-
-Acción
-
-</th>
-
-
-</tr>
-
-
-
-
-
-
-
-<tr>
-
-
-<td>
-
-Carlos López
-
-</td>
-
-
-<td>
-
-carlos@empresa.com
-
-</td>
-
-
-<td>
-
-Agente
-
-</td>
-
-
-<td>
-
-Activo
-
-</td>
-
-
-<td>
-
-Editar
-
-</td>
-
-
-
-</tr>
-
-
-
-
-
-
-
-<tr>
-
-
-<td>
-
-Ana Martínez
-
-</td>
-
-
-<td>
-
-ana@empresa.com
-
-</td>
-
-
-<td>
-
-Supervisor
-
-</td>
-
-
-<td>
-
-Activo
-
-</td>
-
-
-<td>
-
-Editar
-
-</td>
-
-
-</tr>
-
-
-
-
-
-
-
-<tr>
-
-
-<td>
-
-Pedro Sánchez
-
-</td>
-
-
-<td>
-
-pedro@empresa.com
-
-</td>
-
-
-<td>
-
-Especialista
-
-</td>
-
-
-<td>
-
-Activo
-
-</td>
-
-
-<td>
-
-Editar
-
-</td>
-
-
-
-</tr>
-
-
-
-
-
-</table>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-
-Permisos por rol
-
-</h3>
-
-
-
-
-<table>
-
-
-<tr>
-
-<th>
-
-Rol
-
-</th>
-
-
-<th>
-
-Permisos
-
-</th>
-
-
-</tr>
-
-
-
-
-
-<tr>
-
-
-<td>
-
-Administrador
-
-</td>
-
-
-<td>
-
-Control total del sistema
-
-</td>
-
-
-</tr>
-
-
-
-
-
-<tr>
-
-
-<td>
-
-Supervisor
-
-</td>
-
-
-<td>
-
-Gestión de equipo y reportes
-
-</td>
-
-
-</tr>
-
-
-
-
-
-
-<tr>
-
-
-<td>
-
-Agente
-
-</td>
-
-
-<td>
-
-Crear y gestionar solicitudes
-
-</td>
-
-
-</tr>
-
-
-
-
-
-</table>
-
-
-
-
-</div>
-
-
-
-
-
-
 
 </main>
-
-
-
 </div>
 
-
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
-
 </html>

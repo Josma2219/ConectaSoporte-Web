@@ -1,303 +1,169 @@
 <!DOCTYPE html>
-
-<html>
-
-
+<html lang="es">
 <head>
-
-<title>Revisión Escalación</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revisión de escalación · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
-
-
-
 <body>
-
-
-
 <div class="app-layout">
-
-
-
 <aside class="sidebar">
-
-
-<div class="brand">
-
-<img src="img/logo.png">
-
-
-<div>
-
-<h2>
-ConectaSoporte
-</h2>
-
-
-<span>
-Supervisor
-
-</span>
-
-
+  <a href="supervisor.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Supervisora</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="supervisor.html" class="nav-link"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a><a href="solicitudes.html" class="">Por asignar</a><a href="solicitudes.html" class="">Buscador avanzado</a></div>
 </div>
-
-
+<div class="nav-group open">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="alert-triangle"></i><span class="txt">Escalaciones</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="revision-escalacion.html" class="active">Pendientes de revisión</a><a href="revision-escalacion.html" class="">En revisión</a><a href="revision-escalacion.html" class="">Resueltas</a><a href="revision-escalacion.html" class="">Historial</a></div>
 </div>
-
-
-
-
-<nav>
-
-
-<a href="supervisor.html">
-
-Panel supervisor
-
-</a>
-
-
-<a class="active">
-
-Revisión
-
-</a>
-
-
-</nav>
-
-
+<a href="supervisor.html" class="nav-link"><i data-lucide="users"></i><span class="txt">Equipo</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="bar-chart-3"></i><span class="txt">Reportes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="ejecutivo.html" class="">Panel ejecutivo</a><a href="ejecutivo.html" class="">Indicadores</a><a href="calidad.html" class="">Evaluación de calidad</a><a href="ejecutivo.html" class="">Encuestas</a><a href="calidad.html" class="">Calibraciones</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="">Artículos</a><a href="conocimiento.html" class="">Categorías</a><a href="conocimiento.html" class="">Pendientes de revisión</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="settings"></i><span class="txt">Configuración</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="usuarios.html" class="">General</a><a href="usuarios.html" class="">Canales</a><a href="usuarios.html" class="">Plantillas</a><a href="usuarios.html" class="">Reglas de negocio</a><a href="usuarios.html" class="">Usuarios</a><a href="usuarios.html" class="">Roles y permisos</a><a href="usuarios.html" class="">Grupos</a><a href="usuarios.html" class="">Auditoría</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
-
-
-
-
-
-
-
-
-
 <main class="main-content">
-
-
-
 <header class="top-header">
-
-
-<div>
-
-<h1>
-Revisión de escalación
-
-</h1>
-
-
-<p>
-Validación antes de enviar a equipo técnico
-
-</p>
-
-
-</div>
-
-
-
-<div class="status-badge">
-
-Pendiente
-
-</div>
-
-
+  <div><h1>Revisión de escalación</h1><p>Escalaciones / Revisión de escalación</p></div>
+  <div></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">3</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">2</span></button>
+    <div class="profile">
+      <div class="circle">AM</div>
+      <div><strong>Ana Martínez</strong><br><small>Supervisora</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-
-
-
-
-<section class="dashboard-grid">
-
-
-
 <div class="panel">
-
-
-<h3>
-
-Datos del caso
-
-</h3>
-
-
-
-<div class="info-row">
-
-ID:
-
-<b>
-CS-2026-001
-
-</b>
-
+  <div class="alert-box alert-warning" style="justify-content:space-between;align-items:center;">
+    <div style="display:flex;gap:12px;"><i data-lucide="alert-triangle"></i><div><strong>Escalación pendiente de revisión</strong><p style="margin-top:2px;font-size:13px;">Evalúe la información de la escalación y determine la acción correspondiente.</p></div></div>
+  </div>
+  <div class="info-grid" style="margin-top:14px;">
+    <div class="info-item"><span class="lbl">ID de escalación</span><span class="val">ESC-2026-0056</span></div>
+    <div class="info-item"><span class="lbl">Prioridad</span><span class="badge prioridad-alta">Alta</span></div>
+    <div class="info-item"><span class="lbl">Fecha de escalación</span><span class="val">24/07/2026 11:20</span></div>
+  </div>
 </div>
 
+<div class="dashboard-grid">
+  <div>
+    <div class="panel">
+      <div class="info-grid">
+        <div class="info-item"><span class="lbl">Solicitud origen</span><a href="solicitud-detalle.html" class="val" style="color:var(--primary);">CS-2026-0128 <i data-lucide="external-link"></i></a></div>
+        <div class="info-item"><span class="lbl">Asunto</span><span class="val">No puedo iniciar sesión</span></div>
+        <div class="info-item"><span class="lbl">Cliente</span><span class="val">Juan Pérez</span></div>
+        <div class="info-item"><span class="lbl">Asignada (actual)</span><span class="val">Carlos López · Agente de Soporte</span></div>
+        <div class="info-item"><span class="lbl">Estado actual</span><span class="badge badge-blue">En progreso</span></div>
+        <div class="info-item"><span class="lbl">Tiempo desde escalación</span><span class="val"><i data-lucide="clock"></i> 2h 15min</span></div>
+      </div>
 
+      <div class="tabs" style="margin-top:20px;">
+        <div class="tab active">Información de escalación</div>
+        <div class="tab">Actividad y comentarios</div>
+        <div class="tab">Historial de la solicitud</div>
+        <div class="tab">Adjuntos (2)</div>
+        <div class="tab">SLA e impacto</div>
+      </div>
 
-<div class="info-row">
+      <div class="info-grid cols-2">
+        <div class="info-item"><span class="lbl">Motivo de escalación</span><span class="val">Usuario no puede acceder al sistema y el problema persiste después de las validaciones básicas.</span></div>
+        <div class="info-item"><span class="lbl">Escalada por</span><span class="val">Carlos López · Agente de Soporte</span></div>
+        <div class="info-item"><span class="lbl">Nivel de escalación</span><span class="val">Nivel 2 - Soporte especializado</span></div>
+        <div class="info-item"><span class="lbl">Fecha de escalación</span><span class="val">24/07/2026 11:20</span></div>
+        <div class="info-item"><span class="lbl">Impacto</span><span class="badge badge-amber">Medio</span></div>
+        <div class="info-item"><span class="lbl">¿Afecta a más usuarios?</span><span class="val">Sí</span></div>
+        <div class="info-item"><span class="lbl">Urgencia</span><span class="badge prioridad-alta">Alta</span></div>
+        <div class="info-item"><span class="lbl">Cantidad aproximada</span><span class="val">25 usuarios</span></div>
+      </div>
+      <div class="summary-block"><span class="lbl" style="display:block;margin-bottom:6px;">Descripción del motivo</span><p>El cliente indica que desde hoy en la mañana no puede iniciar sesión en el sistema. Al ingresar sus credenciales aparece el mensaje de error "Usuario o contraseña incorrectos". Se validó restablecimiento de contraseña.</p></div>
+      <div class="summary-block"><span class="lbl" style="display:block;margin-bottom:6px;">Impacto detallado</span><p>Afecta al departamento de Operaciones. Hay 25 usuarios con el mismo comportamiento reportado.</p></div>
+    </div>
+  </div>
 
-Agente:
+  <div>
+    <div class="panel">
+      <h3>Línea de tiempo de la actividad</h3>
+      <div class="timeline">
+        <div class="timeline-item"><div class="t-icon"><i data-lucide="file-plus"></i></div><div class="t-head"><strong>Solicitud creada</strong><span class="t-time">24/07/2026 09:15</span></div><p>Por: Juan Pérez</p></div>
+        <div class="timeline-item"><div class="t-icon"><i data-lucide="user-round-check"></i></div><div class="t-head"><strong>Asignada a Carlos López</strong><span class="t-time">24/07/2026 09:20</span></div><p>Por: Sistema</p></div>
+        <div class="timeline-item"><div class="t-icon"><i data-lucide="message-circle"></i></div><div class="t-head"><strong>Comentario del agente</strong><span class="t-time">24/07/2026 10:10</span></div><p>Se validó credenciales y restablecimiento de contraseña.</p></div>
+        <div class="timeline-item"><div class="t-icon"><i data-lucide="refresh-cw"></i></div><div class="t-head"><strong>Estado cambiado a En progreso</strong><span class="t-time">24/07/2026 10:12</span></div><p>Por: Carlos López</p></div>
+        <div class="timeline-item"><div class="t-icon"><i data-lucide="arrow-up-circle"></i></div><div class="t-head"><strong>Solicitud escalada a Nivel 2</strong><span class="t-time">24/07/2026 11:20</span></div><p>Por: Carlos López</p></div>
+      </div>
+    </div>
 
-<b>
-Carlos López
-
-</b>
-
+    <div class="panel">
+      <h3>Revisión de la escalación</h3>
+      <label class="field-label">Decisión <span class="required">*</span></label>
+      <div class="radio-group" style="flex-direction:column;gap:10px;margin-bottom:14px;">
+        <label class="radio-option"><input type="radio" name="dec" checked> Aceptar escalación</label>
+        <label class="radio-option"><input type="radio" name="dec"> Devolver al agente</label>
+        <label class="radio-option"><input type="radio" name="dec"> Reclasificar nivel</label>
+        <label class="radio-option"><input type="radio" name="dec"> Reasignar a especialista</label>
+        <label class="radio-option"><input type="radio" name="dec"> Cerrar escalación</label>
+      </div>
+      <label class="field-label">Asignar a <span class="required">*</span></label>
+      <select><option>Seleccione especialista o grupo...</option></select>
+      <label class="field-label">Comentario para el siguiente nivel <span class="required">*</span></label>
+      <textarea class="large-input" placeholder="Explique la acción tomada o agregue instrucciones..."></textarea>
+      <div class="char-count">0 / 1000</div>
+    </div>
+  </div>
 </div>
 
-
-
-<div class="info-row">
-
-Prioridad:
-
-<b>
-Alta
-
-</b>
-
+<div class="alert-box alert-info" style="align-items:center;">
+  <i data-lucide="info"></i><span>Al aceptar la escalación, la solicitud y toda la comunicación serán visibles para el siguiente nivel.</span>
 </div>
-
-
-
-<div class="info-row">
-
-Fecha:
-
-<b>
-27/07/2026
-
-</b>
-
+<div class="action-panel">
+  <a href="#" class="secondary-button">Cancelar</a>
+  <button class="main-button">Confirmar acción <i data-lucide="check"></i></button>
 </div>
-
-
-
-</div>
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-Acciones
-
-</h3>
-
-
-<a class="main-button">
-
-Aceptar escalación
-
-</a>
-
-
-<br><br>
-
-
-<a class="secondary-button">
-
-Solicitar información
-
-</a>
-
-
-<br><br>
-
-
-<a class="danger-button">
-
-Rechazar
-
-</a>
-
-
-</div>
-
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-
-Historial de revisión
-
-</h3>
-
-
-
-<div class="timeline-item">
-
-Agente creó escalación
-
-</div>
-
-
-<div class="timeline-item">
-
-Supervisor revisando información
-
-</div>
-
-
-<div class="timeline-item">
-
-Pendiente aprobación técnica
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
 
 </main>
-
-
 </div>
 
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>

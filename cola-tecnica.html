@@ -1,408 +1,166 @@
 <!DOCTYPE html>
-
-<html>
-
-
+<html lang="es">
 <head>
-
-<title>Cola Técnica</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cola técnica · ConectaSoporte</title>
 <link rel="stylesheet" href="css/estilo.css">
-
 </head>
-
-
-
 <body>
-
-
 <div class="app-layout">
-
-
-
 <aside class="sidebar">
-
-
-<div class="brand">
-
-<img src="img/logo.png">
-
-
-<div>
-
-<h2>
-ConectaSoporte
-</h2>
-
-
-<span>
-Equipo técnico
-
-</span>
-
-
+  <a href="cola-tecnica.html" class="brand">
+    <img src="img/logo.png" alt="ConectaSoporte">
+    <div><h2>ConectaSoporte</h2><span>Técnico N2</span></div>
+  </a>
+  <nav class="nav-scroll">
+    <a href="cola-tecnica.html" class="nav-link"><i data-lucide="layout-dashboard"></i><span class="txt">Panel</span></a>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="list-checks"></i><span class="txt">Solicitudes</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="solicitudes.html" class="">Todas las solicitudes</a><a href="solicitudes.html" class="">Mis pendientes</a></div>
 </div>
-
-
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="alert-triangle"></i><span class="txt">Escalaciones</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="revision-escalacion.html" class="">Pendientes de revisión</a><a href="revision-escalacion.html" class="">En revisión</a></div>
 </div>
-
-
-
-
-
-<nav>
-
-
-<a href="index.html">
-
-Inicio
-
-</a>
-
-
-<a class="active">
-
-Cola técnica
-
-</a>
-
-
-<a href="conocimiento.html">
-
-Base conocimiento
-
-</a>
-
-
-</nav>
-
-
+<div class="nav-group open">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="life-buoy"></i><span class="txt">Cola técnica</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="cola-tecnica.html" class="active">Mis asignaciones</a><a href="cola-tecnica.html" class="">En atención</a><a href="cola-tecnica.html" class="">Pausadas</a><a href="cola-tecnica.html" class="">Resueltas</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="book-open"></i><span class="txt">Base de conocimiento</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="conocimiento.html" class="">Artículos</a><a href="conocimiento.html" class="">Categorías</a></div>
+</div>
+<div class="nav-group">
+  <div class="nav-group-label"><span class="lbl"><i data-lucide="settings"></i><span class="txt">Configuración</span></span><i data-lucide="chevron-right" class="chev"></i></div>
+  <div class="nav-submenu"><a href="usuarios.html" class="">General</a><a href="usuarios.html" class="">Usuarios</a></div>
+</div>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="nav-link"><i data-lucide="bell"></i><span class="txt">Notificaciones</span><span class="nav-badge">3</span></a>
+    <a href="#" class="nav-link"><i data-lucide="message-square"></i><span class="txt">Mensajes</span><span class="nav-badge">2</span></a>
+    <a href="login.html" class="nav-link"><i data-lucide="log-out"></i><span class="txt">Cerrar sesión</span></a>
+  </div>
 </aside>
-
-
-
-
-
-
-
-
-
 <main class="main-content">
-
-
 <header class="top-header">
-
-
-<div>
-
-<h1>
-Cola técnica
-
-</h1>
-
-
-<p>
-Casos asignados a especialistas
-
-</p>
-
-
-</div>
-
-
-
-<div class="profile">
-
-
-<div class="circle">
-
-PS
-
-</div>
-
-
-<div>
-
-<strong>
-
-Pedro Sánchez
-
-</strong>
-
-
-<br>
-
-
-<small>
-
-Especialista técnico
-
-</small>
-
-
-</div>
-
-
-</div>
-
-
+  <div><h1>Cola técnica</h1><p>Vista de todas las solicitudes asignadas al equipo técnico</p></div>
+  <div></div>
+  <div class="header-actions">
+    <button class="icon-btn"><i data-lucide="bell"></i><span class="badge-count">3</span></button>
+    <button class="icon-btn"><i data-lucide="message-square"></i><span class="badge-count">2</span></button>
+    <div class="profile">
+      <div class="circle">PS</div>
+      <div><strong>Pedro Sánchez</strong><br><small>Técnico N2</small></div>
+      <i data-lucide="chevron-down" class="chev"></i>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-
-
-
+<div class="panel">
+  <div class="table-toolbar">
+    <div class="input-with-icon" style="max-width:280px;"><i data-lucide="search"></i><input type="text" placeholder="Buscar por ID, asunto o cliente..."></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <select style="margin:0;width:auto;"><option>Todos los estados</option></select>
+      <select style="margin:0;width:auto;"><option>Todas las prioridades</option></select>
+      <select style="margin:0;width:auto;"><option>Todas las categorías</option></select>
+      <select style="margin:0;width:auto;"><option>Técnico asignado</option></select>
+      <button class="secondary-button btn-sm"><i data-lucide="sliders-horizontal"></i> Filtros avanzados</button>
+    </div>
+  </div>
+</div>
 
 <section class="stats-grid">
-
-
-<div class="stat-card">
-
-
-<span>
-Pendientes
-
-</span>
-
-
-<h2>
-18
-
-</h2>
-
-
-</div>
-
-
-
-
-<div class="stat-card">
-
-
-<span>
-En análisis
-
-</span>
-
-
-<h2>
-7
-
-</h2>
-
-
-</div>
-
-
-
-
-<div class="stat-card">
-
-
-<span>
-Resueltas
-
-</span>
-
-
-<h2>
-32
-
-</h2>
-
-
-</div>
-
-
+  <div class="stat-card"><div class="stat-card-top"><span>En cola</span><div class="stat-icon"><i data-lucide="inbox"></i></div></div><h2>18</h2><a class="stat-link">Ver detalles</a></div>
+  <div class="stat-card"><div class="stat-card-top"><span>En espera</span><div class="stat-icon c-amber c-orange"><i data-lucide="hourglass"></i></div></div><h2>7</h2><a class="stat-link">Ver detalles</a></div>
+  <div class="stat-card"><div class="stat-card-top"><span>En atención</span><div class="stat-icon c-green"><i data-lucide="play-circle"></i></div></div><h2>32</h2><a class="stat-link">Ver detalles</a></div>
+  <div class="stat-card"><div class="stat-card-top"><span>Pausadas</span><div class="stat-icon c-purple"><i data-lucide="pause-circle"></i></div></div><h2>5</h2><a class="stat-link">Ver detalles</a></div>
+  <div class="stat-card"><div class="stat-card-top"><span>Resueltas hoy</span><div class="stat-icon c-teal"><i data-lucide="check-circle-2"></i></div></div><h2>124</h2><a class="stat-link">Ver detalles</a></div>
 </section>
 
-
-
-
-
-
-
-
-
 <div class="panel">
-
-
-<h3>
-Casos técnicos
-
-</h3>
-
-
-
-
-
-<table>
-
-
-<tr>
-
-<th>
-ID
-
-</th>
-
-
-<th>
-Problema
-
-</th>
-
-
-<th>
-Prioridad
-
-</th>
-
-
-<th>
-Estado
-
-</th>
-
-
-</tr>
-
-
-
-
-
-<tr>
-
-
-<td>
-
-CS-2026-001
-
-</td>
-
-
-<td>
-
-Error autenticación
-
-</td>
-
-
-<td>
-
-Alta
-
-</td>
-
-
-<td>
-
-En análisis
-
-</td>
-
-
-</tr>
-
-
-
-
-
-<tr>
-
-
-<td>
-
-CS-2026-015
-
-</td>
-
-
-<td>
-
-Falla servidor
-
-</td>
-
-
-<td>
-
-Crítica
-
-</td>
-
-
-<td>
-
-Pendiente
-
-</td>
-
-
-</tr>
-
-
-
-
-
-</table>
-
-
-
+  <div class="table-toolbar"><span class="table-count">Solicitudes en cola técnica (18)</span>
+    <div style="display:flex;gap:10px;"><button class="secondary-button btn-sm"><i data-lucide="download"></i> Exportar</button><button class="secondary-button btn-sm"><i data-lucide="columns-3"></i> Columnas</button></div>
+  </div>
+  <div class="table-wrap"><table>
+    <tr><th><input type="checkbox" style="width:auto;margin:0;"></th><th>ID</th><th>Asunto</th><th>Cliente</th><th>Prioridad</th><th>Categoría</th><th>Estado</th><th>Asignada a</th><th>Tiempo en cola</th><th>Fecha</th><th>Acciones</th></tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0132</a></td><td>No puedo acceder al sistema</td><td>María González</td>
+      <td><span class="badge prioridad-alta">Alta</span></td><td>Sistema</td>
+      <td><span class="badge badge-blue">En cola</span></td><td>Grupo N2 - Sistemas</td><td>1h 25min</td><td>24/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0131</a></td><td>Error al cargar documentos</td><td>Juan Pérez</td>
+      <td><span class="badge prioridad-media">Media</span></td><td>Aplicación</td>
+      <td><span class="badge badge-blue">En cola</span></td><td>Grupo N2 - Aplicaciones</td><td>55 min</td><td>24/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0130</a></td><td>Falla al generar reporte</td><td>Ana Ramírez</td>
+      <td><span class="badge prioridad-alta">Alta</span></td><td>Reportes</td>
+      <td><span class="badge badge-amber">En espera</span></td><td>Grupo N2 - Reportes</td><td>2h 10min</td><td>24/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0129</a></td><td>Lentitud en el sistema</td><td>Roberto Núñez</td>
+      <td><span class="badge prioridad-media">Media</span></td><td>Rendimiento</td>
+      <td><span class="badge badge-green">En atención</span></td><td>Pedro Sánchez</td><td>—</td><td>24/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0128</a></td><td>Impresora no responde</td><td>Laura Vargas</td>
+      <td><span class="badge prioridad-baja">Baja</span></td><td>Hardware</td>
+      <td><span class="badge badge-blue">En cola</span></td><td>Grupo N1 - Hardware</td><td>35 min</td><td>24/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0127</a></td><td>Acceso denegado VPN</td><td>Carlos López</td>
+      <td><span class="badge prioridad-alta">Alta</span></td><td>Accesos</td>
+      <td><span class="badge badge-gray">Pausada</span></td><td>Pedro Sánchez</td><td>—</td><td>24/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" style="width:auto;margin:0;"></td>
+      <td><a href="solicitud-detalle.html">CS-2026-0126</a></td><td>No recibo correos</td><td>Sofía Méndez</td>
+      <td><span class="badge prioridad-baja">Baja</span></td><td>Correo</td>
+      <td><span class="badge badge-blue">En cola</span></td><td>Grupo N1 - Mesa</td><td>20 min</td><td>24/07/2026</td>
+      <td style="display:flex;gap:6px;"><a href="solicitud-detalle.html" class="icon-action"><i data-lucide="eye"></i></a><button class="icon-action"><i data-lucide="more-vertical"></i></button></td>
+    </tr>
+  </table></div>
+  <div class="pagination">
+    <div class="p-info">Mostrar <select style="width:auto;display:inline-block;margin:0 6px;"><option>10</option></select> por página · 1-7 de 18</div>
+    <div class="pages"><button class="page-btn"><i data-lucide="chevrons-left"></i></button><button class="page-btn"><i data-lucide="chevron-left"></i></button><button class="page-btn active">1</button><button class="page-btn">2</button><span>…</span><button class="page-btn">6</button><button class="page-btn"><i data-lucide="chevron-right"></i></button><button class="page-btn"><i data-lucide="chevrons-right"></i></button></div>
+  </div>
 </div>
-
-
-
-
-
-
-
-<div class="panel">
-
-
-<h3>
-
-Diagnóstico técnico
-
-</h3>
-
-
-<div class="large-input">
-
-Registrar pruebas realizadas y solución aplicada...
-
-</div>
-
-
-
-<a class="main-button">
-
-Guardar diagnóstico
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
 
 </main>
-
-
-
 </div>
 
-
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+  document.querySelectorAll('.nav-group-label').forEach(function(el){
+    el.addEventListener('click', function(){
+      el.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menu = document.querySelector(btn.getAttribute('data-toggle'));
+      if(menu){ menu.classList.toggle('show'); menu.style.display = menu.classList.contains('show') ? 'block' : 'none'; }
+    });
+  });
+  document.addEventListener('click', function(){
+    document.querySelectorAll('.dropdown-menu.show').forEach(function(m){ m.classList.remove('show'); m.style.display='none'; });
+  });
+</script>
 </body>
-
-
 </html>
