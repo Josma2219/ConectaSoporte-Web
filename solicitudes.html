@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
 
 <title>Solicitudes</title>
+
 <link rel="stylesheet" href="css/estilo.css">
 
 </head>
@@ -11,70 +13,177 @@
 
 <body>
 
-<div class="contenedor">
+
+<div class="app-layout">
+
 
 
 <aside class="sidebar">
 
-<div class="logo">
+
+<div class="brand">
 
 <img src="img/logo.png">
 
-<h2>ConectaSoporte</h2>
+
+<div>
+
+<h2>
+ConectaSoporte
+</h2>
+
+<span>
+Solicitudes
+</span>
+
+</div>
 
 </div>
 
 
-<div class="menu">
 
-<a href="index.html">Panel</a>
-<a href="solicitudes.html">Solicitudes</a>
-<a href="escalacion.html">Escalaciones</a>
-<a href="cola-tecnica.html">Cola técnica</a>
-<a href="conocimiento.html">Base conocimiento</a>
-<a href="ejecutivo.html">Reportes</a>
 
-</div>
+
+<nav>
+
+
+<a href="index.html">
+Inicio
+</a>
+
+
+<a class="active">
+Solicitudes
+</a>
+
+
+<a href="registro-solicitud.html">
+Nueva solicitud
+</a>
+
+
+<a href="conocimiento.html">
+Base conocimiento
+</a>
+
+
+</nav>
+
+
 
 </aside>
 
 
 
-<main class="contenido">
 
 
-<div class="header">
+
+
+
+<main class="main-content">
+
+
+
+<header class="top-header">
+
+
+<div>
 
 <h1>
-Lista de solicitudes
+Solicitudes
+
 </h1>
 
-<span>
-Agente de soporte
-</span>
+
+<p>
+Gestión y seguimiento de casos
+
+</p>
+
 
 </div>
 
 
 
-<div class="card">
+<div class="profile">
 
-
-<h2>Filtros de búsqueda</h2>
-
-
-<div class="campo">
-Buscar por ID, cliente o asunto
+<div class="circle">
+CL
 </div>
 
 
-<div class="campo">
+<div>
+
+<strong>
+Carlos López
+</strong>
+
+
+<br>
+
+
+<small>
+Agente
+
+</small>
+
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+Filtros de búsqueda
+
+</h3>
+
+
+
+<div class="filter-grid">
+
+
+<div class="input-box">
+
+Buscar solicitud
+
+</div>
+
+
+<div class="input-box">
+
 Estado: Todos
+
 </div>
 
 
-<div class="campo">
+<div class="input-box">
+
 Prioridad: Todas
+
+</div>
+
+
+<div class="input-box">
+
+Fecha
+
+</div>
+
+
+
 </div>
 
 
@@ -83,12 +192,35 @@ Prioridad: Todas
 
 
 
-<div class="tabla">
 
 
-<h2>
-Solicitudes registradas
-</h2>
+
+
+
+<div class="panel">
+
+
+<div class="panel-header">
+
+
+<h3>
+Listado de solicitudes
+
+</h3>
+
+
+<a class="main-button">
+
+Nueva solicitud
+
+</a>
+
+
+</div>
+
+
+
+
 
 
 <table>
@@ -96,35 +228,72 @@ Solicitudes registradas
 
 <tr>
 
-<th>ID</th>
-<th>Cliente</th>
-<th>Asunto</th>
-<th>Prioridad</th>
-<th>Estado</th>
+
+<th>
+ID
+
+</th>
+
+
+<th>
+Cliente
+
+</th>
+
+
+<th>
+Asunto
+
+</th>
+
+
+<th>
+Prioridad
+
+</th>
+
+
+<th>
+Estado
+
+</th>
+
 
 </tr>
+
+
+
 
 
 <tr>
 
 <td>
-CS-2026-0128
+CS-2026-001
+
 </td>
+
 
 <td>
 Juan Pérez
+
 </td>
 
+
 <td>
-No puedo iniciar sesión
+Error de acceso
+
 </td>
+
 
 <td>
 Alta
+
 </td>
+
 
 <td>
 En progreso
+
 </td>
 
 
@@ -132,71 +301,100 @@ En progreso
 
 
 
+
+
 <tr>
 
 <td>
-CS-2026-0129
+CS-2026-002
+
 </td>
 
-<td>
-María González
-</td>
 
 <td>
-Error aplicación móvil
+María Gómez
+
 </td>
+
+
+<td>
+Problema aplicación
+
+</td>
+
 
 <td>
 Media
+
 </td>
+
 
 <td>
 Pendiente
+
 </td>
 
 
 </tr>
+
+
 
 
 
 <tr>
 
 <td>
-CS-2026-0130
+CS-2026-003
+
 </td>
 
-<td>
-Carlos López
-</td>
 
 <td>
-Problema correo
+Empresa ABC
+
 </td>
+
+
+<td>
+Configuración sistema
+
+</td>
+
 
 <td>
 Baja
+
 </td>
 
+
 <td>
-Resuelta
+Resuelto
+
 </td>
 
 
 </tr>
+
 
 
 
 </table>
 
 
+
 </div>
+
+
+
 
 
 
 </main>
 
 
+
 </div>
+
 
 
 </body>

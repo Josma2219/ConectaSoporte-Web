@@ -1,7 +1,12 @@
-/* ======================================
-   CONECTASOPORTE - ESTILO GENERAL
-   ====================================== */
+/* =====================================================
+   CONECTASOPORTE
+   CSS GENERAL DEL PROTOTIPO
+   ===================================================== */
 
+
+/* ------------------------------
+   RESET GENERAL
+------------------------------ */
 
 *{
 
@@ -13,7 +18,6 @@
 }
 
 
-
 body{
 
     background:#f4f7fb;
@@ -23,128 +27,397 @@ body{
 
 
 
-.contenedor{
+a{
+
+    text-decoration:none;
+
+}
+
+
+/* =====================================================
+   LOGIN
+===================================================== */
+
+
+.login-page{
+
+    min-height:100vh;
+
+    background:#174A7E;
 
     display:flex;
-    min-height:100vh;
+
+    align-items:center;
+
+    justify-content:center;
 
 }
 
 
 
-/* ======================================
+.login-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+
+.login-card{
+
+
+    background:white;
+
+    width:420px;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+    text-align:center;
+
+}
+
+
+
+.login-logo{
+
+    width:80px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.login-card h1{
+
+    color:#174A7E;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.subtitle{
+
+    color:#78909C;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+.input-group{
+
+    text-align:left;
+
+    margin-bottom:20px;
+
+}
+
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+
+
+
+.input-box{
+
+    background:#f7f9fc;
+
+    border:1px solid #d8e0e8;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    color:#607D8B;
+
+}
+
+
+
+.large-input{
+
+    min-height:120px;
+
+    background:#f7f9fc;
+
+    border:1px solid #d8e0e8;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    color:#607D8B;
+
+}
+
+
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:20px 0;
+
+    color:#607D8B;
+
+    font-size:14px;
+
+}
+
+
+
+
+.main-button{
+
+
+    background:#174A7E;
+
+    color:white;
+
+    padding:13px 25px;
+
+    border-radius:10px;
+
+    display:inline-block;
+
+    cursor:pointer;
+
+    border:none;
+
+}
+
+
+
+.main-button:hover{
+
+    background:#2D74B8;
+
+}
+
+
+
+.secondary-button{
+
+
+    background:white;
+
+    color:#174A7E;
+
+    border:1px solid #174A7E;
+
+    padding:13px 25px;
+
+    border-radius:10px;
+
+    display:inline-block;
+
+}
+
+
+
+.danger-button{
+
+    background:#C94A4A;
+
+    color:white;
+
+    padding:13px 25px;
+
+    border-radius:10px;
+
+    display:inline-block;
+
+}
+
+
+
+.login-footer{
+
+    margin-top:30px;
+
+    color:#78909C;
+
+    font-size:13px;
+
+}
+
+
+
+/* =====================================================
+   ESTRUCTURA PRINCIPAL
+===================================================== */
+
+
+.app-layout{
+
+
+    display:flex;
+
+    min-height:100vh;
+
+
+}
+
+
+
+/* =====================================================
    SIDEBAR
-   ====================================== */
+===================================================== */
 
 
 .sidebar{
 
-    width:260px;
+
+    width:270px;
+
     background:#174A7E;
-    padding:20px;
+
+    min-height:100vh;
+
+    padding:25px;
+
     color:white;
+
     position:fixed;
-    height:100vh;
 
 }
 
 
 
-.logo{
+.brand{
+
 
     display:flex;
+
     align-items:center;
+
     gap:12px;
-    margin-bottom:35px;
+
+    margin-bottom:40px;
+
 
 }
 
 
 
-.logo img{
+.brand img{
+
 
     width:45px;
+
     height:45px;
-    object-fit:contain;
 
 }
 
 
 
-.logo h2{
+.brand h2{
 
     font-size:20px;
+
     color:white;
 
 }
 
 
 
-.menu a{
+.brand span{
 
-    display:flex;
-    align-items:center;
+    color:#d8e9f8;
 
-    padding:14px 16px;
+    font-size:13px;
 
-    margin-bottom:8px;
+}
+
+
+
+
+.sidebar nav a{
+
+
+    display:block;
+
+    padding:14px 18px;
 
     color:#eaf4fc;
 
-    text-decoration:none;
+    border-radius:12px;
 
-    border-radius:10px;
+    margin-bottom:10px;
 
-    transition:.3s;
 
 }
 
 
 
-.menu a:hover{
+.sidebar nav a:hover,
+.sidebar nav .active{
+
 
     background:#2D74B8;
 
     color:white;
 
-}
-
-
-
-.menu a:before{
-
-    content:"▸";
-
-    margin-right:10px;
 
 }
 
 
 
-/* ======================================
+/* =====================================================
    CONTENIDO
-   ====================================== */
+===================================================== */
 
 
-.contenido{
+.main-content{
 
-    margin-left:260px;
 
-    flex:1;
+    margin-left:270px;
+
+    width:calc(100% - 270px);
 
     padding:30px;
 
+
 }
 
 
 
-.header{
+/* =====================================================
+   HEADER
+===================================================== */
+
+
+.top-header{
+
 
     background:white;
 
-    padding:22px;
+    padding:22px 30px;
 
-    border-radius:15px;
+    border-radius:18px;
 
     display:flex;
 
@@ -154,98 +427,101 @@ body{
 
     margin-bottom:25px;
 
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    box-shadow:0 5px 18px rgba(0,0,0,.06);
+
 
 }
 
 
 
-.header h1{
+.top-header h1{
+
 
     color:#174A7E;
 
-    font-size:28px;
+    margin-bottom:5px;
+
+
+}
+
+
+
+.top-header p{
+
+
+    color:#78909C;
+
 
 }
 
 
 
 
-
-/* ======================================
-   TARJETAS KPI
-   ====================================== */
+.profile{
 
 
-.cards{
+    display:flex;
 
-    display:grid;
+    align-items:center;
 
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:12px;
 
-    gap:20px;
 
 }
 
 
 
-.card{
-
-    background:white;
-
-    padding:25px;
-
-    border-radius:18px;
-
-    box-shadow:0 5px 18px rgba(0,0,0,.08);
-
-    margin-bottom:20px;
-
-}
+.circle{
 
 
+    width:45px;
 
-.card h3{
+    height:45px;
 
-    color:#607D8B;
+    border-radius:50%;
 
-    font-size:16px;
+    background:#2D74B8;
 
-    margin-bottom:12px;
+    color:white;
 
-}
+    display:flex;
 
+    justify-content:center;
 
-
-.card h2{
-
-    color:#174A7E;
-
-    margin-bottom:15px;
-
-}
-
-
-
-.numero{
-
-    font-size:38px;
+    align-items:center;
 
     font-weight:bold;
 
-    color:#174A7E;
 
 }
 
 
 
 
-/* ======================================
-   TABLAS
-   ====================================== */
+/* =====================================================
+   TARJETAS KPI
+===================================================== */
 
 
-.tabla{
+.stats-grid{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+.stat-card{
+
 
     background:white;
 
@@ -253,35 +529,117 @@ body{
 
     border-radius:18px;
 
-    margin-top:25px;
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
 
-    box-shadow:0 5px 18px rgba(0,0,0,.08);
 
 }
 
 
 
-.tabla h2{
+.stat-card span{
+
+
+    color:#607D8B;
+
+    font-size:14px;
+
+
+}
+
+
+
+.stat-card h2{
+
+
+    font-size:38px;
+
+    color:#174A7E;
+
+    margin:15px 0;
+
+
+}
+
+
+
+.stat-card p{
+
+
+    color:#78909C;
+
+}
+
+
+
+/* =====================================================
+   PANELES
+===================================================== */
+
+
+.panel{
+
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
+
+
+}
+
+
+
+.panel h3{
+
 
     color:#174A7E;
 
     margin-bottom:20px;
 
+
 }
 
+
+
+
+.dashboard-grid{
+
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:25px;
+
+
+}
+
+
+
+/* =====================================================
+   TABLAS
+===================================================== */
 
 
 table{
 
+
     width:100%;
 
     border-collapse:collapse;
+
 
 }
 
 
 
 th{
+
 
     background:#174A7E;
 
@@ -291,15 +649,18 @@ th{
 
     text-align:left;
 
+
 }
 
 
 
 td{
 
+
     padding:14px;
 
-    border-bottom:1px solid #e0e0e0;
+    border-bottom:1px solid #e5e9ed;
+
 
 }
 
@@ -307,231 +668,222 @@ td{
 
 tr:hover{
 
-    background:#f1f8ff;
+
+    background:#f5faff;
+
+
+}
+
+
+
+/* =====================================================
+   FORMULARIOS
+===================================================== */
+
+
+.form-grid{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
 
 }
 
 
 
 
-/* ======================================
-   CAMPOS VISUALES
-   ====================================== */
+.filter-grid{
 
 
-.campo{
+    display:grid;
 
-    background:#f7f9fc;
+    grid-template-columns:repeat(4,1fr);
 
-    border:1px solid #dce3ea;
+    gap:15px;
 
-    padding:15px;
-
-    border-radius:10px;
-
-    margin:12px 0;
-
-    color:#455A64;
 
 }
 
 
 
-.campo:hover{
+.action-panel{
 
-    border-color:#2D74B8;
 
-}
+    display:flex;
 
+    justify-content:flex-end;
 
+    gap:15px;
 
-
-/* ======================================
-   BOTONES
-   ====================================== */
-
-
-.btn{
-
-    display:inline-block;
-
-    background:#174A7E;
-
-    color:white;
-
-    padding:13px 22px;
-
-    border-radius:10px;
-
-    text-decoration:none;
-
-    margin-top:10px;
-
-    transition:.3s;
-
-}
-
-
-
-.btn:hover{
-
-    background:#2D74B8;
-
-}
-
-
-
-/* ======================================
-   GRAFICOS SIMULADOS
-   ====================================== */
-
-
-.grafico{
-
-    background:white;
-
-    padding:25px;
-
-    border-radius:18px;
-
-    margin-top:25px;
-
-    box-shadow:0 5px 18px rgba(0,0,0,.08);
-
-}
-
-
-
-.grafico h2{
-
-    color:#174A7E;
-
-    margin-bottom:20px;
-
-}
-
-
-
-.barra{
-
-    height:35px;
-
-    background:#2D74B8;
-
-    color:white;
-
-    padding:8px 15px;
-
-    border-radius:20px;
-
-    margin:15px 0;
-
-    font-size:14px;
-
-}
-
-
-
-.verde{
-
-    background:#2D9D78;
-
-}
-
-
-
-.amarillo{
-
-    background:#F1B844;
-
-}
-
-
-
-.rojo{
-
-    background:#C94A4A;
 
 }
 
 
 
 
-/* ======================================
+/* =====================================================
    ESTADOS
-   ====================================== */
+===================================================== */
 
 
-.estado{
+.status-badge{
 
-    padding:6px 12px;
-
-    border-radius:20px;
-
-    font-size:13px;
-
-    font-weight:bold;
-
-}
-
-
-
-.estado-activo{
-
-    background:#d8f5e8;
-
-    color:#16734d;
-
-}
-
-
-
-.estado-pendiente{
 
     background:#fff3cd;
 
     color:#856404;
 
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+
 }
 
 
 
-.estado-critico{
+.alert-box{
 
-    background:#f8d7da;
 
-    color:#842029;
+    background:#fff4e5;
+
+    border-left:5px solid #F1B844;
+
+    padding:15px;
+
+    margin-bottom:12px;
+
+    border-radius:8px;
+
+
+}
+
+
+
+/* =====================================================
+   TIMELINE
+===================================================== */
+
+
+.timeline-item{
+
+
+    padding:15px;
+
+    border-left:4px solid #2D74B8;
+
+    background:#f7faff;
+
+    margin-bottom:15px;
+
+    border-radius:8px;
+
+
+}
+
+
+
+/* =====================================================
+   CONOCIMIENTO
+===================================================== */
+
+
+.knowledge-item{
+
+
+    background:#f7f9fc;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.knowledge-item h4{
+
+
+    color:#174A7E;
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+.knowledge-item span{
+
+
+    color:#2D74B8;
+
+    font-size:13px;
+
+
+}
+
+
+
+/* =====================================================
+   ARTICULOS / PASOS
+===================================================== */
+
+
+.step-item{
+
+
+    padding:18px;
+
+    background:#f7f9fc;
+
+    margin-bottom:12px;
+
+    border-radius:10px;
+
 
 }
 
 
 
 
-
-/* ======================================
-   DASHBOARD EJECUTIVO
-   ====================================== */
+.info-row{
 
 
-.indicador{
+    padding:12px 0;
+
+    border-bottom:1px solid #eee;
+
+
+}
+
+
+
+
+.priority-item{
+
 
     display:flex;
 
     justify-content:space-between;
 
-    align-items:center;
+    padding:15px;
 
-}
+    background:#f7f9fc;
 
+    margin-bottom:10px;
 
+    border-radius:10px;
 
-.indicador span{
-
-    font-size:30px;
-
-    font-weight:bold;
-
-    color:#174A7E;
 
 }
 
@@ -539,77 +891,114 @@ tr:hover{
 
 
 
-/* ======================================
-   LOGIN
-   ====================================== */
+.chart-container{
 
 
-body:has(.login){
+    display:flex;
 
-    background:#174A7E;
+    flex-direction:column;
+
+    gap:15px;
+
 
 }
 
 
 
-.login{
+.chart-line{
 
-    width:400px;
 
-    margin:auto;
+    background:#2D74B8;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:10px;
+
 
 }
 
 
 
-.login .card{
-
-    text-align:center;
-
-}
 
 
-
-
-
-/* ======================================
+/* =====================================================
    RESPONSIVE
-   ====================================== */
+===================================================== */
 
 
-@media(max-width:900px){
+@media(max-width:1000px){
 
 
 .sidebar{
+
 
     width:80px;
 
 }
 
 
-.logo h2{
+.brand span,
+.brand h2,
+.sidebar nav a{
+
 
     display:none;
 
-}
-
-
-.menu a{
-
-    font-size:0;
 
 }
 
 
-.contenido{
+
+.main-content{
+
 
     margin-left:80px;
 
+    width:calc(100% - 80px);
+
+
 }
 
 
 
-.cards{
+.stats-grid{
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+.dashboard-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+}
+
+
+@media(max-width:600px){
+
+
+.stats-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.form-grid,
+.filter-grid{
 
     grid-template-columns:1fr;
 

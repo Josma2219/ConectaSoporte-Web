@@ -2,6 +2,7 @@
 
 <html>
 
+
 <head>
 
 <title>Revisión Escalación</title>
@@ -15,38 +16,58 @@
 <body>
 
 
-<div class="contenedor">
+
+<div class="app-layout">
+
 
 
 <aside class="sidebar">
 
 
-<div class="logo">
+<div class="brand">
 
 <img src="img/logo.png">
+
+
+<div>
 
 <h2>
 ConectaSoporte
 </h2>
 
 
+<span>
+Supervisor
+
+</span>
+
+
+</div>
+
+
 </div>
 
 
 
-<div class="menu">
+
+<nav>
+
 
 <a href="supervisor.html">
-Supervisor
+
+Panel supervisor
+
 </a>
 
 
-<a href="cola-tecnica.html">
-Cola técnica
+<a class="active">
+
+Revisión
+
 </a>
 
 
-</div>
+</nav>
 
 
 </aside>
@@ -56,90 +77,26 @@ Cola técnica
 
 
 
-<main class="contenido">
 
 
 
-<div class="header">
+<main class="main-content">
+
+
+
+<header class="top-header">
+
+
+<div>
 
 <h1>
 Revisión de escalación
+
 </h1>
 
 
-Escalación pendiente
-
-
-</div>
-
-
-
-
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-Solicitud
-</h3>
-
-CS-2026-0128
-
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-Prioridad
-</h3>
-
-Alta
-
-
-</div>
-
-
-
-
-<div class="card">
-
-<h3>
-Tiempo
-</h3>
-
-2 horas
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="card">
-
-
-<h2>
-Detalle del problema
-
-</h2>
-
-
 <p>
-
-El agente requiere soporte especializado debido a que
-la solución inicial no resolvió el incidente.
+Validación antes de enviar a equipo técnico
 
 </p>
 
@@ -148,43 +105,130 @@ la solución inicial no resolvió el incidente.
 
 
 
+<div class="status-badge">
+
+Pendiente
+
+</div>
+
+
+</header>
 
 
 
-<div class="card">
 
 
-<h2>
-Decisión del supervisor
-
-</h2>
 
 
-<div class="campo">
+
+
+<section class="dashboard-grid">
+
+
+
+<div class="panel">
+
+
+<h3>
+
+Datos del caso
+
+</h3>
+
+
+
+<div class="info-row">
+
+ID:
+
+<b>
+CS-2026-001
+
+</b>
+
+</div>
+
+
+
+<div class="info-row">
+
+Agente:
+
+<b>
+Carlos López
+
+</b>
+
+</div>
+
+
+
+<div class="info-row">
+
+Prioridad:
+
+<b>
+Alta
+
+</b>
+
+</div>
+
+
+
+<div class="info-row">
+
+Fecha:
+
+<b>
+27/07/2026
+
+</b>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+Acciones
+
+</h3>
+
+
+<a class="main-button">
 
 Aceptar escalación
 
-</div>
+</a>
 
 
-<div class="campo">
-
-Devolver al agente
-
-</div>
+<br><br>
 
 
-<div class="campo">
+<a class="secondary-button">
 
-Asignar especialista
+Solicitar información
+
+</a>
 
 
-</div>
+<br><br>
 
 
-<a class="btn" href="cola-tecnica.html">
+<a class="danger-button">
 
-Confirmar acción
+Rechazar
 
 </a>
 
@@ -193,8 +237,61 @@ Confirmar acción
 
 
 
-</main>
 
+</section>
+
+
+
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+
+Historial de revisión
+
+</h3>
+
+
+
+<div class="timeline-item">
+
+Agente creó escalación
+
+</div>
+
+
+<div class="timeline-item">
+
+Supervisor revisando información
+
+</div>
+
+
+<div class="timeline-item">
+
+Pendiente aprobación técnica
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</main>
 
 
 </div>

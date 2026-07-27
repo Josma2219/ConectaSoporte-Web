@@ -5,49 +5,91 @@
 
 <head>
 
-<title>Usuarios</title>
+<title>Administración usuarios</title>
+
 
 <link rel="stylesheet" href="css/estilo.css">
 
-</head>
 
+</head>
 
 
 <body>
 
 
-<div class="contenedor">
+
+<div class="app-layout">
+
 
 
 <aside class="sidebar">
 
 
-<div class="logo">
+<div class="brand">
+
 
 <img src="img/logo.png">
 
+
+
+<div>
+
+
 <h2>
+
 ConectaSoporte
+
 </h2>
 
 
+<span>
+
+Administración
+
+</span>
+
+
+
+</div>
+
+
 </div>
 
 
 
-<div class="menu">
 
-<a href="usuarios.html">
-Usuarios
-</a>
+
+
+
+<nav>
 
 
 <a href="index.html">
+
 Inicio
+
 </a>
 
 
-</div>
+
+<a class="active">
+
+Usuarios
+
+</a>
+
+
+
+<a href="ejecutivo.html">
+
+Reportes
+
+</a>
+
+
+
+</nav>
+
 
 
 </aside>
@@ -56,89 +98,189 @@ Inicio
 
 
 
-<main class="contenido">
 
 
 
-<div class="header">
+
+<main class="main-content">
+
+
+
+<header class="top-header">
+
+
+<div>
 
 
 <h1>
+
 Administración de usuarios
+
 </h1>
 
 
+<p>
+
+Gestión de accesos y permisos
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="profile">
+
+
+<div class="circle">
+
+AD
+
+</div>
+
+
+<div>
+
+
+<strong>
+
 Administrador
 
+</strong>
+
+
+</div>
+
 
 </div>
 
 
 
+</header>
 
 
 
-<div class="cards">
 
 
-<div class="card">
 
-<h3>
+
+
+
+<section class="stats-grid">
+
+
+
+<div class="stat-card">
+
+
+<span>
+
 Usuarios totales
-</h3>
 
-<div class="numero">
-128
-</div>
-
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-Activos
-</h3>
-
-
-<div class="numero">
-112
-</div>
-
-
-</div>
-
-
-<div class="card">
-
-<h3>
-Bloqueados
-</h3>
-
-
-<div class="numero">
-0
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="tabla">
+</span>
 
 
 <h2>
-Usuarios registrados
+
+128
+
 </h2>
+
+
+
+</div>
+
+
+
+
+
+<div class="stat-card">
+
+
+<span>
+
+Usuarios activos
+
+</span>
+
+
+<h2>
+
+112
+
+</h2>
+
+
+</div>
+
+
+
+
+
+<div class="stat-card">
+
+
+<span>
+
+Pendientes aprobación
+
+</span>
+
+
+<h2>
+
+8
+
+</h2>
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<div class="panel-header">
+
+
+<h3>
+
+Usuarios registrados
+
+</h3>
+
+
+
+<a class="main-button">
+
+Nuevo usuario
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
 
 
 <table>
@@ -146,79 +288,317 @@ Usuarios registrados
 
 <tr>
 
-<th>Nombre</th>
 
-<th>Rol</th>
+<th>
 
-<th>Estado</th>
+Nombre
+
+</th>
+
+
+<th>
+
+Correo
+
+</th>
+
+
+<th>
+
+Rol
+
+</th>
+
+
+<th>
+
+Estado
+
+</th>
+
+
+<th>
+
+Acción
+
+</th>
 
 
 </tr>
 
 
 
-<tr>
-
-<td>
-Ana Martínez
-</td>
-
-<td>
-Supervisora
-</td>
-
-<td>
-Activo
-</td>
-
-
-</tr>
 
 
 
 
 <tr>
 
+
 <td>
+
 Carlos López
+
 </td>
 
+
 <td>
+
+carlos@empresa.com
+
+</td>
+
+
+<td>
+
 Agente
+
 </td>
 
+
 <td>
+
 Activo
+
 </td>
+
+
+<td>
+
+Editar
+
+</td>
+
 
 
 </tr>
+
+
+
+
 
 
 
 <tr>
 
-<td>
-Pedro Sánchez
-</td>
 
 <td>
-Técnico
+
+Ana Martínez
+
 </td>
 
+
 <td>
+
+ana@empresa.com
+
+</td>
+
+
+<td>
+
+Supervisor
+
+</td>
+
+
+<td>
+
 Activo
+
+</td>
+
+
+<td>
+
+Editar
+
 </td>
 
 
 </tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+Pedro Sánchez
+
+</td>
+
+
+<td>
+
+pedro@empresa.com
+
+</td>
+
+
+<td>
+
+Especialista
+
+</td>
+
+
+<td>
+
+Activo
+
+</td>
+
+
+<td>
+
+Editar
+
+</td>
+
+
+
+</tr>
+
+
+
 
 
 </table>
 
 
 
+
 </div>
+
+
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+
+Permisos por rol
+
+</h3>
+
+
+
+
+<table>
+
+
+<tr>
+
+<th>
+
+Rol
+
+</th>
+
+
+<th>
+
+Permisos
+
+</th>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+
+<td>
+
+Administrador
+
+</td>
+
+
+<td>
+
+Control total del sistema
+
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+
+<td>
+
+Supervisor
+
+</td>
+
+
+<td>
+
+Gestión de equipo y reportes
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+Agente
+
+</td>
+
+
+<td>
+
+Crear y gestionar solicitudes
+
+</td>
+
+
+</tr>
+
+
+
+
+
+</table>
+
+
+
+
+</div>
+
 
 
 
@@ -228,10 +608,13 @@ Activo
 </main>
 
 
+
 </div>
 
 
+
 </body>
+
 
 
 </html>

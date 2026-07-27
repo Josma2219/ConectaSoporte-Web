@@ -2,55 +2,91 @@
 
 <html>
 
+
 <head>
 
-<title>Panel ejecutivo</title>
+<title>Panel Ejecutivo</title>
 
 <link rel="stylesheet" href="css/estilo.css">
 
 </head>
 
 
-
 <body>
 
 
-<div class="contenedor">
+
+<div class="app-layout">
+
 
 
 <aside class="sidebar">
 
 
-<div class="logo">
+<div class="brand">
+
 
 <img src="img/logo.png">
+
+
+
+<div>
 
 <h2>
 ConectaSoporte
 </h2>
 
+
+<span>
+Gerencia
+
+</span>
+
+
 </div>
 
 
-<div class="menu">
+
+</div>
+
+
+
+
+
+
+<nav>
 
 
 <a href="index.html">
-Panel
+
+Inicio
+
 </a>
 
 
-<a href="ejecutivo.html">
-Indicadores
+<a class="active">
+
+Panel ejecutivo
+
+</a>
+
+
+<a href="calidad.html">
+
+Calidad
+
 </a>
 
 
 <a href="usuarios.html">
+
 Usuarios
+
 </a>
 
 
-</div>
+</nav>
+
 
 
 </aside>
@@ -61,142 +97,272 @@ Usuarios
 
 
 
-<main class="contenido">
 
 
-<div class="header">
+<main class="main-content">
+
+
+
+<header class="top-header">
+
+
+<div>
 
 <h1>
+
 Panel ejecutivo
+
 </h1>
 
 
+<p>
+
+Indicadores generales del servicio
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="profile">
+
+
+<div class="circle">
+
+GD
+
+</div>
+
+
+
+<div>
+
+
+<strong>
+
 Gerencia
 
-
-</div>
-
+</strong>
 
 
+<br>
 
 
-<div class="cards">
+<small>
 
+Administrador
 
-<div class="card">
+</small>
 
-<h3>
-Solicitudes
-</h3>
-
-<div class="numero">
-
-1248
-
-</div>
 
 
 </div>
 
 
 
-
-<div class="card">
-
-<h3>
-SLA
-
-</h3>
-
-
-<div class="numero">
-
-92%
-
 </div>
 
 
-</div>
-
-
-
-
-
-<div class="card">
-
-<h3>
-CSAT
-
-</h3>
-
-
-<div class="numero">
-
-4.6
-
-</div>
-
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-Costo reducido
-
-</h3>
-
-
-<div class="numero">
-
-34%
-
-</div>
-
-
-</div>
-
-
-</div>
+</header>
 
 
 
 
 
 
-<div class="grafico">
+
+
+
+<section class="stats-grid">
+
+
+
+<div class="stat-card">
+
+
+<span>
+
+Solicitudes mensuales
+
+</span>
 
 
 <h2>
-Tendencia mensual
+
+1248
 
 </h2>
 
 
+<p>
 
-<div class="barra" style="width:70%">
++15% crecimiento
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="stat-card">
+
+
+<span>
+
+Cumplimiento SLA
+
+</span>
+
+
+<h2>
+
+92%
+
+</h2>
+
+
+<p>
+
+Objetivo 90%
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="stat-card">
+
+
+<span>
+
+Satisfacción cliente
+
+</span>
+
+
+<h2>
+
+4.6
+
+</h2>
+
+
+<p>
+
+Promedio mensual
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="stat-card">
+
+
+<span>
+
+Reducción costos
+
+</span>
+
+
+<h2>
+
+34%
+
+</h2>
+
+
+<p>
+
+Ahorro operativo
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="dashboard-grid">
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+
+Tendencia de solicitudes
+
+</h3>
+
+
+
+
+<div class="chart-container">
+
+
+<div class="chart-line">
 
 Enero
 
 </div>
 
 
-<div class="barra verde" style="width:85%">
+<div class="chart-line">
 
 Febrero
 
 </div>
 
 
-<div class="barra" style="width:90%">
+<div class="chart-line">
 
 Marzo
 
 </div>
 
 
+<div class="chart-line">
+
+Abril
+
+</div>
+
+
+</div>
+
+
 
 
 </div>
@@ -206,13 +372,109 @@ Marzo
 
 
 
-<div class="tabla">
 
 
-<h2>
-Top categorías
+<div class="panel">
 
-</h2>
+
+<h3>
+
+Distribución por prioridad
+
+</h3>
+
+
+
+<div class="priority-item">
+
+
+Crítica
+
+<span>
+
+15%
+
+</span>
+
+
+</div>
+
+
+
+<div class="priority-item">
+
+
+Alta
+
+<span>
+
+35%
+
+</span>
+
+
+</div>
+
+
+
+<div class="priority-item">
+
+
+Media
+
+<span>
+
+40%
+
+</span>
+
+
+</div>
+
+
+
+<div class="priority-item">
+
+
+Baja
+
+<span>
+
+10%
+
+</span>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+
+Impacto del proyecto
+
+</h3>
+
+
 
 
 <table>
@@ -220,54 +482,136 @@ Top categorías
 
 <tr>
 
-<th>Categoría</th>
 
-<th>Solicitudes</th>
+<th>
+
+Indicador
+
+</th>
+
+
+<th>
+
+Antes
+
+</th>
+
+
+<th>
+
+Después
+
+</th>
+
 
 </tr>
+
+
 
 
 <tr>
 
 <td>
-Accesos
+
+Tiempo respuesta
+
 </td>
 
+
 <td>
-324
+
+35 min
+
+</td>
+
+
+<td>
+
+24 min
+
 </td>
 
 
 </tr>
+
+
+
 
 
 <tr>
 
 <td>
-Aplicaciones
+
+Satisfacción
+
 </td>
 
+
 <td>
-256
+
+80%
+
+</td>
+
+
+<td>
+
+92%
+
 </td>
 
 
 </tr>
+
+
+
+
+
+
+<tr>
+
+<td>
+
+Costos operativos
+
+</td>
+
+
+<td>
+
+100%
+
+</td>
+
+
+<td>
+
+66%
+
+</td>
+
+
+</tr>
+
 
 
 </table>
 
 
+
 </div>
+
+
+
+
+
 
 
 
 </main>
 
 
-
 </div>
-
 
 
 </body>

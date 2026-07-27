@@ -4,7 +4,7 @@
 
 <head>
 
-<title>Panel Supervisor</title>
+<title>Panel Supervisor - ConectaSoporte</title>
 
 <link rel="stylesheet" href="css/estilo.css">
 
@@ -14,28 +14,48 @@
 <body>
 
 
-<div class="contenedor">
+<div class="app-layout">
+
 
 
 <aside class="sidebar">
 
 
-<div class="logo">
+<div class="brand">
+
 
 <img src="img/logo.png">
+
+
+<div>
 
 <h2>
 ConectaSoporte
 </h2>
 
+<span>
+Supervisor
+</span>
+
+</div>
+
+
 </div>
 
 
 
-<div class="menu">
+
+
+<nav>
+
 
 <a href="index.html">
-Panel general
+Inicio
+</a>
+
+
+<a class="active">
+Supervisor
 </a>
 
 
@@ -49,17 +69,18 @@ Escalaciones
 </a>
 
 
-<a href="cola-tecnica.html">
-Equipo técnico
-</a>
-
-
 <a href="calidad.html">
 Calidad
 </a>
 
 
-</div>
+<a href="ejecutivo.html">
+Indicadores
+</a>
+
+
+</nav>
+
 
 
 </aside>
@@ -69,93 +90,68 @@ Calidad
 
 
 
-<main class="contenido">
 
 
-<div class="header">
+<main class="main-content">
 
+
+
+<header class="top-header">
+
+
+<div>
 
 <h1>
 Panel del supervisor
 </h1>
 
 
+<p>
+Control operativo del equipo de soporte
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="profile">
+
+
+<div class="circle">
+AM
+</div>
+
+
+
+<div>
+
+<strong>
 Ana Martínez
-
-</div>
-
+</strong>
 
 
+<br>
 
 
+<small>
+Supervisora
 
-<div class="cards">
-
-
-
-<div class="card">
-
-<h3>
-Solicitudes pendientes
-</h3>
-
-<div class="numero">
-42
-</div>
+</small>
 
 
 </div>
 
 
 
-
-<div class="card">
-
-<h3>
-Agentes conectados
-</h3>
-
-<div class="numero">
-18
-</div>
-
-
 </div>
 
 
 
-
-<div class="card">
-
-<h3>
-Escalaciones activas
-</h3>
-
-<div class="numero">
-7
-</div>
-
-
-</div>
-
-
-
-
-<div class="card">
-
-<h3>
-Cumplimiento SLA
-</h3>
-
-<div class="numero">
-92%
-</div>
-
-
-</div>
-
-
-</div>
+</header>
 
 
 
@@ -163,14 +159,126 @@ Cumplimiento SLA
 
 
 
-<div class="tabla">
+<section class="stats-grid">
+
+
+
+<div class="stat-card">
+
+<span>
+Casos activos
+</span>
 
 
 <h2>
-Rendimiento del equipo
+248
+</h2>
 
+
+<p>
+Actualizado hoy
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="stat-card">
+
+<span>
+Agentes conectados
+</span>
+
+
+<h2>
+18
+</h2>
+
+
+<p>
+Disponibles
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="stat-card">
+
+<span>
+Escalaciones pendientes
+</span>
+
+
+<h2>
+12
+</h2>
+
+
+<p>
+Requieren revisión
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="stat-card">
+
+<span>
+Cumplimiento SLA
+
+</span>
+
+
+<h2>
+92%
 
 </h2>
+
+
+<p>
+Meta mensual
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="dashboard-grid">
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+Carga del equipo
+
+</h3>
 
 
 
@@ -179,13 +287,19 @@ Rendimiento del equipo
 
 <tr>
 
-<th>Agente</th>
+<th>
+Agente
+</th>
 
-<th>Casos atendidos</th>
 
-<th>Satisfacción</th>
+<th>
+Casos
+</th>
 
-<th>Estado</th>
+
+<th>
+Estado
+</th>
 
 
 </tr>
@@ -198,21 +312,20 @@ Rendimiento del equipo
 Carlos López
 </td>
 
-<td>
-35
-</td>
 
 <td>
-4.8 / 5
+18
+
 </td>
 
+
 <td>
-Activo
+Disponible
+
 </td>
 
 
 </tr>
-
 
 
 
@@ -222,16 +335,16 @@ Activo
 María González
 </td>
 
-<td>
-28
-</td>
 
 <td>
-4.6 / 5
+22
+
 </td>
 
+
 <td>
-Activo
+Atendiendo
+
 </td>
 
 
@@ -242,19 +355,19 @@ Activo
 <tr>
 
 <td>
-Juan Pérez
+Pedro Sánchez
 </td>
 
-<td>
-21
-</td>
 
 <td>
-4.5 / 5
+15
+
 </td>
 
+
 <td>
-Activo
+Disponible
+
 </td>
 
 
@@ -273,31 +386,49 @@ Activo
 
 
 
-<div class="grafico">
+
+<div class="panel">
 
 
-<h2>
-Solicitudes por estado
+<h3>
+Alertas del sistema
 
-</h2>
+</h3>
 
 
-<div class="barra verde" style="width:80%">
-Resueltas 80%
+
+<div class="alert-box">
+
+5 solicitudes próximas a vencer
+
+</div>
+
+
+
+<div class="alert-box">
+
+3 escalaciones sin respuesta
+
 </div>
 
 
-<div class="barra" style="width:45%">
-En proceso 45%
+
+<div class="alert-box">
+
+Nuevo artículo pendiente de aprobación
+
+</div>
+
+
+
 </div>
 
 
-<div class="barra rojo" style="width:20%">
-Vencidas 20%
-</div>
 
 
-</div>
+</section>
+
+
 
 
 
@@ -309,6 +440,7 @@ Vencidas 20%
 
 
 </div>
+
 
 
 </body>

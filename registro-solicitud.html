@@ -2,37 +2,72 @@
 
 <html>
 
-
 <head>
 
-<title>Nueva solicitud</title>
+<title>Nueva Solicitud</title>
 
 <link rel="stylesheet" href="css/estilo.css">
 
 </head>
 
 
-
 <body>
 
 
+<div class="app-layout">
 
-<div class="contenedor">
 
 
 <aside class="sidebar">
 
 
-<div class="logo">
+<div class="brand">
 
 <img src="img/logo.png">
+
+
+<div>
 
 <h2>
 ConectaSoporte
 </h2>
 
 
+<span>
+Nueva solicitud
+</span>
+
+
 </div>
+
+</div>
+
+
+
+
+<nav>
+
+<a href="index.html">
+Inicio
+</a>
+
+
+<a href="solicitudes.html">
+Solicitudes
+</a>
+
+
+<a class="active">
+Crear solicitud
+</a>
+
+
+<a href="conocimiento.html">
+Conocimiento
+</a>
+
+
+</nav>
 
 
 </aside>
@@ -42,10 +77,17 @@ ConectaSoporte
 
 
 
-<main class="contenido">
 
 
-<div class="header">
+
+<main class="main-content">
+
+
+
+<header class="top-header">
+
+
+<div>
 
 <h1>
 Registrar solicitud
@@ -53,47 +95,149 @@ Registrar solicitud
 </h1>
 
 
+<p>
+Crear nuevo caso de soporte
+
+</p>
+
+
+</div>
+
+
+
+<div class="profile">
+
+
+<div class="circle">
+CL
+</div>
+
+
+<div>
+
+<strong>
+Carlos López
+</strong>
+
+
+<br>
+
+
+<small>
+Agente
+
+</small>
+
+
+</div>
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+Información del cliente
+
+</h3>
+
+
+
+<div class="form-grid">
+
+
+<div class="input-box">
+
+Nombre del cliente
+
+</div>
+
+
+<div class="input-box">
+
+Correo electrónico
+
+</div>
+
+
+<div class="input-box">
+
+Empresa
+
+</div>
+
+
+<div class="input-box">
+
+Teléfono
+
+</div>
+
+
+</div>
+
+
 </div>
 
 
 
 
 
-<div class="card">
-
-
-<h2>
-Información del caso
-
-</h2>
 
 
 
-<div class="campo">
 
-Categoría
-
-</div>
+<div class="panel">
 
 
+<h3>
+Información del problema
 
-<div class="campo">
+</h3>
 
-Asunto
+
+
+<div class="input-box">
+
+Categoría del problema
 
 </div>
 
 
 
-<div class="campo">
 
-Descripción del problema
+<div class="input-box">
+
+Título de la solicitud
 
 </div>
 
 
 
-<div class="campo">
+
+<div class="large-input">
+
+Descripción detallada del problema
+
+</div>
+
+
+
+
+<div class="input-box">
 
 Prioridad
 
@@ -101,7 +245,8 @@ Prioridad
 
 
 
-<div class="campo">
+
+<div class="input-box">
 
 Adjuntar evidencia
 
@@ -109,15 +254,36 @@ Adjuntar evidencia
 
 
 
-<a class="btn" href="solicitudes.html">
+</div>
+
+
+
+
+
+
+
+
+<div class="panel action-panel">
+
+
+<a class="secondary-button">
+
+Cancelar
+
+</a>
+
+
+
+<a href="solicitudes.html" class="main-button">
 
 Crear solicitud
 
 </a>
 
 
-
 </div>
+
+
 
 
 

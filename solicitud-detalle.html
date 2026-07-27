@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -13,34 +14,56 @@
 <body>
 
 
-<div class="contenedor">
+<div class="app-layout">
+
 
 
 <aside class="sidebar">
 
 
-<div class="logo">
+<div class="brand">
 
 <img src="img/logo.png">
 
-<h2>ConectaSoporte</h2>
+
+<div>
+
+<h2>
+ConectaSoporte
+</h2>
+
+
+<span>
+Detalle caso
+
+</span>
+
+
+</div>
+
 
 </div>
 
 
 
-<div class="menu">
+
+<nav>
+
 
 <a href="solicitudes.html">
-Solicitudes
+Volver solicitudes
+
 </a>
+
 
 <a href="escalacion.html">
-Escalar
+Escalar caso
+
 </a>
 
 
-</div>
+</nav>
+
 
 
 </aside>
@@ -48,75 +71,194 @@ Escalar
 
 
 
-<main class="contenido">
 
 
-<div class="header">
+
+
+<main class="main-content">
+
+
+
+<header class="top-header">
+
+
+<div>
 
 <h1>
-Detalle de solicitud
+CS-2026-001
+
 </h1>
 
-CS-2026-0128
+
+<p>
+Detalle de solicitud
+
+</p>
+
 
 </div>
 
 
 
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-Cliente
-</h3>
-
-Juan Pérez
-
-</div>
-
-
-<div class="card">
-
-<h3>
-Prioridad
-</h3>
-
-Alta
-
-</div>
-
-
-<div class="card">
-
-<h3>
-Estado
-</h3>
+<div class="status-badge">
 
 En progreso
 
 </div>
 
 
+
+</header>
+
+
+
+
+
+
+
+
+
+<section class="dashboard-grid">
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+Información del caso
+
+</h3>
+
+
+
+<div class="info-row">
+
+Cliente:
+
+<b>
+Juan Pérez
+</b>
+
+</div>
+
+
+
+<div class="info-row">
+
+Categoría:
+
+<b>
+Acceso
+
+</b>
+
 </div>
 
 
 
 
-<div class="card">
+<div class="info-row">
+
+Prioridad:
+
+<b>
+Alta
+
+</b>
+
+</div>
 
 
-<h2>
+
+
+<div class="info-row">
+
+Responsable:
+
+<b>
+Carlos López
+
+</b>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+Acciones
+
+</h3>
+
+
+
+<button class="main-button">
+
+Actualizar estado
+
+</button>
+
+
+
+<button class="secondary-button">
+
+Escalar
+
+</button>
+
+
+
+<button class="secondary-button">
+
+Cerrar solicitud
+
+</button>
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
 Descripción del problema
-</h2>
+
+</h3>
 
 
 <p>
 
-El usuario reporta que no puede ingresar al sistema corporativo.
-Después de validar credenciales el error continúa.
+El usuario no puede ingresar al sistema corporativo.
+Se muestra mensaje de error después de validar credenciales.
 
 </p>
 
@@ -125,27 +267,53 @@ Después de validar credenciales el error continúa.
 
 
 
-<div class="card">
 
 
-<h2>
-Historial de actividad
-</h2>
 
 
-<p>
-09:00 - Solicitud creada
-</p>
 
 
-<p>
-09:20 - Asignada a Carlos López
-</p>
+<div class="panel">
 
 
-<p>
-10:30 - Validación inicial realizada
-</p>
+<h3>
+Historial del caso
+
+</h3>
+
+
+
+
+<div class="timeline-item">
+
+09:00
+Solicitud creada
+
+</div>
+
+
+<div class="timeline-item">
+
+09:20
+Asignada a agente
+
+</div>
+
+
+<div class="timeline-item">
+
+10:30
+Pruebas iniciales realizadas
+
+</div>
+
+
+<div class="timeline-item">
+
+11:45
+Pendiente de escalación
+
+</div>
 
 
 
@@ -154,9 +322,6 @@ Historial de actividad
 
 
 
-<a class="btn" href="escalacion.html">
-Crear escalación
-</a>
 
 
 
@@ -165,7 +330,6 @@ Crear escalación
 
 
 </div>
-
 
 
 </body>

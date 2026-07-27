@@ -16,38 +16,65 @@
 <body>
 
 
-<div class="contenedor">
+<div class="app-layout">
 
 
 
 <aside class="sidebar">
 
 
-<div class="logo">
+<div class="brand">
 
 <img src="img/logo.png">
+
+
+<div>
 
 <h2>
 ConectaSoporte
 </h2>
 
 
+<span>
+Equipo técnico
+
+</span>
+
+
+</div>
+
+
 </div>
 
 
 
-<div class="menu">
+
+
+<nav>
+
 
 <a href="index.html">
-Panel
+
+Inicio
+
 </a>
 
-<a href="cola-tecnica.html">
+
+<a class="active">
+
 Cola técnica
+
 </a>
 
 
-</div>
+<a href="conocimiento.html">
+
+Base conocimiento
+
+</a>
+
+
+</nav>
 
 
 </aside>
@@ -56,64 +83,62 @@ Cola técnica
 
 
 
-<main class="contenido">
 
 
-<div class="header">
+
+
+<main class="main-content">
+
+
+<header class="top-header">
+
+
+<div>
 
 <h1>
 Cola técnica
+
 </h1>
 
 
-Técnico N2
+<p>
+Casos asignados a especialistas
+
+</p>
 
 
 </div>
 
 
 
+<div class="profile">
 
-<div class="cards">
 
+<div class="circle">
 
-<div class="card">
-
-<h3>
-En cola
-</h3>
-
-<div class="numero">
-18
-</div>
+PS
 
 </div>
 
 
+<div>
 
-<div class="card">
+<strong>
 
-<h3>
-En atención
-</h3>
+Pedro Sánchez
 
-<div class="numero">
-7
-</div>
-
-</div>
+</strong>
 
 
+<br>
 
-<div class="card">
 
-<h3>
-Resueltas hoy
-</h3>
+<small>
 
-<div class="numero">
-32
-</div>
+Especialista técnico
+
+</small>
+
 
 </div>
 
@@ -121,15 +146,96 @@ Resueltas hoy
 </div>
 
 
+</header>
 
 
 
-<div class="tabla">
+
+
+
+
+
+
+<section class="stats-grid">
+
+
+<div class="stat-card">
+
+
+<span>
+Pendientes
+
+</span>
 
 
 <h2>
-Solicitudes técnicas pendientes
+18
+
 </h2>
+
+
+</div>
+
+
+
+
+<div class="stat-card">
+
+
+<span>
+En análisis
+
+</span>
+
+
+<h2>
+7
+
+</h2>
+
+
+</div>
+
+
+
+
+<div class="stat-card">
+
+
+<span>
+Resueltas
+
+</span>
+
+
+<h2>
+32
+
+</h2>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+Casos técnicos
+
+</h3>
+
+
 
 
 
@@ -138,60 +244,107 @@ Solicitudes técnicas pendientes
 
 <tr>
 
-<th>ID</th>
-<th>Problema</th>
-<th>Asignado</th>
-<th>Estado</th>
+<th>
+ID
+
+</th>
+
+
+<th>
+Problema
+
+</th>
+
+
+<th>
+Prioridad
+
+</th>
+
+
+<th>
+Estado
+
+</th>
 
 
 </tr>
 
-
-
-<tr>
-
-<td>
-CS-2026-0130
-</td>
-
-<td>
-Falla del sistema
-</td>
-
-<td>
-Pedro Sánchez
-</td>
-
-<td>
-En atención
-</td>
-
-
-</tr>
 
 
 
 
 <tr>
 
-<td>
-CS-2026-0135
-</td>
 
 <td>
-Error servidor
+
+CS-2026-001
+
 </td>
 
-<td>
-Equipo N2
-</td>
 
 <td>
-En cola
+
+Error autenticación
+
+</td>
+
+
+<td>
+
+Alta
+
+</td>
+
+
+<td>
+
+En análisis
+
 </td>
 
 
 </tr>
+
+
+
+
+
+<tr>
+
+
+<td>
+
+CS-2026-015
+
+</td>
+
+
+<td>
+
+Falla servidor
+
+</td>
+
+
+<td>
+
+Crítica
+
+</td>
+
+
+<td>
+
+Pendiente
+
+</td>
+
+
+</tr>
+
+
 
 
 
@@ -204,7 +357,45 @@ En cola
 
 
 
+
+
+
+<div class="panel">
+
+
+<h3>
+
+Diagnóstico técnico
+
+</h3>
+
+
+<div class="large-input">
+
+Registrar pruebas realizadas y solución aplicada...
+
+</div>
+
+
+
+<a class="main-button">
+
+Guardar diagnóstico
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
 </main>
+
 
 
 </div>

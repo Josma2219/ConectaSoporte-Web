@@ -2,6 +2,7 @@
 
 <html>
 
+
 <head>
 
 <title>Escalación</title>
@@ -11,42 +12,68 @@
 </head>
 
 
+
 <body>
 
 
-
-<div class="contenedor">
-
+<div class="app-layout">
 
 
 <aside class="sidebar">
 
 
-<div class="logo">
+<div class="brand">
+
 
 <img src="img/logo.png">
+
+
+<div>
 
 <h2>
 ConectaSoporte
 </h2>
 
+
+<span>
+Escalaciones
+
+</span>
+
+
+</div>
+
+
 </div>
 
 
 
-<div class="menu">
+
+<nav>
+
 
 <a href="solicitudes.html">
+
 Solicitudes
+
 </a>
+
+
+<a class="active">
+
+Escalar caso
+
+</a>
+
 
 <a href="cola-tecnica.html">
+
 Cola técnica
+
 </a>
 
 
-</div>
-
+</nav>
 
 
 </aside>
@@ -55,41 +82,138 @@ Cola técnica
 
 
 
-<main class="contenido">
 
 
 
-<div class="header">
+
+<main class="main-content">
+
+
+<header class="top-header">
+
+
+<div>
 
 <h1>
-Formulario de escalación
+Nueva escalación
+
 </h1>
 
 
+<p>
+Enviar caso a soporte especializado
+
+</p>
+
+
 </div>
 
 
 
+<div class="status-badge">
 
-<div class="card">
+Pendiente
 
-
-<h2>
-Información de escalación
-</h2>
+</div>
 
 
+</header>
 
-<div class="campo">
+
+
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+Información del caso
+
+</h3>
+
+
+
+<div class="info-card">
+
 
 Solicitud:
-CS-2026-0128
+
+<b>
+CS-2026-001
+</b>
+
 
 </div>
 
 
 
-<div class="campo">
+<div class="info-card">
+
+
+Cliente:
+
+<b>
+Juan Pérez
+
+</b>
+
+
+</div>
+
+
+
+<div class="info-card">
+
+
+Categoría:
+
+<b>
+Error de acceso
+
+</b>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+Datos de escalación
+
+</h3>
+
+
+
+
+<div class="input-box">
+
+Área destino:
+Soporte técnico nivel 2
+
+</div>
+
+
+
+
+<div class="input-box">
 
 Motivo de escalación
 
@@ -97,40 +221,340 @@ Motivo de escalación
 
 
 
-<div class="campo">
-
-Nivel requerido:
-Soporte técnico nivel 2
-
-</div>
 
 
+<div class="large-input">
 
-<div class="campo">
-
-Descripción detallada del problema
+Descripción técnica del problema,
+pruebas realizadas y resultados obtenidos.
 
 </div>
 
 
 
-<a class="btn" href="cola-tecnica.html">
+
+
+<div class="large-input">
+
+Evidencias adjuntas
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="action-panel">
+
+
+<a class="main-button" href="revision-escalacion.html">
 
 Enviar escalación
 
 </a>
 
 
-
 </div>
+
+
+
 
 
 
 </main>
 
 
+
 </div>
 
+
+</body>
+
+
+</html><!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+<title>Escalación</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+
+
+<body>
+
+
+<div class="app-layout">
+
+
+<aside class="sidebar">
+
+
+<div class="brand">
+
+
+<img src="img/logo.png">
+
+
+<div>
+
+<h2>
+ConectaSoporte
+</h2>
+
+
+<span>
+Escalaciones
+
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<nav>
+
+
+<a href="solicitudes.html">
+
+Solicitudes
+
+</a>
+
+
+<a class="active">
+
+Escalar caso
+
+</a>
+
+
+<a href="cola-tecnica.html">
+
+Cola técnica
+
+</a>
+
+
+</nav>
+
+
+</aside>
+
+
+
+
+
+
+
+
+
+<main class="main-content">
+
+
+<header class="top-header">
+
+
+<div>
+
+<h1>
+Nueva escalación
+
+</h1>
+
+
+<p>
+Enviar caso a soporte especializado
+
+</p>
+
+
+</div>
+
+
+
+<div class="status-badge">
+
+Pendiente
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+Información del caso
+
+</h3>
+
+
+
+<div class="info-card">
+
+
+Solicitud:
+
+<b>
+CS-2026-001
+</b>
+
+
+</div>
+
+
+
+<div class="info-card">
+
+
+Cliente:
+
+<b>
+Juan Pérez
+
+</b>
+
+
+</div>
+
+
+
+<div class="info-card">
+
+
+Categoría:
+
+<b>
+Error de acceso
+
+</b>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3>
+Datos de escalación
+
+</h3>
+
+
+
+
+<div class="input-box">
+
+Área destino:
+Soporte técnico nivel 2
+
+</div>
+
+
+
+
+<div class="input-box">
+
+Motivo de escalación
+
+</div>
+
+
+
+
+
+<div class="large-input">
+
+Descripción técnica del problema,
+pruebas realizadas y resultados obtenidos.
+
+</div>
+
+
+
+
+
+<div class="large-input">
+
+Evidencias adjuntas
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="action-panel">
+
+
+<a class="main-button" href="revision-escalacion.html">
+
+Enviar escalación
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+</main>
+
+
+
+</div>
 
 
 </body>
