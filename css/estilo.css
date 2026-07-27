@@ -1,0 +1,619 @@
+/* ======================================
+   CONECTASOPORTE - ESTILO GENERAL
+   ====================================== */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Arial, sans-serif;
+
+}
+
+
+
+body{
+
+    background:#f4f7fb;
+    color:#263238;
+
+}
+
+
+
+.contenedor{
+
+    display:flex;
+    min-height:100vh;
+
+}
+
+
+
+/* ======================================
+   SIDEBAR
+   ====================================== */
+
+
+.sidebar{
+
+    width:260px;
+    background:#174A7E;
+    padding:20px;
+    color:white;
+    position:fixed;
+    height:100vh;
+
+}
+
+
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:35px;
+
+}
+
+
+
+.logo img{
+
+    width:45px;
+    height:45px;
+    object-fit:contain;
+
+}
+
+
+
+.logo h2{
+
+    font-size:20px;
+    color:white;
+
+}
+
+
+
+.menu a{
+
+    display:flex;
+    align-items:center;
+
+    padding:14px 16px;
+
+    margin-bottom:8px;
+
+    color:#eaf4fc;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+
+
+.menu a:hover{
+
+    background:#2D74B8;
+
+    color:white;
+
+}
+
+
+
+.menu a:before{
+
+    content:"▸";
+
+    margin-right:10px;
+
+}
+
+
+
+/* ======================================
+   CONTENIDO
+   ====================================== */
+
+
+.contenido{
+
+    margin-left:260px;
+
+    flex:1;
+
+    padding:30px;
+
+}
+
+
+
+.header{
+
+    background:white;
+
+    padding:22px;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+.header h1{
+
+    color:#174A7E;
+
+    font-size:28px;
+
+}
+
+
+
+
+
+/* ======================================
+   TARJETAS KPI
+   ====================================== */
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+    margin-bottom:20px;
+
+}
+
+
+
+.card h3{
+
+    color:#607D8B;
+
+    font-size:16px;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.card h2{
+
+    color:#174A7E;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.numero{
+
+    font-size:38px;
+
+    font-weight:bold;
+
+    color:#174A7E;
+
+}
+
+
+
+
+/* ======================================
+   TABLAS
+   ====================================== */
+
+
+.tabla{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    margin-top:25px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+
+
+.tabla h2{
+
+    color:#174A7E;
+
+    margin-bottom:20px;
+
+}
+
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+
+
+th{
+
+    background:#174A7E;
+
+    color:white;
+
+    padding:14px;
+
+    text-align:left;
+
+}
+
+
+
+td{
+
+    padding:14px;
+
+    border-bottom:1px solid #e0e0e0;
+
+}
+
+
+
+tr:hover{
+
+    background:#f1f8ff;
+
+}
+
+
+
+
+/* ======================================
+   CAMPOS VISUALES
+   ====================================== */
+
+
+.campo{
+
+    background:#f7f9fc;
+
+    border:1px solid #dce3ea;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin:12px 0;
+
+    color:#455A64;
+
+}
+
+
+
+.campo:hover{
+
+    border-color:#2D74B8;
+
+}
+
+
+
+
+/* ======================================
+   BOTONES
+   ====================================== */
+
+
+.btn{
+
+    display:inline-block;
+
+    background:#174A7E;
+
+    color:white;
+
+    padding:13px 22px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    margin-top:10px;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    background:#2D74B8;
+
+}
+
+
+
+/* ======================================
+   GRAFICOS SIMULADOS
+   ====================================== */
+
+
+.grafico{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    margin-top:25px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+
+
+.grafico h2{
+
+    color:#174A7E;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.barra{
+
+    height:35px;
+
+    background:#2D74B8;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    margin:15px 0;
+
+    font-size:14px;
+
+}
+
+
+
+.verde{
+
+    background:#2D9D78;
+
+}
+
+
+
+.amarillo{
+
+    background:#F1B844;
+
+}
+
+
+
+.rojo{
+
+    background:#C94A4A;
+
+}
+
+
+
+
+/* ======================================
+   ESTADOS
+   ====================================== */
+
+
+.estado{
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+
+
+.estado-activo{
+
+    background:#d8f5e8;
+
+    color:#16734d;
+
+}
+
+
+
+.estado-pendiente{
+
+    background:#fff3cd;
+
+    color:#856404;
+
+}
+
+
+
+.estado-critico{
+
+    background:#f8d7da;
+
+    color:#842029;
+
+}
+
+
+
+
+
+/* ======================================
+   DASHBOARD EJECUTIVO
+   ====================================== */
+
+
+.indicador{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.indicador span{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:#174A7E;
+
+}
+
+
+
+
+
+/* ======================================
+   LOGIN
+   ====================================== */
+
+
+body:has(.login){
+
+    background:#174A7E;
+
+}
+
+
+
+.login{
+
+    width:400px;
+
+    margin:auto;
+
+}
+
+
+
+.login .card{
+
+    text-align:center;
+
+}
+
+
+
+
+
+/* ======================================
+   RESPONSIVE
+   ====================================== */
+
+
+@media(max-width:900px){
+
+
+.sidebar{
+
+    width:80px;
+
+}
+
+
+.logo h2{
+
+    display:none;
+
+}
+
+
+.menu a{
+
+    font-size:0;
+
+}
+
+
+.contenido{
+
+    margin-left:80px;
+
+}
+
+
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
